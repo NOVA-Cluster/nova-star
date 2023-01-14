@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="$GND" color="16" fill="1" visible="no" active="no"/>
@@ -26259,11 +26259,14 @@ Block, Siemens and generic&lt;p&gt;
 <class number="5" name="12V_FUSED" width="0.635" drill="0">
 <clearance class="5" value="0.254"/>
 </class>
-<class number="6" name="120VAC_PWR" width="2.54" drill="0">
-<clearance class="6" value="1.27"/>
+<class number="6" name="120VAC_PWR" width="1.27" drill="0">
+<clearance class="6" value="0.508"/>
 </class>
 <class number="7" name="120VAC" width="1.27" drill="0">
-<clearance class="7" value="1.27"/>
+<clearance class="7" value="0.508"/>
+</class>
+<class number="8" name="60V" width="1.27" drill="0">
+<clearance class="8" value="0.508"/>
 </class>
 </classes>
 <parts>
@@ -26778,6 +26781,18 @@ Block, Siemens and generic&lt;p&gt;
 <part name="C32" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:38668554/1" technology="1UF/50V"/>
 <part name="5V_CTRL_LAZERS" library="con-jst-ph" library_urn="urn:adsk.eagle:library:37597460" deviceset="B8B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:37597503/1"/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="D2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="blue">
+<attribute name="JLC_ROTATION" value="180"/>
+<attribute name="LCSC_PART" value="C72041"/>
+</part>
+<part name="D3" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="blue">
+<attribute name="JLC_ROTATION" value="180"/>
+<attribute name="LCSC_PART" value="C72041"/>
+</part>
+<part name="R3" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="1.2K"/>
+<part name="R4" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="1.2K"/>
+<part name="P+15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27846,6 +27861,32 @@ Block, Siemens and generic&lt;p&gt;
 <instance part="P+4" gate="1" x="429.26" y="266.7" smashed="yes">
 <attribute name="VALUE" x="426.72" y="261.62" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="D2" gate="G$1" x="73.66" y="398.78" smashed="yes">
+<attribute name="NAME" x="70.231" y="394.208" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="67.945" y="399.288" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+<attribute name="LCSC_PART" x="73.66" y="398.78" size="1.778" layer="96" display="off"/>
+<attribute name="JLC_ROTATION" x="73.66" y="398.78" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="D3" gate="G$1" x="73.66" y="426.72" smashed="yes">
+<attribute name="NAME" x="70.231" y="422.148" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="67.945" y="427.228" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+<attribute name="LCSC_PART" x="73.66" y="426.72" size="1.778" layer="96" display="off"/>
+<attribute name="JLC_ROTATION" x="73.66" y="426.72" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R3" gate="R1" x="81.28" y="426.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="79.7814" y="422.91" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="84.582" y="422.91" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R4" gate="R1" x="81.28" y="398.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="79.7814" y="394.97" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="84.582" y="394.97" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+15" gate="1" x="81.28" y="436.88" smashed="yes">
+<attribute name="VALUE" x="78.74" y="431.8" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+25" gate="1" x="81.28" y="408.94" smashed="yes">
+<attribute name="VALUE" x="78.74" y="403.86" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 <bus name="ESP32_BUS:+3V3,+5V,2,4,5,12,13,14,15,16,17,18,19,20,21/SDA,22/SCL,23,25_POOFER,26_BOOM_IGNITER,27_BOOM_FUEL,32_BOOM_BLOWER,33,34,35,36,39,GND">
@@ -28456,6 +28497,16 @@ Block, Siemens and generic&lt;p&gt;
 <pinref part="5V_CTRL_LAZERS" gate="G$1" pin="8"/>
 <wire x1="426.72" y1="259.08" x2="429.26" y2="259.08" width="0.1524" layer="91"/>
 <junction x="429.26" y="259.08"/>
+</segment>
+<segment>
+<pinref part="R4" gate="R1" pin="2"/>
+<pinref part="P+25" gate="1" pin="+5V"/>
+<wire x1="81.28" y1="403.86" x2="81.28" y2="406.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R3" gate="R1" pin="2"/>
+<pinref part="P+15" gate="1" pin="+5V"/>
+<wire x1="81.28" y1="431.8" x2="81.28" y2="434.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="4">
@@ -29172,9 +29223,13 @@ Block, Siemens and generic&lt;p&gt;
 </segment>
 <segment>
 <pinref part="K1" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="391.16" x2="63.5" y2="391.16" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="391.16" x2="73.66" y2="391.16" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="391.16" x2="63.5" y2="391.16" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="391.16" x2="63.5" y2="393.7" width="0.1524" layer="91"/>
 <label x="68.58" y="388.62" size="2.54" layer="95"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="73.66" y1="393.7" x2="73.66" y2="391.16" width="0.1524" layer="91"/>
+<junction x="73.66" y="391.16"/>
 </segment>
 </net>
 <net name="EXP_ULN1" class="0">
@@ -29185,9 +29240,13 @@ Block, Siemens and generic&lt;p&gt;
 </segment>
 <segment>
 <pinref part="K2" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="419.1" x2="63.5" y2="419.1" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="419.1" x2="73.66" y2="419.1" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="419.1" x2="63.5" y2="419.1" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="419.1" x2="63.5" y2="421.64" width="0.1524" layer="91"/>
 <label x="68.58" y="416.56" size="2.54" layer="95"/>
+<pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="73.66" y1="421.64" x2="73.66" y2="419.1" width="0.1524" layer="91"/>
+<junction x="73.66" y="419.1"/>
 </segment>
 </net>
 <net name="EXP_ULN2" class="0">
@@ -29646,7 +29705,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="292.1" y="170.18" size="2.54" layer="95"/>
 </segment>
 </net>
-<net name="60VDC" class="0">
+<net name="60VDC" class="8">
 <segment>
 <pinref part="D10" gate="G$1" pin="C"/>
 <wire x1="363.22" y1="464.82" x2="373.38" y2="464.82" width="0.1524" layer="91"/>
@@ -29708,7 +29767,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="157.48" y="340.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GND2" class="0">
+<net name="GND2" class="8">
 <segment>
 <pinref part="D11" gate="G$1" pin="A1"/>
 <pinref part="SUPPLY2" gate="G$1" pin="GND2"/>
@@ -29956,6 +30015,26 @@ Block, Siemens and generic&lt;p&gt;
 <pinref part="R60" gate="R1" pin="1"/>
 <wire x1="137.16" y1="271.78" x2="137.16" y2="269.24" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="269.24" x2="142.24" y2="269.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="73.66" y1="401.32" x2="73.66" y2="403.86" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="403.86" x2="76.2" y2="403.86" width="0.1524" layer="91"/>
+<pinref part="R4" gate="R1" pin="1"/>
+<wire x1="76.2" y1="403.86" x2="76.2" y2="393.7" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="393.7" x2="81.28" y2="393.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="A"/>
+<wire x1="73.66" y1="429.26" x2="73.66" y2="431.8" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="431.8" x2="76.2" y2="431.8" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="431.8" x2="76.2" y2="421.64" width="0.1524" layer="91"/>
+<pinref part="R3" gate="R1" pin="1"/>
+<wire x1="76.2" y1="421.64" x2="81.28" y2="421.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -166,7 +166,7 @@
 <wire x1="139.37" y1="0" x2="139.37" y2="187.95" width="0" layer="20"/>
 <wire x1="139.37" y1="187.95" x2="0" y2="187.95" width="0" layer="20"/>
 <wire x1="0" y1="187.95" x2="0" y2="0" width="0" layer="20"/>
-<text x="110.49" y="100.33" size="1.27" layer="25">NOVA: STARBASE v01
+<text x="118.11" y="17.145" size="1.27" layer="25">NOVA: STARBASE v02
 (c) Jm Casler 2023
 www.casler.org
 www.oontz.com</text>
@@ -177,7 +177,7 @@ www.oontz.com</text>
 14 TMS
 15 TDO 
 </text>
-<text x="10.795" y="182.245" size="3.81" layer="25">NOVA: STARBASE v01</text>
+<text x="36.195" y="182.245" size="3.81" layer="25">NOVA: STARBASE v02</text>
 <text x="22.86" y="1.27" size="1.6764" layer="21">3v
 5v
 12v
@@ -213,7 +213,7 @@ High Voltage</text>
 High Voltage</text>
 <text x="43.815" y="170.18" size="1.27" layer="25"> **Warning**
 High Voltage</text>
-<text x="78.105" y="182.88" size="1.27" layer="25"> **Warning**
+<text x="17.145" y="91.44" size="1.27" layer="25"> **Warning**
 High Voltage</text>
 <wire x1="1.27" y1="81.28" x2="49.53" y2="81.28" width="0.1524" layer="25"/>
 <wire x1="49.53" y1="81.28" x2="49.53" y2="128.27" width="0.1524" layer="25"/>
@@ -261,18 +261,17 @@ High Voltage</text>
 </polygon>
 <text x="14.605" y="145.415" size="1.778" layer="25" rot="R90">FOG POWER</text>
 <text x="14.605" y="105.41" size="1.778" layer="25" rot="R90">ACTIVATE</text>
-<text x="123.825" y="34.29" size="1.778" layer="25">GND</text>
-<wire x1="123.19" y1="42.545" x2="123.19" y2="33.655" width="0.1524" layer="25"/>
-<wire x1="123.19" y1="33.655" x2="129.54" y2="33.655" width="0.1524" layer="25"/>
-<wire x1="129.54" y1="33.655" x2="129.54" y2="42.545" width="0.1524" layer="25"/>
-<wire x1="129.54" y1="42.545" x2="123.19" y2="42.545" width="0.1524" layer="25"/>
-<text x="86.995" y="148.59" size="1.778" layer="21">Poofer</text>
-<text x="86.995" y="137.16" size="1.778" layer="21">Igniter</text>
-<text x="86.995" y="128.905" size="1.778" layer="21">Fuel</text>
-<text x="86.995" y="120.65" size="1.778" layer="21">Blower</text>
-<text x="78.105" y="18.415" size="1.778" layer="21">3.3v</text>
-<text x="78.105" y="8.89" size="1.778" layer="21">5v</text>
-<text x="93.345" y="8.89" size="1.778" layer="21">5v</text>
+<text x="116.84" y="5.08" size="1.778" layer="25">GND</text>
+<wire x1="116.205" y1="13.335" x2="116.205" y2="4.445" width="0.1524" layer="25"/>
+<wire x1="116.205" y1="4.445" x2="122.555" y2="4.445" width="0.1524" layer="25"/>
+<wire x1="122.555" y1="4.445" x2="122.555" y2="13.335" width="0.1524" layer="25"/>
+<wire x1="122.555" y1="13.335" x2="116.205" y2="13.335" width="0.1524" layer="25"/>
+<text x="106.045" y="150.495" size="1.778" layer="21">Poofer</text>
+<text x="106.045" y="139.7" size="1.778" layer="21">Igniter</text>
+<text x="106.045" y="130.81" size="1.778" layer="21">Fuel</text>
+<text x="106.045" y="121.285" size="1.778" layer="21">Blower</text>
+<text x="104.14" y="10.795" size="1.778" layer="21">3.3v</text>
+<text x="80.645" y="10.795" size="1.778" layer="21">5v</text>
 <text x="38.735" y="7.62" size="1.778" layer="21">12v</text>
 <text x="53.34" y="7.62" size="1.778" layer="21">12v</text>
 <text x="135.89" y="127.635" size="1.016" layer="21" distance="100">En
@@ -2503,41 +2502,41 @@ You are welcome to use this library for commercial purposes. For attribution, we
 Block, Siemens and generic&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="S10K40" urn="urn:adsk.eagle:footprint:30457/1" library_version="3">
+<package name="S20K20" urn="urn:adsk.eagle:footprint:30484/1" library_version="3">
 <description>&lt;b&gt;VARISTOR&lt;/b&gt;</description>
-<wire x1="-1.016" y1="6.35" x2="1.016" y2="6.35" width="0.1524" layer="21"/>
-<wire x1="-1.143" y1="0" x2="-1.143" y2="5.08" width="0.0508" layer="21"/>
-<wire x1="1.143" y1="-5.08" x2="1.143" y2="0" width="0.0508" layer="21"/>
-<wire x1="0.762" y1="-2.54" x2="0.762" y2="0" width="0.0508" layer="21"/>
-<wire x1="-0.762" y1="0" x2="-0.762" y2="2.54" width="0.0508" layer="21"/>
-<wire x1="2.286" y1="-1.905" x2="2.286" y2="3.683" width="0.1524" layer="21"/>
-<wire x1="-2.286" y1="1.905" x2="-2.286" y2="-3.683" width="0.1524" layer="21"/>
-<wire x1="-1.651" y1="-2.667" x2="-1.651" y2="-4.953" width="0.1524" layer="51"/>
-<wire x1="1.651" y1="2.667" x2="1.651" y2="4.953" width="0.1524" layer="51"/>
-<wire x1="-2.286" y1="1.905" x2="-1.651" y2="2.54" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.286" y1="-3.683" x2="-1.651" y2="-4.318" width="0.1524" layer="51" curve="90"/>
-<wire x1="1.651" y1="4.318" x2="2.286" y2="3.683" width="0.1524" layer="51" curve="-90"/>
-<wire x1="1.651" y1="-2.54" x2="2.286" y2="-1.905" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.651" y1="-5.715" x2="1.651" y2="2.667" width="0.1524" layer="21"/>
-<wire x1="-1.651" y1="-2.667" x2="-1.651" y2="5.715" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="-6.35" x2="1.651" y2="-5.715" width="0.1524" layer="21" curve="90"/>
-<wire x1="-1.651" y1="-5.715" x2="-1.016" y2="-6.35" width="0.1524" layer="21" curve="90"/>
-<wire x1="-1.651" y1="5.715" x2="-1.016" y2="6.35" width="0.1524" layer="21" curve="-90"/>
-<wire x1="1.016" y1="6.35" x2="1.651" y2="5.715" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.016" y1="-6.35" x2="1.016" y2="-6.35" width="0.1524" layer="21"/>
-<wire x1="1.651" y1="4.953" x2="1.651" y2="5.715" width="0.1524" layer="21"/>
-<wire x1="-1.651" y1="-5.715" x2="-1.651" y2="-4.953" width="0.1524" layer="21"/>
-<pad name="1" x="-1.016" y="-3.81" drill="1.016" shape="long"/>
-<pad name="2" x="1.016" y="3.81" drill="1.016" shape="long"/>
-<text x="-2.667" y="-5.08" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-2.667" y="0.762" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-1.27" y1="11.303" x2="1.27" y2="11.303" width="0.1524" layer="21"/>
+<wire x1="-1.397" y1="0" x2="-1.397" y2="10.16" width="0.0508" layer="21"/>
+<wire x1="1.397" y1="-10.16" x2="1.397" y2="0" width="0.0508" layer="21"/>
+<wire x1="0.889" y1="-5.08" x2="0.889" y2="0" width="0.0508" layer="21"/>
+<wire x1="-0.889" y1="0" x2="-0.889" y2="5.08" width="0.0508" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="4.953" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="1.905" x2="-2.54" y2="-4.953" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-3.937" x2="-1.905" y2="-6.223" width="0.1524" layer="51"/>
+<wire x1="1.905" y1="3.937" x2="1.905" y2="6.223" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="1.905" x2="-1.905" y2="2.54" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.54" y1="-4.953" x2="-1.905" y2="-5.588" width="0.1524" layer="51" curve="90"/>
+<wire x1="1.905" y1="5.588" x2="2.54" y2="4.953" width="0.1524" layer="51" curve="-90"/>
+<wire x1="1.905" y1="-2.54" x2="2.54" y2="-1.905" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.905" y1="-10.668" x2="1.905" y2="3.937" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-3.937" x2="-1.905" y2="10.668" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-11.303" x2="1.905" y2="-10.668" width="0.1524" layer="21" curve="90"/>
+<wire x1="-1.905" y1="-10.668" x2="-1.27" y2="-11.303" width="0.1524" layer="21" curve="90"/>
+<wire x1="-1.905" y1="10.668" x2="-1.27" y2="11.303" width="0.1524" layer="21" curve="-90"/>
+<wire x1="1.27" y1="11.303" x2="1.905" y2="10.668" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.27" y1="-11.303" x2="1.27" y2="-11.303" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="6.223" x2="1.905" y2="10.668" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-10.668" x2="-1.905" y2="-6.223" width="0.1524" layer="21"/>
+<pad name="1" x="-1.016" y="-5.08" drill="1.1938" shape="long"/>
+<pad name="2" x="1.016" y="5.08" drill="1.1938" shape="long"/>
+<text x="-3.048" y="-9.525" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.048" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="S10K40" urn="urn:adsk.eagle:package:30549/1" type="box" library_version="3">
+<package3d name="S20K20" urn="urn:adsk.eagle:package:30577/1" type="box" library_version="3">
 <description>VARISTOR</description>
 <packageinstances>
-<packageinstance name="S10K40"/>
+<packageinstance name="S20K20"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -3006,10 +3005,10 @@ Source: http://eshop.phoenixcontact.com .. 1729128.pdf</description>
 <wire x1="66" y1="0" x2="66" y2="48" width="0.127" layer="21"/>
 <wire x1="66" y1="48" x2="0" y2="48" width="0.127" layer="21"/>
 <wire x1="0" y1="48" x2="0" y2="0" width="0.127" layer="21"/>
-<hole x="3" y="3" drill="4"/>
-<hole x="3" y="45" drill="4"/>
-<hole x="63" y="45" drill="4"/>
-<hole x="63" y="3" drill="4"/>
+<hole x="3" y="3" drill="6"/>
+<hole x="3" y="45" drill="6"/>
+<hole x="63" y="45" drill="6"/>
+<hole x="63" y="3" drill="6"/>
 <pad name="IN+" x="3" y="34" drill="1.5" shape="square"/>
 <pad name="IN-" x="3" y="29" drill="1.5" shape="square"/>
 <pad name="OUT+" x="63" y="34" drill="1.5" shape="square"/>
@@ -3022,6 +3021,44 @@ IN -</text>
 OUT -</text>
 </package>
 </packages>
+</library>
+<library name="diode" urn="urn:adsk.eagle:library:210">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DO214AA" urn="urn:adsk.eagle:footprint:43213/1" library_version="8">
+<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
+<wire x1="-2.4" y1="1.1" x2="2.4" y2="1.1" width="0.254" layer="51"/>
+<wire x1="2.4" y1="1.1" x2="2.4" y2="-1.1" width="0.254" layer="51"/>
+<wire x1="2.4" y1="-1.1" x2="-2.4" y2="-1.1" width="0.254" layer="51"/>
+<wire x1="-2.4" y1="-1.1" x2="-2.4" y2="1.1" width="0.254" layer="51"/>
+<wire x1="-1.2" y1="0" x2="0.05" y2="0.7" width="0.254" layer="21"/>
+<wire x1="0.05" y1="0.7" x2="0.05" y2="-0.7" width="0.254" layer="21"/>
+<wire x1="0.05" y1="-0.7" x2="-1.2" y2="0" width="0.254" layer="21"/>
+<smd name="C" x="-2.55" y="0" dx="1.8" dy="2.2" layer="1"/>
+<smd name="A" x="2.55" y="0" dx="1.8" dy="2.2" layer="1"/>
+<text x="-2.64" y="1.436" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.64" y="-2.706" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.75" y1="-0.7" x2="-2.5" y2="0.65" layer="51"/>
+<rectangle x1="2.5" y1="-0.7" x2="2.75" y2="0.65" layer="51"/>
+<rectangle x1="-1.4" y1="-1.05" x2="-1.1" y2="1.05" layer="21"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="DO214AA" urn="urn:adsk.eagle:package:43433/2" type="model" library_version="8">
+<description>DIODE</description>
+<packageinstances>
+<packageinstance name="DO214AA"/>
+</packageinstances>
+</package3d>
+</packages3d>
 </library>
 </libraries>
 <attributes>
@@ -3254,15 +3291,15 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="37" x="21.59" y="5.08" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="21.59" y="5.08" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uf" x="81.915" y="6.35" smashed="yes" rot="R90">
-<attribute name="LCSC_PART" value="C15849" x="81.915" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="POPULARITY" value="63" x="158.115" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="158.115" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uf" x="84.455" y="8.255" smashed="yes" rot="R90">
+<attribute name="LCSC_PART" value="C15849" x="84.455" y="8.255" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="POPULARITY" value="63" x="160.655" y="74.295" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="160.655" y="74.295" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uf" x="69.215" y="6.35" smashed="yes" rot="R270">
-<attribute name="LCSC_PART" value="C19702" x="69.215" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="POPULARITY" value="37" x="-6.985" y="-63.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="-6.985" y="-63.5" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uf" x="71.755" y="8.255" smashed="yes" rot="R270">
+<attribute name="LCSC_PART" value="C19702" x="71.755" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="POPULARITY" value="37" x="-4.445" y="-61.595" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="-4.445" y="-61.595" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="H1" library="holes" library_urn="urn:adsk.eagle:library:237" package="3,0" package3d_urn="urn:adsk.eagle:package:14277/1" value="MOUNT-HOLE3.0" x="134.62" y="5.08" smashed="yes">
 <attribute name="POPULARITY" value="3" x="172.72" y="-63.5" size="1.778" layer="27" display="off"/>
@@ -3279,11 +3316,11 @@ design rules under a new name.</description>
 <element name="U$1" library="ESP32-DEVKITV1" package="ESP32-DEVKITV1" value="ESP32DEVKITV1" x="104.14" y="45.72" smashed="yes" rot="R270">
 <attribute name="NAME" x="104.14" y="35.56" size="1.27" layer="21" rot="R270"/>
 </element>
-<element name="IC2" library="v-reg" library_urn="urn:adsk.eagle:library:409" package="SOT223" package3d_urn="urn:adsk.eagle:package:30370/1" value="LD117AS12TR" x="74.295" y="6.35" smashed="yes">
-<attribute name="JLC_ROTATION" value="270" x="74.295" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="LCSC_PART" value="C6187" x="74.295" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="POPULARITY" value="0" x="74.295" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="0.5" x="74.295" y="6.35" size="1.778" layer="27" display="off"/>
+<element name="IC2" library="v-reg" library_urn="urn:adsk.eagle:library:409" package="SOT223" package3d_urn="urn:adsk.eagle:package:30370/1" value="LD117AS12TR" x="76.835" y="8.255" smashed="yes">
+<attribute name="JLC_ROTATION" value="270" x="76.835" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="LCSC_PART" value="C6187" x="76.835" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="POPULARITY" value="0" x="76.835" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="0.5" x="76.835" y="8.255" size="1.778" layer="27" display="off"/>
 </element>
 <element name="POWER_IN" library="con-phoenix-508-jm" package="MKDSN1,5/4-5,08" package3d_urn="urn:adsk.eagle:package:9636/1" value="MKDSN1,5/4-5,08" x="7.62" y="25.4" smashed="yes" rot="R90">
 <attribute name="POPULARITY" value="5" x="7.62" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3299,10 +3336,10 @@ design rules under a new name.</description>
 <attribute name="PRICE" value="None" x="99.695" y="88.9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/MCP23017-E/SO/?ref=eda" x="99.695" y="88.9" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uf" x="79.375" y="6.35" smashed="yes" rot="R90">
-<attribute name="LCSC_PART" value="C19702" x="79.375" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="POPULARITY" value="37" x="79.375" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="79.375" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uf" x="81.915" y="8.255" smashed="yes" rot="R90">
+<attribute name="LCSC_PART" value="C19702" x="81.915" y="8.255" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="POPULARITY" value="37" x="81.915" y="8.255" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="81.915" y="8.255" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uf" x="101.6" y="79.375" smashed="yes" rot="R270">
 <attribute name="LCSC_PART" value="C19702" x="101.6" y="79.375" size="1.778" layer="27" rot="R270" display="off"/>
@@ -3385,25 +3422,25 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="77" x="16.51" y="1.905" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="16.51" y="1.905" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="IC22" library="v-reg" library_urn="urn:adsk.eagle:library:409" package="SOT223" package3d_urn="urn:adsk.eagle:package:30370/1" value="LD117AS12TR" x="74.295" y="15.875" smashed="yes">
-<attribute name="LCSC_PART" value="C347222" x="74.295" y="15.875" size="1.778" layer="27" display="off"/>
-<attribute name="POPULARITY" value="0" x="74.295" y="15.875" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="0.5" x="74.295" y="15.875" size="1.778" layer="27" display="off"/>
+<element name="IC22" library="v-reg" library_urn="urn:adsk.eagle:library:409" package="SOT223" package3d_urn="urn:adsk.eagle:package:30370/1" value="LD117AS12TR" x="100.33" y="8.255" smashed="yes">
+<attribute name="LCSC_PART" value="C347222" x="100.33" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="POPULARITY" value="0" x="100.33" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="0.5" x="100.33" y="8.255" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uf" x="81.915" y="15.875" smashed="yes" rot="R90">
-<attribute name="LCSC_PART" value="C15849" x="81.915" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="POPULARITY" value="63" x="81.915" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="81.915" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uf" x="107.95" y="8.255" smashed="yes" rot="R90">
+<attribute name="LCSC_PART" value="C15849" x="107.95" y="8.255" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="POPULARITY" value="63" x="107.95" y="8.255" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="107.95" y="8.255" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uf" x="79.375" y="15.875" smashed="yes" rot="R90">
-<attribute name="LCSC_PART" value="C19702" x="79.375" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="POPULARITY" value="37" x="79.375" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="79.375" y="15.875" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uf" x="105.41" y="8.255" smashed="yes" rot="R90">
+<attribute name="LCSC_PART" value="C19702" x="105.41" y="8.255" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="POPULARITY" value="37" x="105.41" y="8.255" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="105.41" y="8.255" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C36" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uf" x="69.215" y="15.875" smashed="yes" rot="R270">
-<attribute name="LCSC_PART" value="C19702" x="69.215" y="15.875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="POPULARITY" value="37" x="69.215" y="15.875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="69.215" y="15.875" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C36" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uf" x="95.25" y="8.255" smashed="yes" rot="R270">
+<attribute name="LCSC_PART" value="C19702" x="95.25" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="POPULARITY" value="37" x="95.25" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="95.25" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C89" library="rcl" library_urn="urn:adsk.eagle:library:334" package="E5-13" package3d_urn="urn:adsk.eagle:package:23375/1" value="2200uf" x="36.83" y="8.255" smashed="yes" rot="R270">
 <attribute name="DIST" value="https://amzn.to/3iR84VS" x="36.83" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
@@ -3524,37 +3561,37 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="6.985" y="147.32" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="2.54" y="143.51" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C9" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_100UF/6.3V_1206" x="66.04" y="6.35" smashed="yes" rot="R270">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810301816_Samsung-Electro-Mechanics-CL31A107MQHNNNE_C15008.pdf" x="66.04" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PART" value="C15008" x="66.04" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="66.04" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="66.04" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_STOCK" value="547696" x="66.04" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PROPERTIES" value="6.3V 100uF X5R ±20% 1206  ROHS" x="66.04" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C9" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_100UF/6.3V_1206" x="68.58" y="8.255" smashed="yes" rot="R270">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810301816_Samsung-Electro-Mechanics-CL31A107MQHNNNE_C15008.pdf" x="68.58" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C15008" x="68.58" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="68.58" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="68.58" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_STOCK" value="547696" x="68.58" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROPERTIES" value="6.3V 100uF X5R ±20% 1206  ROHS" x="68.58" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C10" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_100UF/6.3V_1206" x="62.865" y="6.35" smashed="yes" rot="R270">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810301816_Samsung-Electro-Mechanics-CL31A107MQHNNNE_C15008.pdf" x="62.865" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PART" value="C15008" x="62.865" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="62.865" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="62.865" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_STOCK" value="547696" x="62.865" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PROPERTIES" value="6.3V 100uF X5R ±20% 1206  ROHS" x="62.865" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C10" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_100UF/6.3V_1206" x="65.405" y="8.255" smashed="yes" rot="R270">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810301816_Samsung-Electro-Mechanics-CL31A107MQHNNNE_C15008.pdf" x="65.405" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C15008" x="65.405" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="65.405" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="65.405" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_STOCK" value="547696" x="65.405" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROPERTIES" value="6.3V 100uF X5R ±20% 1206  ROHS" x="65.405" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C11" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_100UF/6.3V_1206" x="66.04" y="15.875" smashed="yes" rot="R270">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810301816_Samsung-Electro-Mechanics-CL31A107MQHNNNE_C15008.pdf" x="66.04" y="15.875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PART" value="C15008" x="66.04" y="15.875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="66.04" y="15.875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="66.04" y="15.875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_STOCK" value="547696" x="66.04" y="15.875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PROPERTIES" value="6.3V 100uF X5R ±20% 1206  ROHS" x="66.04" y="15.875" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C11" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_100UF/6.3V_1206" x="92.075" y="8.255" smashed="yes" rot="R270">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810301816_Samsung-Electro-Mechanics-CL31A107MQHNNNE_C15008.pdf" x="92.075" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C15008" x="92.075" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="92.075" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="92.075" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_STOCK" value="547696" x="92.075" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROPERTIES" value="6.3V 100uF X5R ±20% 1206  ROHS" x="92.075" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C12" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_100UF/6.3V_1206" x="62.865" y="15.875" smashed="yes" rot="R270">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810301816_Samsung-Electro-Mechanics-CL31A107MQHNNNE_C15008.pdf" x="62.865" y="15.875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PART" value="C15008" x="62.865" y="15.875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="62.865" y="15.875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="62.865" y="15.875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_STOCK" value="547696" x="62.865" y="15.875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PROPERTIES" value="6.3V 100uF X5R ±20% 1206  ROHS" x="62.865" y="15.875" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C12" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_100UF/6.3V_1206" x="88.9" y="8.255" smashed="yes" rot="R270">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810301816_Samsung-Electro-Mechanics-CL31A107MQHNNNE_C15008.pdf" x="88.9" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C15008" x="88.9" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="88.9" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="88.9" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_STOCK" value="547696" x="88.9" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROPERTIES" value="6.3V 100uF X5R ±20% 1206  ROHS" x="88.9" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="ULN1" library="SparkFun-IC-Special-Function" library_urn="urn:adsk.eagle:library:527" package="SO18L" package3d_urn="urn:adsk.eagle:package:39215/1" value="" x="92.075" y="104.14" smashed="yes">
 <attribute name="LCSC_PART" value="C9683" x="92.075" y="104.14" size="1.778" layer="27" display="off"/>
@@ -3567,84 +3604,84 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="74.295" y="123.825" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="71.12" y="123.063" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="C13" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_1NF/2KV_1206" x="103.505" y="146.05" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810311314_FH-Guangdong-Fenghua-Advanced-Tech-1206B102K202NT_C9196.pdf" x="103.505" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C9196" x="103.505" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="103.505" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="103.505" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="8943689" x="103.505" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="2kV 1nF X7R ±10% 1206  ROHS" x="103.505" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C13" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_1NF/2KV_1206" x="103.505" y="151.13" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810311314_FH-Guangdong-Fenghua-Advanced-Tech-1206B102K202NT_C9196.pdf" x="103.505" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C9196" x="103.505" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="103.505" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="103.505" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="8943689" x="103.505" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="2kV 1nF X7R ±10% 1206  ROHS" x="103.505" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C15" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C0603" package3d_urn="urn:adsk.eagle:package:38668554/1" value="C_100PF/50V_0603" x="97.79" y="144.145" smashed="yes" rot="R270">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151136_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf" x="97.79" y="144.145" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PART" value="C14858" x="97.79" y="144.145" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="97.79" y="144.145" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="97.79" y="144.145" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_STOCK" value="2152181" x="97.79" y="144.145" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PROPERTIES" value="50V 100pF C0G ±5% 0603  ROHS" x="97.79" y="144.145" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C15" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C0603" package3d_urn="urn:adsk.eagle:package:38668554/1" value="C_100PF/50V_0603" x="97.79" y="149.225" smashed="yes" rot="R270">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151136_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf" x="97.79" y="149.225" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C14858" x="97.79" y="149.225" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="97.79" y="149.225" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="97.79" y="149.225" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_STOCK" value="2152181" x="97.79" y="149.225" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROPERTIES" value="50V 100pF C0G ±5% 0603  ROHS" x="97.79" y="149.225" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R9" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_7.5K_0603" x="100.33" y="144.145" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF7501T5E_C23234.pdf" x="100.33" y="144.145" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C23234" x="100.33" y="144.145" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="100.33" y="144.145" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="100.33" y="144.145" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="230039" x="100.33" y="144.145" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 7.5kOhm 0603  ROHS" x="100.33" y="144.145" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R9" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_330R_0603" x="100.33" y="149.225" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3300T5E_C23138.pdf" x="100.33" y="149.225" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C23138" x="100.33" y="149.225" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="100.33" y="149.225" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="100.33" y="149.225" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="862746" x="100.33" y="149.225" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 330Ohm 0603  ROHS" x="100.33" y="149.225" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R14" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_2K_0603" x="100.33" y="147.955" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2001T5E_C22975.pdf" x="100.33" y="147.955" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C22975" x="100.33" y="147.955" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="100.33" y="147.955" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="100.33" y="147.955" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="3372290" x="100.33" y="147.955" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2kOhm 0603  ROHS" x="100.33" y="147.955" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R14" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_10K_0603" x="100.33" y="153.035" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf" x="100.33" y="153.035" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C25804" x="100.33" y="153.035" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="100.33" y="153.035" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="100.33" y="153.035" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="7979018" x="100.33" y="153.035" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 10kOhm 0603  ROHS" x="100.33" y="153.035" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="T1" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="SOT23" package3d_urn="urn:adsk.eagle:package:38668550/1" value="T_PNP_MMBT5401_CHANGJ_SOT23-BEC" x="93.345" y="146.05" smashed="yes" rot="R180">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1809140241_Changjiang-Electronics-Tech--CJ-MMBT5401_C8326.pdf" x="93.345" y="146.05" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_PART" value="C8326" x="93.345" y="146.05" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="93.345" y="146.05" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="180" x="93.345" y="146.05" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_STOCK" value="367315" x="93.345" y="146.05" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="95.25" y="144.145" size="1.27" layer="25" rot="R180"/>
-<attribute name="PROPERTIES" value="150V 300mW 600mA 200@10mA,5V 100MHz 500mV@50mA,5mA PNP +150°C@(Tj) SOT-23(SOT-23-3) Bipolar Transistors - BJT ROHS" x="93.345" y="146.05" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="T1" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="SOT23" package3d_urn="urn:adsk.eagle:package:38668550/1" value="T_PNP_MMBT5401_CHANGJ_SOT23-BEC" x="93.345" y="151.13" smashed="yes" rot="R180">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1809140241_Changjiang-Electronics-Tech--CJ-MMBT5401_C8326.pdf" x="93.345" y="151.13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_PART" value="C8326" x="93.345" y="151.13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="93.345" y="151.13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="180" x="93.345" y="151.13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_STOCK" value="367315" x="93.345" y="151.13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="95.25" y="149.225" size="1.27" layer="25" rot="R180"/>
+<attribute name="PROPERTIES" value="150V 300mW 600mA 200@10mA,5V 100MHz 500mV@50mA,5mA PNP +150°C@(Tj) SOT-23(SOT-23-3) Bipolar Transistors - BJT ROHS" x="93.345" y="151.13" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R15" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_10R_0603" x="97.79" y="147.955" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF100JT5E_C22859.pdf" x="97.79" y="147.955" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C22859" x="97.79" y="147.955" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="97.79" y="147.955" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="97.79" y="147.955" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="2733989" x="97.79" y="147.955" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±400ppm -55°C~+155°C 10Ohm 0603  ROHS" x="97.79" y="147.955" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R15" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_10R_0603" x="97.79" y="153.035" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF100JT5E_C22859.pdf" x="97.79" y="153.035" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C22859" x="97.79" y="153.035" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="97.79" y="153.035" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="97.79" y="153.035" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="2733989" x="97.79" y="153.035" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±400ppm -55°C~+155°C 10Ohm 0603  ROHS" x="97.79" y="153.035" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R16" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_12K_0603" x="89.535" y="146.05" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1202T5E_C22790.pdf" x="89.535" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C22790" x="89.535" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="89.535" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="89.535" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="256802" x="89.535" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 12kOhm 0603  ROHS" x="89.535" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R16" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_12K_0603" x="89.535" y="151.13" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1202T5E_C22790.pdf" x="89.535" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C22790" x="89.535" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="89.535" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="89.535" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="256802" x="89.535" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 12kOhm 0603  ROHS" x="89.535" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="D6" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="green" x="86.995" y="146.05" smashed="yes" rot="R90">
-<attribute name="JLC_ROTATION" value="180" x="86.995" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C72043" x="86.995" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="86.995" y="148.59" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="86.995" y="143.51" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="D6" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="green" x="86.995" y="151.13" smashed="yes" rot="R90">
+<attribute name="JLC_ROTATION" value="180" x="86.995" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C72043" x="86.995" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="86.995" y="153.67" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="86.995" y="148.59" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R17" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_2.7K_0603" x="84.455" y="146.05" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF2701T5E_C13167.pdf" x="84.455" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C13167" x="84.455" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="84.455" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="84.455" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="65542" x="84.455" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2.7kOhm 0603  ROHS" x="84.455" y="146.05" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R17" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_2.7K_0603" x="84.455" y="151.13" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF2701T5E_C13167.pdf" x="84.455" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C13167" x="84.455" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="84.455" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="84.455" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="65542" x="84.455" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2.7kOhm 0603  ROHS" x="84.455" y="151.13" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R18" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_1K_0603" x="81.915" y="146.05" smashed="yes" rot="R270">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" x="81.915" y="146.05" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PART" value="C21190" x="81.915" y="146.05" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="81.915" y="146.05" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="81.915" y="146.05" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_STOCK" value="5175299" x="81.915" y="146.05" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 1kOhm 0603  ROHS" x="81.915" y="146.05" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R18" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_1K_0603" x="81.915" y="151.13" smashed="yes" rot="R270">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" x="81.915" y="151.13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C21190" x="81.915" y="151.13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="81.915" y="151.13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="81.915" y="151.13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_STOCK" value="5175299" x="81.915" y="151.13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 1kOhm 0603  ROHS" x="81.915" y="151.13" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="IC4" library="74xx-us" library_urn="urn:adsk.eagle:library:88" package="SO14" package3d_urn="urn:adsk.eagle:package:2917/1" value="7404D" x="74.295" y="142.24" smashed="yes">
 <attribute name="LCSC_PART" value="C5590" x="74.295" y="142.24" size="1.778" layer="27" display="off"/>
@@ -3693,84 +3730,84 @@ design rules under a new name.</description>
 <attribute name="NAME" x="71.12" y="116.205" size="1.27" layer="25" rot="R90"/>
 <attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2kOhm 0603  ROHS" x="71.755" y="116.84" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C18" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_1NF/2KV_1206" x="103.505" y="135.255" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810311314_FH-Guangdong-Fenghua-Advanced-Tech-1206B102K202NT_C9196.pdf" x="96.52" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C9196" x="96.52" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="96.52" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="96.52" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="8943689" x="96.52" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="2kV 1nF X7R ±10% 1206  ROHS" x="96.52" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C18" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_1NF/2KV_1206" x="103.505" y="140.335" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810311314_FH-Guangdong-Fenghua-Advanced-Tech-1206B102K202NT_C9196.pdf" x="96.52" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C9196" x="96.52" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="96.52" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="96.52" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="8943689" x="96.52" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="2kV 1nF X7R ±10% 1206  ROHS" x="96.52" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C19" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C0603" package3d_urn="urn:adsk.eagle:package:38668554/1" value="C_100PF/50V_0603" x="97.79" y="133.35" smashed="yes" rot="R270">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151136_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf" x="104.775" y="133.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PART" value="C14858" x="104.775" y="133.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="104.775" y="133.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="104.775" y="133.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_STOCK" value="2152181" x="104.775" y="133.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PROPERTIES" value="50V 100pF C0G ±5% 0603  ROHS" x="104.775" y="133.35" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C19" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C0603" package3d_urn="urn:adsk.eagle:package:38668554/1" value="C_100PF/50V_0603" x="97.79" y="138.43" smashed="yes" rot="R270">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151136_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf" x="104.775" y="138.43" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C14858" x="104.775" y="138.43" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="104.775" y="138.43" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="104.775" y="138.43" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_STOCK" value="2152181" x="104.775" y="138.43" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROPERTIES" value="50V 100pF C0G ±5% 0603  ROHS" x="104.775" y="138.43" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R22" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_7.5K_0603" x="100.33" y="133.35" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF7501T5E_C23234.pdf" x="98.425" y="114.935" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C23234" x="98.425" y="114.935" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="98.425" y="114.935" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="98.425" y="114.935" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="230039" x="98.425" y="114.935" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 7.5kOhm 0603  ROHS" x="98.425" y="114.935" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R22" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_330R_0603" x="100.33" y="138.43" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3300T5E_C23138.pdf" x="98.425" y="120.015" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C23138" x="98.425" y="120.015" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="98.425" y="120.015" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="98.425" y="120.015" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="862746" x="98.425" y="120.015" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 330Ohm 0603  ROHS" x="98.425" y="120.015" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R23" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_2K_0603" x="100.33" y="137.16" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2001T5E_C22975.pdf" x="93.345" y="125.095" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C22975" x="93.345" y="125.095" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="93.345" y="125.095" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="93.345" y="125.095" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="3372290" x="93.345" y="125.095" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2kOhm 0603  ROHS" x="93.345" y="125.095" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R23" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_10K_0603" x="100.33" y="142.24" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf" x="93.345" y="130.175" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C25804" x="93.345" y="130.175" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="93.345" y="130.175" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="93.345" y="130.175" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="7979018" x="93.345" y="130.175" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 10kOhm 0603  ROHS" x="93.345" y="130.175" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="T2" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="SOT23" package3d_urn="urn:adsk.eagle:package:38668550/1" value="T_PNP_MMBT5401_CHANGJ_SOT23-BEC" x="93.345" y="135.255" smashed="yes" rot="R180">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1809140241_Changjiang-Electronics-Tech--CJ-MMBT5401_C8326.pdf" x="93.345" y="157.48" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_PART" value="C8326" x="93.345" y="157.48" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="93.345" y="157.48" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="180" x="93.345" y="157.48" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_STOCK" value="367315" x="93.345" y="157.48" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="95.25" y="133.35" size="1.27" layer="25" rot="R180"/>
-<attribute name="PROPERTIES" value="150V 300mW 600mA 200@10mA,5V 100MHz 500mV@50mA,5mA PNP +150°C@(Tj) SOT-23(SOT-23-3) Bipolar Transistors - BJT ROHS" x="93.345" y="157.48" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="T2" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="SOT23" package3d_urn="urn:adsk.eagle:package:38668550/1" value="T_PNP_MMBT5401_CHANGJ_SOT23-BEC" x="93.345" y="140.335" smashed="yes" rot="R180">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1809140241_Changjiang-Electronics-Tech--CJ-MMBT5401_C8326.pdf" x="93.345" y="162.56" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_PART" value="C8326" x="93.345" y="162.56" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="93.345" y="162.56" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="180" x="93.345" y="162.56" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_STOCK" value="367315" x="93.345" y="162.56" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="95.25" y="138.43" size="1.27" layer="25" rot="R180"/>
+<attribute name="PROPERTIES" value="150V 300mW 600mA 200@10mA,5V 100MHz 500mV@50mA,5mA PNP +150°C@(Tj) SOT-23(SOT-23-3) Bipolar Transistors - BJT ROHS" x="93.345" y="162.56" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R24" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_10R_0603" x="97.79" y="137.16" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF100JT5E_C22859.pdf" x="108.585" y="124.46" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C22859" x="108.585" y="124.46" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="108.585" y="124.46" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="108.585" y="124.46" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="2733989" x="108.585" y="124.46" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±400ppm -55°C~+155°C 10Ohm 0603  ROHS" x="108.585" y="124.46" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R24" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_10R_0603" x="97.79" y="142.24" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF100JT5E_C22859.pdf" x="108.585" y="129.54" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C22859" x="108.585" y="129.54" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="108.585" y="129.54" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="108.585" y="129.54" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="2733989" x="108.585" y="129.54" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±400ppm -55°C~+155°C 10Ohm 0603  ROHS" x="108.585" y="129.54" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R25" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_12K_0603" x="89.535" y="135.255" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1202T5E_C22790.pdf" x="100.33" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C22790" x="100.33" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="100.33" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="100.33" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="256802" x="100.33" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 12kOhm 0603  ROHS" x="100.33" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R25" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_12K_0603" x="89.535" y="140.335" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1202T5E_C22790.pdf" x="100.33" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C22790" x="100.33" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="100.33" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="100.33" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="256802" x="100.33" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 12kOhm 0603  ROHS" x="100.33" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="D7" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="green" x="86.995" y="135.255" smashed="yes" rot="R90">
-<attribute name="JLC_ROTATION" value="180" x="97.79" y="112.395" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C72043" x="97.79" y="112.395" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="86.36" y="135.255" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="86.995" y="132.715" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="D7" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="green" x="86.995" y="140.335" smashed="yes" rot="R90">
+<attribute name="JLC_ROTATION" value="180" x="97.79" y="117.475" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C72043" x="97.79" y="117.475" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="86.36" y="140.335" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="86.995" y="137.795" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R28" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_2.7K_0603" x="84.455" y="135.255" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF2701T5E_C13167.pdf" x="109.22" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C13167" x="109.22" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="109.22" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="109.22" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="65542" x="109.22" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2.7kOhm 0603  ROHS" x="109.22" y="135.255" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R28" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_2.7K_0603" x="84.455" y="140.335" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF2701T5E_C13167.pdf" x="109.22" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C13167" x="109.22" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="109.22" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="109.22" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="65542" x="109.22" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2.7kOhm 0603  ROHS" x="109.22" y="140.335" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R29" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_1K_0603" x="81.915" y="135.255" smashed="yes" rot="R270">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" x="62.23" y="135.255" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PART" value="C21190" x="62.23" y="135.255" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="62.23" y="135.255" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="62.23" y="135.255" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_STOCK" value="5175299" x="62.23" y="135.255" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 1kOhm 0603  ROHS" x="62.23" y="135.255" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R29" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_1K_0603" x="81.915" y="140.335" smashed="yes" rot="R270">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" x="62.23" y="140.335" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C21190" x="62.23" y="140.335" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="62.23" y="140.335" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="62.23" y="140.335" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_STOCK" value="5175299" x="62.23" y="140.335" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 1kOhm 0603  ROHS" x="62.23" y="140.335" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R30" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_2K_0603" x="75.565" y="116.84" smashed="yes" rot="R90">
 <attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2001T5E_C22975.pdf" x="100.33" y="105.41" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3781,84 +3818,84 @@ design rules under a new name.</description>
 <attribute name="NAME" x="74.93" y="116.205" size="1.27" layer="25" rot="R90"/>
 <attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2kOhm 0603  ROHS" x="100.33" y="105.41" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C20" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_1NF/2KV_1206" x="103.505" y="127" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810311314_FH-Guangdong-Fenghua-Advanced-Tech-1206B102K202NT_C9196.pdf" x="96.52" y="127" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C9196" x="96.52" y="127" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="96.52" y="127" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="96.52" y="127" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="8943689" x="96.52" y="127" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="2kV 1nF X7R ±10% 1206  ROHS" x="96.52" y="127" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C20" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_1NF/2KV_1206" x="103.505" y="130.81" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810311314_FH-Guangdong-Fenghua-Advanced-Tech-1206B102K202NT_C9196.pdf" x="96.52" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C9196" x="96.52" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="96.52" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="96.52" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="8943689" x="96.52" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="2kV 1nF X7R ±10% 1206  ROHS" x="96.52" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C21" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C0603" package3d_urn="urn:adsk.eagle:package:38668554/1" value="C_100PF/50V_0603" x="97.79" y="125.095" smashed="yes" rot="R270">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151136_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf" x="104.775" y="125.095" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PART" value="C14858" x="104.775" y="125.095" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="104.775" y="125.095" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="104.775" y="125.095" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_STOCK" value="2152181" x="104.775" y="125.095" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PROPERTIES" value="50V 100pF C0G ±5% 0603  ROHS" x="104.775" y="125.095" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C21" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C0603" package3d_urn="urn:adsk.eagle:package:38668554/1" value="C_100PF/50V_0603" x="97.79" y="128.905" smashed="yes" rot="R270">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151136_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf" x="104.775" y="128.905" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C14858" x="104.775" y="128.905" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="104.775" y="128.905" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="104.775" y="128.905" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_STOCK" value="2152181" x="104.775" y="128.905" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROPERTIES" value="50V 100pF C0G ±5% 0603  ROHS" x="104.775" y="128.905" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R31" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_7.5K_0603" x="100.33" y="125.095" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF7501T5E_C23234.pdf" x="98.425" y="106.68" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C23234" x="98.425" y="106.68" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="98.425" y="106.68" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="98.425" y="106.68" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="230039" x="98.425" y="106.68" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 7.5kOhm 0603  ROHS" x="98.425" y="106.68" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R31" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_330R_0603" x="100.33" y="128.905" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3300T5E_C23138.pdf" x="98.425" y="110.49" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C23138" x="98.425" y="110.49" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="98.425" y="110.49" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="98.425" y="110.49" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="862746" x="98.425" y="110.49" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 330Ohm 0603  ROHS" x="98.425" y="110.49" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R32" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_2K_0603" x="100.33" y="128.905" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2001T5E_C22975.pdf" x="93.345" y="116.84" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C22975" x="93.345" y="116.84" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="93.345" y="116.84" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="93.345" y="116.84" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="3372290" x="93.345" y="116.84" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2kOhm 0603  ROHS" x="93.345" y="116.84" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R32" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_10K_0603" x="100.33" y="132.715" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf" x="93.345" y="120.65" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C25804" x="93.345" y="120.65" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="93.345" y="120.65" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="93.345" y="120.65" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="7979018" x="93.345" y="120.65" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 10kOhm 0603  ROHS" x="93.345" y="120.65" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="T3" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="SOT23" package3d_urn="urn:adsk.eagle:package:38668550/1" value="T_PNP_MMBT5401_CHANGJ_SOT23-BEC" x="93.345" y="127" smashed="yes" rot="R180">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1809140241_Changjiang-Electronics-Tech--CJ-MMBT5401_C8326.pdf" x="93.345" y="149.225" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_PART" value="C8326" x="93.345" y="149.225" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="93.345" y="149.225" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="180" x="93.345" y="149.225" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_STOCK" value="367315" x="93.345" y="149.225" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="95.25" y="125.095" size="1.27" layer="25" rot="R180"/>
-<attribute name="PROPERTIES" value="150V 300mW 600mA 200@10mA,5V 100MHz 500mV@50mA,5mA PNP +150°C@(Tj) SOT-23(SOT-23-3) Bipolar Transistors - BJT ROHS" x="93.345" y="149.225" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="T3" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="SOT23" package3d_urn="urn:adsk.eagle:package:38668550/1" value="T_PNP_MMBT5401_CHANGJ_SOT23-BEC" x="93.345" y="130.81" smashed="yes" rot="R180">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1809140241_Changjiang-Electronics-Tech--CJ-MMBT5401_C8326.pdf" x="93.345" y="153.035" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_PART" value="C8326" x="93.345" y="153.035" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="93.345" y="153.035" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="180" x="93.345" y="153.035" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_STOCK" value="367315" x="93.345" y="153.035" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="95.25" y="128.905" size="1.27" layer="25" rot="R180"/>
+<attribute name="PROPERTIES" value="150V 300mW 600mA 200@10mA,5V 100MHz 500mV@50mA,5mA PNP +150°C@(Tj) SOT-23(SOT-23-3) Bipolar Transistors - BJT ROHS" x="93.345" y="153.035" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R33" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_10R_0603" x="97.79" y="128.905" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF100JT5E_C22859.pdf" x="108.585" y="116.205" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C22859" x="108.585" y="116.205" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="108.585" y="116.205" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="108.585" y="116.205" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="2733989" x="108.585" y="116.205" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±400ppm -55°C~+155°C 10Ohm 0603  ROHS" x="108.585" y="116.205" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R33" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_10R_0603" x="97.79" y="132.715" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF100JT5E_C22859.pdf" x="108.585" y="120.015" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C22859" x="108.585" y="120.015" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="108.585" y="120.015" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="108.585" y="120.015" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="2733989" x="108.585" y="120.015" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±400ppm -55°C~+155°C 10Ohm 0603  ROHS" x="108.585" y="120.015" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R34" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_12K_0603" x="89.535" y="127" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1202T5E_C22790.pdf" x="100.33" y="127" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C22790" x="100.33" y="127" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="100.33" y="127" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="100.33" y="127" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="256802" x="100.33" y="127" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 12kOhm 0603  ROHS" x="100.33" y="127" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R34" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_12K_0603" x="89.535" y="130.81" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1202T5E_C22790.pdf" x="100.33" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C22790" x="100.33" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="100.33" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="100.33" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="256802" x="100.33" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 12kOhm 0603  ROHS" x="100.33" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="D8" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="green" x="86.995" y="127" smashed="yes" rot="R90">
-<attribute name="JLC_ROTATION" value="180" x="97.79" y="104.14" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C72043" x="97.79" y="104.14" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="86.36" y="127" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="87.63" y="127" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="D8" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="green" x="86.995" y="130.81" smashed="yes" rot="R90">
+<attribute name="JLC_ROTATION" value="180" x="97.79" y="107.95" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C72043" x="97.79" y="107.95" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="86.36" y="130.81" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="87.63" y="130.81" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R35" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_2.7K_0603" x="84.455" y="127" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF2701T5E_C13167.pdf" x="109.22" y="127" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C13167" x="109.22" y="127" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="109.22" y="127" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="109.22" y="127" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="65542" x="109.22" y="127" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2.7kOhm 0603  ROHS" x="109.22" y="127" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R35" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_2.7K_0603" x="84.455" y="130.81" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF2701T5E_C13167.pdf" x="109.22" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C13167" x="109.22" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="109.22" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="109.22" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="65542" x="109.22" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2.7kOhm 0603  ROHS" x="109.22" y="130.81" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R36" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_1K_0603" x="81.915" y="127" smashed="yes" rot="R270">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" x="62.23" y="127" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PART" value="C21190" x="62.23" y="127" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="62.23" y="127" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="62.23" y="127" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_STOCK" value="5175299" x="62.23" y="127" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 1kOhm 0603  ROHS" x="62.23" y="127" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R36" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_1K_0603" x="81.915" y="130.81" smashed="yes" rot="R270">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" x="62.23" y="130.81" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C21190" x="62.23" y="130.81" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="62.23" y="130.81" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="62.23" y="130.81" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_STOCK" value="5175299" x="62.23" y="130.81" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 1kOhm 0603  ROHS" x="62.23" y="130.81" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R37" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_2K_0603" x="75.565" y="130.81" smashed="yes" rot="R270">
 <attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2001T5E_C22975.pdf" x="50.8" y="142.24" size="1.778" layer="27" rot="R270" display="off"/>
@@ -3869,84 +3906,84 @@ design rules under a new name.</description>
 <attribute name="NAME" x="76.2" y="131.445" size="1.27" layer="25" rot="R270"/>
 <attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2kOhm 0603  ROHS" x="50.8" y="142.24" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C22" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_1NF/2KV_1206" x="103.505" y="118.745" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810311314_FH-Guangdong-Fenghua-Advanced-Tech-1206B102K202NT_C9196.pdf" x="96.52" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C9196" x="96.52" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="96.52" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="96.52" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="8943689" x="96.52" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="2kV 1nF X7R ±10% 1206  ROHS" x="96.52" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C22" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="C_1NF/2KV_1206" x="103.505" y="121.285" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810311314_FH-Guangdong-Fenghua-Advanced-Tech-1206B102K202NT_C9196.pdf" x="96.52" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C9196" x="96.52" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="96.52" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="96.52" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="8943689" x="96.52" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="2kV 1nF X7R ±10% 1206  ROHS" x="96.52" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C23" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C0603" package3d_urn="urn:adsk.eagle:package:38668554/1" value="C_100PF/50V_0603" x="97.79" y="116.84" smashed="yes" rot="R270">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151136_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf" x="104.775" y="116.84" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PART" value="C14858" x="104.775" y="116.84" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="104.775" y="116.84" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="104.775" y="116.84" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_STOCK" value="2152181" x="104.775" y="116.84" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PROPERTIES" value="50V 100pF C0G ±5% 0603  ROHS" x="104.775" y="116.84" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C23" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="C0603" package3d_urn="urn:adsk.eagle:package:38668554/1" value="C_100PF/50V_0603" x="97.79" y="119.38" smashed="yes" rot="R270">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151136_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf" x="104.775" y="119.38" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C14858" x="104.775" y="119.38" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="104.775" y="119.38" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="104.775" y="119.38" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_STOCK" value="2152181" x="104.775" y="119.38" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROPERTIES" value="50V 100pF C0G ±5% 0603  ROHS" x="104.775" y="119.38" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R38" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_7.5K_0603" x="100.33" y="116.84" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF7501T5E_C23234.pdf" x="98.425" y="98.425" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C23234" x="98.425" y="98.425" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="98.425" y="98.425" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="98.425" y="98.425" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="230039" x="98.425" y="98.425" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 7.5kOhm 0603  ROHS" x="98.425" y="98.425" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R38" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_330R_0603" x="100.33" y="119.38" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3300T5E_C23138.pdf" x="98.425" y="100.965" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C23138" x="98.425" y="100.965" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="98.425" y="100.965" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="98.425" y="100.965" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="862746" x="98.425" y="100.965" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 330Ohm 0603  ROHS" x="98.425" y="100.965" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R39" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_2K_0603" x="100.33" y="120.65" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2001T5E_C22975.pdf" x="93.345" y="108.585" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C22975" x="93.345" y="108.585" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="93.345" y="108.585" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="93.345" y="108.585" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="3372290" x="93.345" y="108.585" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2kOhm 0603  ROHS" x="93.345" y="108.585" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R39" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_10K_0603" x="100.33" y="123.19" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf" x="93.345" y="111.125" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C25804" x="93.345" y="111.125" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="93.345" y="111.125" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="93.345" y="111.125" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="7979018" x="93.345" y="111.125" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 10kOhm 0603  ROHS" x="93.345" y="111.125" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="T4" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="SOT23" package3d_urn="urn:adsk.eagle:package:38668550/1" value="T_PNP_MMBT5401_CHANGJ_SOT23-BEC" x="93.345" y="118.745" smashed="yes" rot="R180">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1809140241_Changjiang-Electronics-Tech--CJ-MMBT5401_C8326.pdf" x="93.345" y="140.97" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_PART" value="C8326" x="93.345" y="140.97" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="93.345" y="140.97" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="180" x="93.345" y="140.97" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_STOCK" value="367315" x="93.345" y="140.97" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="95.25" y="116.84" size="1.27" layer="25" rot="R180"/>
-<attribute name="PROPERTIES" value="150V 300mW 600mA 200@10mA,5V 100MHz 500mV@50mA,5mA PNP +150°C@(Tj) SOT-23(SOT-23-3) Bipolar Transistors - BJT ROHS" x="93.345" y="140.97" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="T4" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="SOT23" package3d_urn="urn:adsk.eagle:package:38668550/1" value="T_PNP_MMBT5401_CHANGJ_SOT23-BEC" x="93.345" y="121.285" smashed="yes" rot="R180">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1809140241_Changjiang-Electronics-Tech--CJ-MMBT5401_C8326.pdf" x="93.345" y="143.51" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_PART" value="C8326" x="93.345" y="143.51" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="93.345" y="143.51" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="180" x="93.345" y="143.51" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_STOCK" value="367315" x="93.345" y="143.51" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="95.25" y="119.38" size="1.27" layer="25" rot="R180"/>
+<attribute name="PROPERTIES" value="150V 300mW 600mA 200@10mA,5V 100MHz 500mV@50mA,5mA PNP +150°C@(Tj) SOT-23(SOT-23-3) Bipolar Transistors - BJT ROHS" x="93.345" y="143.51" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R40" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_10R_0603" x="97.79" y="120.65" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF100JT5E_C22859.pdf" x="108.585" y="107.95" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C22859" x="108.585" y="107.95" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="108.585" y="107.95" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="108.585" y="107.95" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="2733989" x="108.585" y="107.95" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±400ppm -55°C~+155°C 10Ohm 0603  ROHS" x="108.585" y="107.95" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R40" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_10R_0603" x="97.79" y="123.19" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF100JT5E_C22859.pdf" x="108.585" y="110.49" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C22859" x="108.585" y="110.49" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="108.585" y="110.49" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="108.585" y="110.49" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="2733989" x="108.585" y="110.49" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±400ppm -55°C~+155°C 10Ohm 0603  ROHS" x="108.585" y="110.49" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R41" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_12K_0603" x="89.535" y="118.745" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1202T5E_C22790.pdf" x="100.33" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C22790" x="100.33" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="100.33" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="100.33" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="256802" x="100.33" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 12kOhm 0603  ROHS" x="100.33" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R41" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_12K_0603" x="89.535" y="121.285" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1202T5E_C22790.pdf" x="100.33" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C22790" x="100.33" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="100.33" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="100.33" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="256802" x="100.33" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 12kOhm 0603  ROHS" x="100.33" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="D9" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="green" x="86.995" y="118.745" smashed="yes" rot="R90">
-<attribute name="JLC_ROTATION" value="180" x="97.79" y="95.885" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C72043" x="97.79" y="95.885" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="86.36" y="118.745" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="87.63" y="118.745" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="D9" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="green" x="86.995" y="121.285" smashed="yes" rot="R90">
+<attribute name="JLC_ROTATION" value="180" x="97.79" y="98.425" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C72043" x="97.79" y="98.425" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="86.36" y="121.285" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="87.63" y="121.285" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R42" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_2.7K_0603" x="84.455" y="118.745" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF2701T5E_C13167.pdf" x="109.22" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C13167" x="109.22" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="109.22" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="109.22" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="65542" x="109.22" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2.7kOhm 0603  ROHS" x="109.22" y="118.745" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R42" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_2.7K_0603" x="84.455" y="121.285" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF2701T5E_C13167.pdf" x="109.22" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C13167" x="109.22" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="109.22" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="109.22" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="65542" x="109.22" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2.7kOhm 0603  ROHS" x="109.22" y="121.285" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R43" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_1K_0603" x="81.915" y="118.745" smashed="yes" rot="R270">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" x="62.23" y="118.745" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PART" value="C21190" x="62.23" y="118.745" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="62.23" y="118.745" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="62.23" y="118.745" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_STOCK" value="5175299" x="62.23" y="118.745" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 1kOhm 0603  ROHS" x="62.23" y="118.745" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R43" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_1K_0603" x="81.915" y="121.285" smashed="yes" rot="R270">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" x="62.23" y="121.285" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C21190" x="62.23" y="121.285" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="62.23" y="121.285" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="62.23" y="121.285" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_STOCK" value="5175299" x="62.23" y="121.285" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 1kOhm 0603  ROHS" x="62.23" y="121.285" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R44" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_2K_0603" x="71.755" y="130.81" smashed="yes" rot="R270">
 <attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2001T5E_C22975.pdf" x="46.99" y="142.24" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4016,15 +4053,15 @@ design rules under a new name.</description>
 <attribute name="LCSC_STOCK" value="307807" x="58.42" y="106.045" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PROPERTIES" value="100V 850mV@2A 2A SMA(DO-214AC) Schottky Barrier Diodes (SBD) ROHS" x="58.42" y="106.045" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R55" library="varistor" library_urn="urn:adsk.eagle:library:410" package="S10K40" package3d_urn="urn:adsk.eagle:package:30549/1" value="S10K40" x="36.83" y="170.815" smashed="yes">
-<attribute name="NAME" x="32.639" y="164.465" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="POPULARITY" value="0" x="36.83" y="170.815" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="32.639" y="170.434" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="R55" library="varistor" library_urn="urn:adsk.eagle:library:410" package="S20K20" package3d_urn="urn:adsk.eagle:package:30577/1" value="S20K20" x="26.035" y="168.91" smashed="yes" rot="R90">
+<attribute name="NAME" x="32.385" y="164.719" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="POPULARITY" value="0" x="26.035" y="168.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="26.416" y="164.719" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R56" library="varistor" library_urn="urn:adsk.eagle:library:410" package="S10K40" package3d_urn="urn:adsk.eagle:package:30549/1" value="S10K40" x="27.305" y="170.815" smashed="yes">
-<attribute name="NAME" x="23.114" y="164.465" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="POPULARITY" value="0" x="27.305" y="170.815" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="23.114" y="170.434" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="R56" library="varistor" library_urn="urn:adsk.eagle:library:410" package="S20K20" package3d_urn="urn:adsk.eagle:package:30577/1" value="S20K20" x="26.035" y="176.53" smashed="yes" rot="R90">
+<attribute name="NAME" x="32.385" y="172.339" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="POPULARITY" value="0" x="26.035" y="176.53" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="26.416" y="172.339" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="FIRE" library="con-phoenix-508-jm" package="MKDSN1,5/8-5,08" package3d_urn="urn:adsk.eagle:package:9632/1" value="MKDSN1,5/8-5,08" x="7.62" y="81.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="3.175" y="61.2889" size="1.27" layer="25" rot="R90"/>
@@ -4231,47 +4268,28 @@ design rules under a new name.</description>
 <attribute name="NAME" x="130.429" y="74.168" size="1.016" layer="25" ratio="18" rot="R90"/>
 <attribute name="VALUE" x="134.62" y="74.93" size="1.016" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uf" x="94.615" y="6.35" smashed="yes" rot="R90">
-<attribute name="LCSC_PART" value="C15849" x="73.025" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="POPULARITY" value="63" x="73.025" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="73.025" y="6.35" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="97.155" y="5.08" size="1.27" layer="27" rot="R90"/>
+<element name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X02" package3d_urn="urn:adsk.eagle:package:22455/2" value="" x="119.38" y="10.16" smashed="yes">
+<attribute name="POPULARITY" value="0" x="111.125" y="20.32" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="116.84" y="5.715" size="1.27" layer="27"/>
 </element>
-<element name="C37" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uf" x="84.455" y="6.35" smashed="yes" rot="R270">
-<attribute name="LCSC_PART" value="C19702" x="99.695" y="11.43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="POPULARITY" value="37" x="99.695" y="11.43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="99.695" y="11.43" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="82.55" y="6.985" size="1.27" layer="27" rot="R270"/>
-</element>
-<element name="IC9" library="v-reg" library_urn="urn:adsk.eagle:library:409" package="SOT223" package3d_urn="urn:adsk.eagle:package:30370/1" value="LD117AS12TR" x="89.535" y="6.35" smashed="yes">
-<attribute name="LCSC_PART" value="C6187" x="80.645" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="86.995" y="6.4008" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="0" x="80.645" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="0.5" x="80.645" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="86.995" y="5.0292" size="1.27" layer="27"/>
-</element>
-<element name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X02" package3d_urn="urn:adsk.eagle:package:22455/2" value="" x="126.365" y="39.37" smashed="yes">
-<attribute name="POPULARITY" value="0" x="118.11" y="49.53" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="123.825" y="34.925" size="1.27" layer="27"/>
-</element>
-<element name="K6" library="relay" library_urn="urn:adsk.eagle:library:339" package="AQG" package3d_urn="urn:adsk.eagle:package:24382/1" value="AQG22110" x="29.21" y="99.06" smashed="yes" rot="R180">
-<attribute name="MF" value="" x="29.21" y="99.06" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="29.21" y="99.06" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="41.2823" y="102.2375" size="1.397" layer="25" ratio="10" rot="R180"/>
-<attribute name="OC_FARNELL" value="unknown" x="29.21" y="99.06" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="29.21" y="99.06" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="POPULARITY" value="0" x="29.21" y="99.06" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="33.655" y="102.2365" size="1.397" layer="27" ratio="10" rot="R180"/>
+<element name="K6" library="relay" library_urn="urn:adsk.eagle:library:339" package="AQG" package3d_urn="urn:adsk.eagle:package:24382/1" value="AQG22110" x="32.385" y="99.06" smashed="yes" rot="R180">
+<attribute name="MF" value="" x="32.385" y="99.06" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="32.385" y="99.06" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="44.4573" y="102.2375" size="1.397" layer="25" ratio="10" rot="R180"/>
+<attribute name="OC_FARNELL" value="unknown" x="32.385" y="99.06" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="32.385" y="99.06" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POPULARITY" value="0" x="32.385" y="99.06" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="36.83" y="102.2365" size="1.397" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="U$2" library="Nova" package="ZK-SJVA-4X" value="ZK-SJVA-4X" x="17.145" y="20.32" smashed="yes"/>
-<element name="K5" library="relay" library_urn="urn:adsk.eagle:library:339" package="AQG" package3d_urn="urn:adsk.eagle:package:24382/1" value="AQG22110" x="29.21" y="88.9" smashed="yes" rot="R180">
-<attribute name="MF" value="" x="29.21" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="29.21" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="41.2823" y="92.0775" size="1.397" layer="25" ratio="10" rot="R180"/>
-<attribute name="OC_FARNELL" value="unknown" x="29.21" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="29.21" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="POPULARITY" value="0" x="29.21" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="33.655" y="92.0765" size="1.397" layer="27" ratio="10" rot="R180"/>
+<element name="K5" library="relay" library_urn="urn:adsk.eagle:library:339" package="AQG" package3d_urn="urn:adsk.eagle:package:24382/1" value="AQG22110" x="32.385" y="88.9" smashed="yes" rot="R180">
+<attribute name="MF" value="" x="32.385" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="32.385" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="44.4573" y="92.0775" size="1.397" layer="25" ratio="10" rot="R180"/>
+<attribute name="OC_FARNELL" value="unknown" x="32.385" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="32.385" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POPULARITY" value="0" x="32.385" y="88.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="36.83" y="92.0765" size="1.397" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="C24" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uf" x="17.145" y="52.07" smashed="yes" rot="R270">
 <attribute name="LCSC_PART" value="C15849" x="17.145" y="52.07" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4291,6 +4309,36 @@ design rules under a new name.</description>
 <attribute name="NAME" x="3.175" y="43.5089" size="1.27" layer="25" rot="R90"/>
 <attribute name="POPULARITY" value="14" x="7.62" y="48.26" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="11.43" y="55.245" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="TVS1" library="diode" library_urn="urn:adsk.eagle:library:210" package="DO214AA" package3d_urn="urn:adsk.eagle:package:43433/2" value="" x="92.075" y="146.685" smashed="yes" rot="R180">
+<attribute name="LCSC_PART" value="C80339" x="92.075" y="146.685" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="94.715" y="145.249" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="POPULARITY" value="8" x="92.075" y="146.685" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="94.715" y="149.391" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="TVS2" library="diode" library_urn="urn:adsk.eagle:library:210" package="DO214AA" package3d_urn="urn:adsk.eagle:package:43433/2" value="" x="91.44" y="135.89" smashed="yes" rot="R180">
+<attribute name="LCSC_PART" value="C80339" x="91.44" y="135.89" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="94.08" y="133.184" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="POPULARITY" value="8" x="91.44" y="135.89" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="94.08" y="138.596" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="TVS3" library="diode" library_urn="urn:adsk.eagle:library:210" package="DO214AA" package3d_urn="urn:adsk.eagle:package:43433/2" value="" x="91.44" y="126.365" smashed="yes" rot="R180">
+<attribute name="LCSC_PART" value="C80339" x="91.44" y="126.365" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="94.08" y="124.929" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="POPULARITY" value="8" x="91.44" y="126.365" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="94.08" y="129.071" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="TVS4" library="diode" library_urn="urn:adsk.eagle:library:210" package="DO214AA" package3d_urn="urn:adsk.eagle:package:43433/2" value="" x="92.075" y="116.84" smashed="yes" rot="R180">
+<attribute name="LCSC_PART" value="C80339" x="92.075" y="116.84" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="94.715" y="115.404" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="POPULARITY" value="8" x="92.075" y="116.84" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="94.715" y="119.546" size="1.27" layer="27" ratio="10" rot="R180"/>
+</element>
+<element name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" package="DO214AA" package3d_urn="urn:adsk.eagle:package:43433/2" value="" x="63.5" y="125.73" smashed="yes" rot="R180">
+<attribute name="LCSC_PART" value="C80339" x="63.5" y="125.73" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="66.14" y="124.294" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="POPULARITY" value="8" x="63.5" y="125.73" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="66.14" y="128.436" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 </elements>
 <signals>
@@ -4376,9 +4424,6 @@ design rules under a new name.</description>
 <contactref element="IC8" pad="5"/>
 <contactref element="C33" pad="2"/>
 <contactref element="P1" pad="1"/>
-<contactref element="C34" pad="2"/>
-<contactref element="C37" pad="2"/>
-<contactref element="IC9" pad="1"/>
 <contactref element="JP2" pad="1"/>
 <contactref element="JP2" pad="2"/>
 <contactref element="JP2" pad="3"/>
@@ -4389,29 +4434,51 @@ design rules under a new name.</description>
 <contactref element="C25" pad="2"/>
 <contactref element="X2" pad="1"/>
 <contactref element="Q3" pad="3"/>
-<wire x1="97.79" y1="143.295" x2="103.505" y2="147.45" width="0" layer="19" extent="1-1"/>
-<wire x1="103.505" y1="136.655" x2="97.79" y2="143.295" width="0" layer="19" extent="1-1"/>
-<wire x1="97.79" y1="132.5" x2="103.505" y2="136.655" width="0" layer="19" extent="1-1"/>
-<wire x1="103.505" y1="128.4" x2="97.79" y2="132.5" width="0" layer="19" extent="1-1"/>
-<wire x1="97.79" y1="124.245" x2="103.505" y2="128.4" width="0" layer="19" extent="1-1"/>
-<wire x1="103.505" y1="120.145" x2="97.79" y2="124.245" width="0" layer="19" extent="1-1"/>
-<wire x1="97.79" y1="115.99" x2="103.505" y2="120.145" width="0" layer="19" extent="1-1"/>
-<wire x1="86.995" y1="146.927" x2="97.79" y2="143.295" width="0" layer="19" extent="1-1"/>
-<wire x1="81.915" y1="146.9" x2="86.995" y2="146.927" width="0" layer="19" extent="1-1"/>
-<wire x1="78.105" y1="139.1666" x2="81.915" y2="146.9" width="0" layer="19" extent="1-1"/>
-<wire x1="81.915" y1="136.105" x2="78.105" y2="139.1666" width="0" layer="19" extent="1-1"/>
-<wire x1="86.995" y1="136.132" x2="81.915" y2="136.105" width="0" layer="19" extent="1-1"/>
+<contactref element="TVS1" pad="A"/>
+<contactref element="R14" pad="1"/>
+<contactref element="R32" pad="1"/>
+<contactref element="TVS2" pad="A"/>
+<contactref element="R39" pad="1"/>
+<contactref element="TVS3" pad="A"/>
+<contactref element="TVS4" pad="A"/>
+<contactref element="R23" pad="1"/>
+<contactref element="D4" pad="A"/>
+<wire x1="103.505" y1="152.53" x2="100.33" y2="152.185" width="0" layer="19" extent="1-1"/>
+<wire x1="97.79" y1="148.375" x2="100.33" y2="152.185" width="0" layer="19" extent="1-1"/>
+<wire x1="100.33" y1="141.39" x2="97.79" y2="148.375" width="0" layer="19" extent="1-1"/>
+<wire x1="103.505" y1="141.735" x2="100.33" y2="141.39" width="0" layer="19" extent="1-1"/>
+<wire x1="97.79" y1="137.58" x2="100.33" y2="141.39" width="0" layer="19" extent="1-1"/>
+<wire x1="100.33" y1="131.865" x2="97.79" y2="137.58" width="0" layer="19" extent="1-1"/>
+<wire x1="103.505" y1="132.21" x2="100.33" y2="131.865" width="0" layer="19" extent="1-1"/>
+<wire x1="97.79" y1="128.055" x2="100.33" y2="131.865" width="0" layer="19" extent="1-1"/>
+<wire x1="100.33" y1="122.34" x2="97.79" y2="128.055" width="0" layer="19" extent="1-1"/>
+<wire x1="103.505" y1="122.685" x2="100.33" y2="122.34" width="0" layer="19" extent="1-1"/>
+<wire x1="97.79" y1="118.53" x2="100.33" y2="122.34" width="0" layer="19" extent="1-1"/>
+<wire x1="89.525" y1="146.685" x2="97.79" y2="148.375" width="0" layer="19" extent="1-1"/>
+<wire x1="86.995" y1="152.007" x2="89.525" y2="146.685" width="0" layer="19" extent="1-1"/>
+<wire x1="81.915" y1="151.98" x2="86.995" y2="152.007" width="0" layer="19" extent="1-1"/>
+<wire x1="86.995" y1="141.212" x2="89.525" y2="146.685" width="0" layer="19" extent="1-1"/>
+<wire x1="81.915" y1="141.185" x2="86.995" y2="141.212" width="0" layer="19" extent="1-1"/>
+<wire x1="78.105" y1="139.1666" x2="81.915" y2="141.185" width="0" layer="19" extent="1-1"/>
 <wire x1="74.295" y1="135.04" x2="78.105" y2="139.1666" width="0" layer="19" extent="1-1"/>
+<wire x1="88.89" y1="135.89" x2="86.995" y2="141.212" width="0" layer="19" extent="1-1"/>
+<wire x1="86.995" y1="131.687" x2="88.89" y2="135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="81.915" y1="131.66" x2="86.995" y2="131.687" width="0" layer="19" extent="1-1"/>
+<wire x1="88.89" y1="126.365" x2="86.995" y2="131.687" width="0" layer="19" extent="1-1"/>
+<wire x1="86.995" y1="122.162" x2="88.89" y2="126.365" width="0" layer="19" extent="1-1"/>
+<wire x1="81.915" y1="122.135" x2="86.995" y2="122.162" width="0" layer="19" extent="1-1"/>
+<wire x1="78.105" y1="120.7516" x2="81.915" y2="122.135" width="0" layer="19" extent="1-1"/>
+<wire x1="89.525" y1="116.84" x2="86.995" y2="122.162" width="0" layer="19" extent="1-1"/>
 <wire x1="66.675" y1="135.04" x2="74.295" y2="135.04" width="0" layer="19" extent="1-1"/>
 <wire x1="60.325" y1="133.77" x2="66.675" y2="135.04" width="0" layer="19" extent="1-1"/>
 <wire x1="55.245" y1="133.77" x2="60.325" y2="133.77" width="0" layer="19" extent="1-1"/>
 <wire x1="52.705" y1="133.77" x2="55.245" y2="133.77" width="0" layer="19" extent="1-1"/>
-<wire x1="86.995" y1="127.877" x2="86.995" y2="136.132" width="0" layer="19" extent="1-1"/>
-<wire x1="81.915" y1="127.85" x2="86.995" y2="127.877" width="0" layer="19" extent="1-1"/>
-<wire x1="78.105" y1="120.7516" x2="81.915" y2="127.85" width="0" layer="19" extent="1-1"/>
-<wire x1="81.915" y1="119.595" x2="78.105" y2="120.7516" width="0" layer="19" extent="1-1"/>
-<wire x1="86.995" y1="119.622" x2="81.915" y2="119.595" width="0" layer="19" extent="1-1"/>
-<wire x1="101.6" y1="99.2378" x2="97.79" y2="115.99" width="0" layer="19" extent="1-1"/>
+<wire x1="105.41" y1="167.22" x2="103.505" y2="152.53" width="0" layer="19" extent="1-1"/>
+<wire x1="99.695" y1="179.705" x2="105.41" y2="167.22" width="0" layer="19" extent="1-1"/>
+<wire x1="99.695" y1="182.245" x2="99.695" y2="179.705" width="0" layer="19" extent="1-1"/>
+<wire x1="97.155" y1="182.245" x2="99.695" y2="182.245" width="0" layer="19" extent="1-1"/>
+<wire x1="97.155" y1="179.705" x2="99.695" y2="179.705" width="0" layer="19" extent="1-1"/>
+<wire x1="101.6" y1="99.2378" x2="97.79" y2="118.53" width="0" layer="19" extent="1-1"/>
 <wire x1="105.41" y1="93.505" x2="101.6" y2="99.2378" width="0" layer="19" extent="1-1"/>
 <wire x1="106.68" y1="93.505" x2="105.41" y2="93.505" width="0" layer="19" extent="1-1"/>
 <wire x1="107.95" y1="93.505" x2="106.68" y2="93.505" width="0" layer="19" extent="1-1"/>
@@ -4419,48 +4486,39 @@ design rules under a new name.</description>
 <wire x1="101.6" y1="78.525" x2="102.87" y2="84.295" width="0" layer="19" extent="1-1"/>
 <wire x1="97.79" y1="66.46" x2="101.6" y2="78.525" width="0" layer="19" extent="1-1"/>
 <wire x1="90.6" y1="66.05" x2="97.79" y2="66.46" width="0" layer="19" extent="1-1"/>
+<wire x1="120.65" y1="11.43" x2="118.11" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="120.65" y1="8.89" x2="118.11" y2="8.89" width="0" layer="19" extent="1-1"/>
 <wire x1="83.185" y1="51.12" x2="80.145" y2="49.32" width="0" layer="19" extent="1-1"/>
-<wire x1="62.865" y1="4.95" x2="51.435" y2="5.715" width="0" layer="19" extent="1-1"/>
-<wire x1="66.04" y1="4.95" x2="62.865" y2="4.95" width="0" layer="19" extent="1-1"/>
-<wire x1="69.215" y1="5.5" x2="66.04" y2="4.95" width="0" layer="19" extent="1-1"/>
-<wire x1="71.995" y1="3.2" x2="69.215" y2="5.5" width="0" layer="19" extent="1-1"/>
-<wire x1="71.995" y1="12.725" x2="69.215" y2="5.5" width="0" layer="19" extent="1-1"/>
-<wire x1="69.215" y1="15.025" x2="71.995" y2="12.725" width="0" layer="19" extent="1-1"/>
-<wire x1="66.04" y1="14.475" x2="69.215" y2="15.025" width="0" layer="19" extent="1-1"/>
-<wire x1="62.865" y1="14.475" x2="66.04" y2="14.475" width="0" layer="19" extent="1-1"/>
-<wire x1="79.375" y1="16.725" x2="71.995" y2="12.725" width="0" layer="19" extent="1-1"/>
-<wire x1="81.915" y1="16.825" x2="79.375" y2="16.725" width="0" layer="19" extent="1-1"/>
-<wire x1="79.375" y1="7.2" x2="71.995" y2="3.2" width="0" layer="19" extent="1-1"/>
-<wire x1="81.915" y1="7.3" x2="79.375" y2="7.2" width="0" layer="19" extent="1-1"/>
-<wire x1="84.455" y1="5.5" x2="81.915" y2="7.3" width="0" layer="19" extent="1-1"/>
-<wire x1="87.235" y1="3.2" x2="84.455" y2="5.5" width="0" layer="19" extent="1-1"/>
-<wire x1="94.615" y1="7.3" x2="87.235" y2="3.2" width="0" layer="19" extent="1-1"/>
+<wire x1="107.95" y1="9.205" x2="118.11" y2="8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="105.41" y1="9.105" x2="107.95" y2="9.205" width="0" layer="19" extent="1-1"/>
+<wire x1="98.03" y1="5.105" x2="105.41" y2="9.105" width="0" layer="19" extent="1-1"/>
+<wire x1="95.25" y1="7.405" x2="98.03" y2="5.105" width="0" layer="19" extent="1-1"/>
+<wire x1="92.075" y1="6.855" x2="95.25" y2="7.405" width="0" layer="19" extent="1-1"/>
+<wire x1="88.9" y1="6.855" x2="92.075" y2="6.855" width="0" layer="19" extent="1-1"/>
+<wire x1="84.455" y1="9.205" x2="88.9" y2="6.855" width="0" layer="19" extent="1-1"/>
+<wire x1="81.915" y1="9.105" x2="84.455" y2="9.205" width="0" layer="19" extent="1-1"/>
+<wire x1="74.535" y1="5.105" x2="81.915" y2="9.105" width="0" layer="19" extent="1-1"/>
+<wire x1="71.755" y1="7.405" x2="74.535" y2="5.105" width="0" layer="19" extent="1-1"/>
+<wire x1="68.58" y1="6.855" x2="71.755" y2="7.405" width="0" layer="19" extent="1-1"/>
+<wire x1="65.405" y1="6.855" x2="68.58" y2="6.855" width="0" layer="19" extent="1-1"/>
 <wire x1="15.66" y1="9.525" x2="7.595" y2="17.7589" width="0" layer="19" extent="1-1"/>
 <wire x1="15.66" y1="6.985" x2="15.66" y2="9.525" width="0" layer="19" extent="1-1"/>
 <wire x1="15.66" y1="4.445" x2="15.66" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="15.66" y1="1.905" x2="15.66" y2="4.445" width="0" layer="19" extent="1-1"/>
+<wire x1="60.95" y1="125.73" x2="15.66" y2="1.905" width="0" layer="19" extent="1-1"/>
 <wire x1="132.715" y1="62.23" x2="115.37" y2="66.05" width="0" layer="19" extent="1-1"/>
 <wire x1="132.715" y1="50.8" x2="132.715" y2="62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="127.635" y1="40.64" x2="132.715" y2="50.8" width="0" layer="19" extent="1-1"/>
-<wire x1="125.095" y1="40.64" x2="127.635" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="127.635" y1="38.1" x2="127.635" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="125.095" y1="38.1" x2="125.095" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="120.865" y1="33.02" x2="125.095" y2="38.1" width="0" layer="19" extent="1-1"/>
 <wire x1="132.715" y1="76.105" x2="132.715" y2="62.23" width="0" layer="19" extent="1-1"/>
 <wire x1="131.445" y1="83.9216" x2="132.715" y2="76.105" width="0" layer="19" extent="1-1"/>
 <wire x1="137.16" y1="87.945" x2="131.445" y2="83.9216" width="0" layer="19" extent="1-1"/>
 <wire x1="7.595" y1="45.6989" x2="7.595" y2="27.9189" width="0" layer="19" extent="1-1"/>
 <wire x1="17.145" y1="51.12" x2="7.595" y2="45.6989" width="0" layer="19" extent="1-1"/>
 <wire x1="20.145" y1="49.32" x2="17.145" y2="51.12" width="0" layer="19" extent="1-1"/>
-<wire x1="105.41" y1="167.22" x2="103.505" y2="147.45" width="0" layer="19" extent="1-1"/>
-<wire x1="99.695" y1="179.705" x2="105.41" y2="167.22" width="0" layer="19" extent="1-1"/>
-<wire x1="99.695" y1="182.245" x2="99.695" y2="179.705" width="0" layer="19" extent="1-1"/>
-<wire x1="97.155" y1="182.245" x2="99.695" y2="182.245" width="0" layer="19" extent="1-1"/>
-<wire x1="97.155" y1="179.705" x2="99.695" y2="179.705" width="0" layer="19" extent="1-1"/>
-<wire x1="131.445" y1="146.1516" x2="103.505" y2="147.45" width="0" layer="19" extent="1-1"/>
-<wire x1="137.16" y1="150.175" x2="131.445" y2="146.1516" width="0" layer="19" extent="1-1"/>
+<wire x1="120.865" y1="33.02" x2="132.715" y2="50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="133.35" y1="170.18" x2="105.41" y2="167.22" width="0" layer="19" extent="1-1"/>
+<wire x1="137.16" y1="150.175" x2="133.35" y2="170.18" width="0" layer="19" extent="1-1"/>
+<wire x1="131.445" y1="146.1516" x2="137.16" y2="150.175" width="0" layer="19" extent="1-1"/>
 <wire x1="132.715" y1="128.255" x2="131.445" y2="146.1516" width="0" layer="19" extent="1-1"/>
-<wire x1="133.35" y1="170.18" x2="137.16" y2="150.175" width="0" layer="19" extent="1-1"/>
 <wire x1="73.255" y1="89.91" x2="90.6" y2="66.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
@@ -4478,28 +4536,18 @@ design rules under a new name.</description>
 <contactref element="ULN1" pad="10"/>
 <contactref element="K2" pad="2"/>
 <contactref element="K1" pad="2"/>
-<contactref element="R14" pad="2"/>
 <contactref element="R15" pad="2"/>
-<contactref element="R23" pad="2"/>
 <contactref element="R24" pad="2"/>
-<contactref element="R32" pad="2"/>
 <contactref element="R33" pad="2"/>
-<contactref element="R39" pad="2"/>
 <contactref element="R40" pad="2"/>
 <contactref element="C28" pad="+"/>
-<contactref element="C34" pad="1"/>
-<contactref element="IC9" pad="3"/>
 <contactref element="U$2" pad="IN+"/>
 <contactref element="C24" pad="1"/>
-<wire x1="97.79" y1="148.805" x2="100.33" y2="148.805" width="0" layer="19" extent="1-1"/>
-<wire x1="100.33" y1="138.01" x2="100.33" y2="148.805" width="0" layer="19" extent="1-1"/>
-<wire x1="97.79" y1="138.01" x2="100.33" y2="138.01" width="0" layer="19" extent="1-1"/>
-<wire x1="100.33" y1="129.755" x2="100.33" y2="138.01" width="0" layer="19" extent="1-1"/>
-<wire x1="97.79" y1="129.755" x2="100.33" y2="129.755" width="0" layer="19" extent="1-1"/>
-<wire x1="100.33" y1="121.5" x2="100.33" y2="129.755" width="0" layer="19" extent="1-1"/>
-<wire x1="97.79" y1="121.5" x2="100.33" y2="121.5" width="0" layer="19" extent="1-1"/>
-<wire x1="101.6" y1="109.0422" x2="100.33" y2="121.5" width="0" layer="19" extent="1-1"/>
-<wire x1="40.64" y1="140.97" x2="97.79" y2="138.01" width="0" layer="19" extent="1-1"/>
+<wire x1="97.79" y1="143.09" x2="97.79" y2="153.885" width="0" layer="19" extent="1-1"/>
+<wire x1="97.79" y1="133.565" x2="97.79" y2="143.09" width="0" layer="19" extent="1-1"/>
+<wire x1="97.79" y1="124.04" x2="97.79" y2="133.565" width="0" layer="19" extent="1-1"/>
+<wire x1="101.6" y1="109.0422" x2="97.79" y2="124.04" width="0" layer="19" extent="1-1"/>
+<wire x1="40.64" y1="140.97" x2="97.79" y2="143.09" width="0" layer="19" extent="1-1"/>
 <wire x1="40.64" y1="112.395" x2="40.64" y2="140.97" width="0" layer="19" extent="1-1"/>
 <wire x1="20.145" y1="54.32" x2="40.64" y2="112.395" width="0" layer="19" extent="1-1"/>
 <wire x1="17.145" y1="53.02" x2="20.145" y2="54.32" width="0" layer="19" extent="1-1"/>
@@ -4507,11 +4555,9 @@ design rules under a new name.</description>
 <wire x1="21.197" y1="4.445" x2="7.595" y2="32.9989" width="0" layer="19" extent="1-1"/>
 <wire x1="36.83" y1="10.795" x2="21.197" y2="4.445" width="0" layer="19" extent="1-1"/>
 <wire x1="51.435" y1="10.795" x2="36.83" y2="10.795" width="0" layer="19" extent="1-1"/>
-<wire x1="76.595" y1="3.2" x2="51.435" y2="10.795" width="0" layer="19" extent="1-1"/>
-<wire x1="79.375" y1="5.5" x2="76.595" y2="3.2" width="0" layer="19" extent="1-1"/>
-<wire x1="81.915" y1="5.4" x2="79.375" y2="5.5" width="0" layer="19" extent="1-1"/>
-<wire x1="91.835" y1="3.2" x2="81.915" y2="5.4" width="0" layer="19" extent="1-1"/>
-<wire x1="94.615" y1="5.4" x2="91.835" y2="3.2" width="0" layer="19" extent="1-1"/>
+<wire x1="79.135" y1="5.105" x2="51.435" y2="10.795" width="0" layer="19" extent="1-1"/>
+<wire x1="81.915" y1="7.405" x2="79.135" y2="5.105" width="0" layer="19" extent="1-1"/>
+<wire x1="84.455" y1="7.305" x2="81.915" y2="7.405" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V" class="3">
 <contactref element="C5" pad="1"/>
@@ -4532,8 +4578,6 @@ design rules under a new name.</description>
 <contactref element="5V_CTRL_LAZERS" pad="8"/>
 <contactref element="R4" pad="2"/>
 <contactref element="R3" pad="2"/>
-<contactref element="C37" pad="1"/>
-<contactref element="IC9" pad="4"/>
 <contactref element="D12" pad="C"/>
 <contactref element="D19" pad="A"/>
 <contactref element="D13" pad="C"/>
@@ -4552,18 +4596,16 @@ design rules under a new name.</description>
 <wire x1="61.595" y1="103.263" x2="58.42" y2="104.02" width="0" layer="19" extent="1-1"/>
 <wire x1="58.42" y1="94.495" x2="61.595" y2="103.263" width="0" layer="19" extent="1-1"/>
 <wire x1="61.595" y1="93.738" x2="58.42" y2="94.495" width="0" layer="19" extent="1-1"/>
-<wire x1="36.83" y1="99.06" x2="50.8" y2="114.72" width="0" layer="19" extent="1-1"/>
-<wire x1="36.83" y1="88.9" x2="36.83" y2="99.06" width="0" layer="19" extent="1-1"/>
-<wire x1="81.915" y1="14.925" x2="115.37" y2="68.59" width="0" layer="19" extent="1-1"/>
-<wire x1="79.375" y1="15.025" x2="81.915" y2="14.925" width="0" layer="19" extent="1-1"/>
-<wire x1="76.595" y1="12.725" x2="79.375" y2="15.025" width="0" layer="19" extent="1-1"/>
-<wire x1="74.295" y1="9.5" x2="76.595" y2="12.725" width="0" layer="19" extent="1-1"/>
-<wire x1="69.215" y1="7.2" x2="74.295" y2="9.5" width="0" layer="19" extent="1-1"/>
-<wire x1="66.04" y1="7.75" x2="69.215" y2="7.2" width="0" layer="19" extent="1-1"/>
-<wire x1="62.865" y1="7.75" x2="66.04" y2="7.75" width="0" layer="19" extent="1-1"/>
-<wire x1="84.455" y1="7.2" x2="81.915" y2="14.925" width="0" layer="19" extent="1-1"/>
-<wire x1="89.535" y1="9.5" x2="84.455" y2="7.2" width="0" layer="19" extent="1-1"/>
-<wire x1="21.197" y1="6.985" x2="62.865" y2="7.75" width="0" layer="19" extent="1-1"/>
+<wire x1="40.005" y1="99.06" x2="58.42" y2="94.495" width="0" layer="19" extent="1-1"/>
+<wire x1="40.005" y1="88.9" x2="40.005" y2="99.06" width="0" layer="19" extent="1-1"/>
+<wire x1="107.95" y1="7.305" x2="115.37" y2="68.59" width="0" layer="19" extent="1-1"/>
+<wire x1="105.41" y1="7.405" x2="107.95" y2="7.305" width="0" layer="19" extent="1-1"/>
+<wire x1="102.63" y1="5.105" x2="105.41" y2="7.405" width="0" layer="19" extent="1-1"/>
+<wire x1="76.835" y1="11.405" x2="102.63" y2="5.105" width="0" layer="19" extent="1-1"/>
+<wire x1="71.755" y1="9.105" x2="76.835" y2="11.405" width="0" layer="19" extent="1-1"/>
+<wire x1="68.58" y1="9.655" x2="71.755" y2="9.105" width="0" layer="19" extent="1-1"/>
+<wire x1="65.405" y1="9.655" x2="68.58" y2="9.655" width="0" layer="19" extent="1-1"/>
+<wire x1="21.197" y1="6.985" x2="65.405" y2="9.655" width="0" layer="19" extent="1-1"/>
 <wire x1="7.595" y1="22.8389" x2="21.197" y2="6.985" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3" class="4">
@@ -4596,16 +4638,16 @@ design rules under a new name.</description>
 <wire x1="90.6" y1="68.59" x2="97.79" y2="68.16" width="0" layer="19" extent="1-1"/>
 <wire x1="85.51" y1="43.18" x2="90.6" y2="68.59" width="0" layer="19" extent="1-1"/>
 <wire x1="85.51" y1="35.56" x2="85.51" y2="43.18" width="0" layer="19" extent="1-1"/>
-<wire x1="74.295" y1="19.025" x2="85.51" y2="35.56" width="0" layer="19" extent="1-1"/>
-<wire x1="69.215" y1="16.725" x2="74.295" y2="19.025" width="0" layer="19" extent="1-1"/>
-<wire x1="66.04" y1="17.275" x2="69.215" y2="16.725" width="0" layer="19" extent="1-1"/>
-<wire x1="62.865" y1="17.275" x2="66.04" y2="17.275" width="0" layer="19" extent="1-1"/>
-<wire x1="21.197" y1="9.525" x2="62.865" y2="17.275" width="0" layer="19" extent="1-1"/>
+<wire x1="88.9" y1="9.655" x2="85.51" y2="35.56" width="0" layer="19" extent="1-1"/>
+<wire x1="92.075" y1="9.655" x2="88.9" y2="9.655" width="0" layer="19" extent="1-1"/>
+<wire x1="95.25" y1="9.105" x2="92.075" y2="9.655" width="0" layer="19" extent="1-1"/>
+<wire x1="100.33" y1="11.405" x2="95.25" y2="9.105" width="0" layer="19" extent="1-1"/>
 <wire x1="70.485" y1="126.8984" x2="104.14" y2="93.505" width="0" layer="19" extent="1-1"/>
 <wire x1="70.485" y1="145.3134" x2="70.485" y2="126.8984" width="0" layer="19" extent="1-1"/>
 <wire x1="70.485" y1="149.01" x2="70.485" y2="145.3134" width="0" layer="19" extent="1-1"/>
 <wire x1="135.255" y1="146.1516" x2="137.16" y2="86.045" width="0" layer="19" extent="1-1"/>
 <wire x1="137.16" y1="148.275" x2="135.255" y2="146.1516" width="0" layer="19" extent="1-1"/>
+<wire x1="21.197" y1="9.525" x2="88.9" y2="9.655" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="36">
 <contactref element="U$1" pad="17"/>
@@ -4838,11 +4880,11 @@ design rules under a new name.</description>
 <contactref element="R56" pad="1"/>
 <contactref element="K6" pad="O1"/>
 <contactref element="K5" pad="O1"/>
-<wire x1="26.289" y1="167.005" x2="35.814" y2="167.005" width="0" layer="19" extent="1-1"/>
-<wire x1="25.4" y1="154.94" x2="26.289" y2="167.005" width="0" layer="19" extent="1-1"/>
-<wire x1="6.96" y1="168.2539" x2="26.289" y2="167.005" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="99.06" x2="25.4" y2="154.94" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="88.9" x2="26.67" y2="99.06" width="0" layer="19" extent="1-1"/>
+<wire x1="31.115" y1="167.894" x2="31.115" y2="175.514" width="0" layer="19" extent="1-1"/>
+<wire x1="25.4" y1="154.94" x2="31.115" y2="167.894" width="0" layer="19" extent="1-1"/>
+<wire x1="6.96" y1="168.2539" x2="25.4" y2="154.94" width="0" layer="19" extent="1-1"/>
+<wire x1="29.845" y1="99.06" x2="25.4" y2="154.94" width="0" layer="19" extent="1-1"/>
+<wire x1="29.845" y1="88.9" x2="29.845" y2="99.06" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="120_NEUTRAL" class="6">
 <contactref element="X1" pad="2"/>
@@ -4851,8 +4893,8 @@ design rules under a new name.</description>
 <contactref element="R56" pad="2"/>
 <contactref element="FIRE" pad="8"/>
 <contactref element="FIRE" pad="6"/>
-<wire x1="28.321" y1="174.625" x2="37.846" y2="174.625" width="0" layer="19" extent="1-1"/>
-<wire x1="6.96" y1="173.3339" x2="28.321" y2="174.625" width="0" layer="19" extent="1-1"/>
+<wire x1="20.955" y1="169.926" x2="20.955" y2="177.546" width="0" layer="19" extent="1-1"/>
+<wire x1="6.96" y1="173.3339" x2="20.955" y2="169.926" width="0" layer="19" extent="1-1"/>
 <wire x1="6.96" y1="157.4589" x2="6.96" y2="173.3339" width="0" layer="19" extent="1-1"/>
 <wire x1="7.595" y1="99.0389" x2="6.96" y2="157.4589" width="0" layer="19" extent="1-1"/>
 <wire x1="7.595" y1="88.8789" x2="7.595" y2="99.0389" width="0" layer="19" extent="1-1"/>
@@ -4953,29 +4995,29 @@ design rules under a new name.</description>
 <contactref element="STAR_INPUT" pad="2"/>
 <contactref element="R38" pad="1"/>
 <contactref element="C22" pad="1"/>
-<wire x1="100.33" y1="115.99" x2="103.505" y2="117.345" width="0" layer="19" extent="1-1"/>
-<wire x1="132.715" y1="130.255" x2="103.505" y2="117.345" width="0" layer="19" extent="1-1"/>
+<wire x1="100.33" y1="118.53" x2="103.505" y2="119.885" width="0" layer="19" extent="1-1"/>
+<wire x1="132.715" y1="130.255" x2="103.505" y2="119.885" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BOOMER_FUEL">
 <contactref element="STAR_INPUT" pad="3"/>
 <contactref element="R31" pad="1"/>
 <contactref element="C20" pad="1"/>
-<wire x1="100.33" y1="124.245" x2="103.505" y2="125.6" width="0" layer="19" extent="1-1"/>
-<wire x1="132.715" y1="132.255" x2="103.505" y2="125.6" width="0" layer="19" extent="1-1"/>
+<wire x1="100.33" y1="128.055" x2="103.505" y2="129.41" width="0" layer="19" extent="1-1"/>
+<wire x1="132.715" y1="132.255" x2="103.505" y2="129.41" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BOOMER_IGNITER">
 <contactref element="STAR_INPUT" pad="4"/>
 <contactref element="R22" pad="1"/>
 <contactref element="C18" pad="1"/>
-<wire x1="100.33" y1="132.5" x2="103.505" y2="133.855" width="0" layer="19" extent="1-1"/>
-<wire x1="132.715" y1="134.255" x2="103.505" y2="133.855" width="0" layer="19" extent="1-1"/>
+<wire x1="100.33" y1="137.58" x2="103.505" y2="138.935" width="0" layer="19" extent="1-1"/>
+<wire x1="132.715" y1="134.255" x2="103.505" y2="138.935" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="POOFER">
 <contactref element="STAR_INPUT" pad="5"/>
 <contactref element="R9" pad="1"/>
 <contactref element="C13" pad="1"/>
-<wire x1="100.33" y1="143.295" x2="103.505" y2="144.65" width="0" layer="19" extent="1-1"/>
-<wire x1="132.715" y1="136.255" x2="103.505" y2="144.65" width="0" layer="19" extent="1-1"/>
+<wire x1="100.33" y1="148.375" x2="103.505" y2="149.73" width="0" layer="19" extent="1-1"/>
+<wire x1="132.715" y1="136.255" x2="103.505" y2="149.73" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="STAR_ENABLE">
 <contactref element="STAR_INPUT" pad="6"/>
@@ -4985,35 +5027,37 @@ design rules under a new name.</description>
 <signal name="N$17">
 <contactref element="R9" pad="2"/>
 <contactref element="C15" pad="1"/>
-<contactref element="R14" pad="1"/>
 <contactref element="T1" pad="1"/>
-<wire x1="100.33" y1="147.105" x2="100.33" y2="144.995" width="0" layer="19" extent="1-1"/>
-<wire x1="97.79" y1="144.995" x2="100.33" y2="144.995" width="0" layer="19" extent="1-1"/>
-<wire x1="94.445" y1="145.1" x2="97.79" y2="144.995" width="0" layer="19" extent="1-1"/>
+<contactref element="TVS1" pad="C"/>
+<contactref element="R14" pad="2"/>
+<wire x1="100.33" y1="150.075" x2="100.33" y2="153.885" width="0" layer="19" extent="1-1"/>
+<wire x1="97.79" y1="150.075" x2="100.33" y2="150.075" width="0" layer="19" extent="1-1"/>
+<wire x1="94.445" y1="150.18" x2="97.79" y2="150.075" width="0" layer="19" extent="1-1"/>
+<wire x1="94.625" y1="146.685" x2="94.445" y2="150.18" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
 <contactref element="T1" pad="3"/>
 <contactref element="R16" pad="2"/>
 <contactref element="R17" pad="2"/>
-<wire x1="89.535" y1="146.9" x2="92.245" y2="146.05" width="0" layer="19" extent="1-1"/>
-<wire x1="84.455" y1="146.9" x2="89.535" y2="146.9" width="0" layer="19" extent="1-1"/>
+<wire x1="89.535" y1="151.98" x2="92.245" y2="151.13" width="0" layer="19" extent="1-1"/>
+<wire x1="84.455" y1="151.98" x2="89.535" y2="151.98" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
 <contactref element="R16" pad="1"/>
 <contactref element="D6" pad="A"/>
-<wire x1="86.995" y1="145.173" x2="89.535" y2="145.2" width="0" layer="19" extent="1-1"/>
+<wire x1="86.995" y1="150.253" x2="89.535" y2="150.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">
 <contactref element="R18" pad="2"/>
 <contactref element="R17" pad="1"/>
 <contactref element="IC3" pad="1"/>
-<wire x1="81.915" y1="145.2" x2="84.455" y2="145.2" width="0" layer="19" extent="1-1"/>
-<wire x1="70.485" y1="120.7516" x2="81.915" y2="145.2" width="0" layer="19" extent="1-1"/>
+<wire x1="81.915" y1="150.28" x2="84.455" y2="150.28" width="0" layer="19" extent="1-1"/>
+<wire x1="70.485" y1="120.7516" x2="81.915" y2="150.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
 <contactref element="T1" pad="2"/>
 <contactref element="R15" pad="1"/>
-<wire x1="94.445" y1="147" x2="97.79" y2="147.105" width="0" layer="19" extent="1-1"/>
+<wire x1="94.445" y1="152.08" x2="97.79" y2="152.185" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$21">
 <contactref element="R20" pad="1"/>
@@ -5033,8 +5077,10 @@ design rules under a new name.</description>
 <contactref element="R19" pad="2"/>
 <contactref element="IC4" pad="1"/>
 <contactref element="C16" pad="1"/>
+<contactref element="D4" pad="C"/>
 <wire x1="69.215" y1="136.74" x2="70.485" y2="139.1666" width="0" layer="19" extent="1-1"/>
 <wire x1="66.675" y1="136.74" x2="69.215" y2="136.74" width="0" layer="19" extent="1-1"/>
+<wire x1="66.05" y1="125.73" x2="66.675" y2="136.74" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LOCAL_EN">
 <contactref element="IC4" pad="4"/>
@@ -5057,35 +5103,37 @@ design rules under a new name.</description>
 <signal name="N$25">
 <contactref element="R22" pad="2"/>
 <contactref element="C19" pad="1"/>
-<contactref element="R23" pad="1"/>
 <contactref element="T2" pad="1"/>
-<wire x1="100.33" y1="134.2" x2="100.33" y2="136.31" width="0" layer="19" extent="1-1"/>
-<wire x1="97.79" y1="134.2" x2="100.33" y2="134.2" width="0" layer="19" extent="1-1"/>
-<wire x1="94.445" y1="134.305" x2="97.79" y2="134.2" width="0" layer="19" extent="1-1"/>
+<contactref element="TVS4" pad="C"/>
+<contactref element="R23" pad="2"/>
+<wire x1="100.33" y1="139.28" x2="100.33" y2="143.09" width="0" layer="19" extent="1-1"/>
+<wire x1="97.79" y1="139.28" x2="100.33" y2="139.28" width="0" layer="19" extent="1-1"/>
+<wire x1="94.445" y1="139.385" x2="97.79" y2="139.28" width="0" layer="19" extent="1-1"/>
+<wire x1="94.625" y1="116.84" x2="94.445" y2="139.385" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$26">
 <contactref element="T2" pad="3"/>
 <contactref element="R25" pad="2"/>
 <contactref element="R28" pad="2"/>
-<wire x1="89.535" y1="136.105" x2="92.245" y2="135.255" width="0" layer="19" extent="1-1"/>
-<wire x1="84.455" y1="136.105" x2="89.535" y2="136.105" width="0" layer="19" extent="1-1"/>
+<wire x1="89.535" y1="141.185" x2="92.245" y2="140.335" width="0" layer="19" extent="1-1"/>
+<wire x1="84.455" y1="141.185" x2="89.535" y2="141.185" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$27">
 <contactref element="R25" pad="1"/>
 <contactref element="D7" pad="A"/>
-<wire x1="86.995" y1="134.378" x2="89.535" y2="134.405" width="0" layer="19" extent="1-1"/>
+<wire x1="86.995" y1="139.458" x2="89.535" y2="139.485" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$28">
 <contactref element="R29" pad="2"/>
 <contactref element="R28" pad="1"/>
 <contactref element="IC3" pad="4"/>
-<wire x1="81.915" y1="134.405" x2="84.455" y2="134.405" width="0" layer="19" extent="1-1"/>
-<wire x1="74.295" y1="120.7516" x2="81.915" y2="134.405" width="0" layer="19" extent="1-1"/>
+<wire x1="81.915" y1="139.485" x2="84.455" y2="139.485" width="0" layer="19" extent="1-1"/>
+<wire x1="74.295" y1="120.7516" x2="81.915" y2="139.485" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$29">
 <contactref element="T2" pad="2"/>
 <contactref element="R24" pad="1"/>
-<wire x1="94.445" y1="136.205" x2="97.79" y2="136.31" width="0" layer="19" extent="1-1"/>
+<wire x1="94.445" y1="141.285" x2="97.79" y2="141.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$30">
 <contactref element="R30" pad="2"/>
@@ -5095,35 +5143,37 @@ design rules under a new name.</description>
 <signal name="N$31">
 <contactref element="R31" pad="2"/>
 <contactref element="C21" pad="1"/>
-<contactref element="R32" pad="1"/>
 <contactref element="T3" pad="1"/>
-<wire x1="100.33" y1="125.945" x2="100.33" y2="128.055" width="0" layer="19" extent="1-1"/>
-<wire x1="97.79" y1="125.945" x2="100.33" y2="125.945" width="0" layer="19" extent="1-1"/>
-<wire x1="94.445" y1="126.05" x2="97.79" y2="125.945" width="0" layer="19" extent="1-1"/>
+<contactref element="TVS2" pad="C"/>
+<contactref element="R32" pad="2"/>
+<wire x1="100.33" y1="129.755" x2="100.33" y2="133.565" width="0" layer="19" extent="1-1"/>
+<wire x1="97.79" y1="129.755" x2="100.33" y2="129.755" width="0" layer="19" extent="1-1"/>
+<wire x1="94.445" y1="129.86" x2="97.79" y2="129.755" width="0" layer="19" extent="1-1"/>
+<wire x1="93.99" y1="135.89" x2="94.445" y2="129.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$32">
 <contactref element="T3" pad="3"/>
 <contactref element="R34" pad="2"/>
 <contactref element="R35" pad="2"/>
-<wire x1="89.535" y1="127.85" x2="92.245" y2="127" width="0" layer="19" extent="1-1"/>
-<wire x1="84.455" y1="127.85" x2="89.535" y2="127.85" width="0" layer="19" extent="1-1"/>
+<wire x1="89.535" y1="131.66" x2="92.245" y2="130.81" width="0" layer="19" extent="1-1"/>
+<wire x1="84.455" y1="131.66" x2="89.535" y2="131.66" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$33">
 <contactref element="R34" pad="1"/>
 <contactref element="D8" pad="A"/>
-<wire x1="86.995" y1="126.123" x2="89.535" y2="126.15" width="0" layer="19" extent="1-1"/>
+<wire x1="86.995" y1="129.933" x2="89.535" y2="129.96" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$34">
 <contactref element="R36" pad="2"/>
 <contactref element="R35" pad="1"/>
 <contactref element="IC3" pad="9"/>
-<wire x1="81.915" y1="126.15" x2="84.455" y2="126.15" width="0" layer="19" extent="1-1"/>
-<wire x1="76.835" y1="126.8984" x2="81.915" y2="126.15" width="0" layer="19" extent="1-1"/>
+<wire x1="81.915" y1="129.96" x2="84.455" y2="129.96" width="0" layer="19" extent="1-1"/>
+<wire x1="76.835" y1="126.8984" x2="81.915" y2="129.96" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$35">
 <contactref element="T3" pad="2"/>
 <contactref element="R33" pad="1"/>
-<wire x1="94.445" y1="127.95" x2="97.79" y2="128.055" width="0" layer="19" extent="1-1"/>
+<wire x1="94.445" y1="131.76" x2="97.79" y2="131.865" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$36">
 <contactref element="R37" pad="2"/>
@@ -5133,35 +5183,37 @@ design rules under a new name.</description>
 <signal name="N$37">
 <contactref element="R38" pad="2"/>
 <contactref element="C23" pad="1"/>
-<contactref element="R39" pad="1"/>
 <contactref element="T4" pad="1"/>
-<wire x1="100.33" y1="117.69" x2="100.33" y2="119.8" width="0" layer="19" extent="1-1"/>
-<wire x1="97.79" y1="117.69" x2="100.33" y2="117.69" width="0" layer="19" extent="1-1"/>
-<wire x1="94.445" y1="117.795" x2="97.79" y2="117.69" width="0" layer="19" extent="1-1"/>
+<contactref element="TVS3" pad="C"/>
+<contactref element="R39" pad="2"/>
+<wire x1="100.33" y1="120.23" x2="100.33" y2="124.04" width="0" layer="19" extent="1-1"/>
+<wire x1="97.79" y1="120.23" x2="100.33" y2="120.23" width="0" layer="19" extent="1-1"/>
+<wire x1="94.445" y1="120.335" x2="97.79" y2="120.23" width="0" layer="19" extent="1-1"/>
+<wire x1="93.99" y1="126.365" x2="94.445" y2="120.335" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$38">
 <contactref element="T4" pad="3"/>
 <contactref element="R41" pad="2"/>
 <contactref element="R42" pad="2"/>
-<wire x1="89.535" y1="119.595" x2="92.245" y2="118.745" width="0" layer="19" extent="1-1"/>
-<wire x1="84.455" y1="119.595" x2="89.535" y2="119.595" width="0" layer="19" extent="1-1"/>
+<wire x1="89.535" y1="122.135" x2="92.245" y2="121.285" width="0" layer="19" extent="1-1"/>
+<wire x1="84.455" y1="122.135" x2="89.535" y2="122.135" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$39">
 <contactref element="R41" pad="1"/>
 <contactref element="D9" pad="A"/>
-<wire x1="86.995" y1="117.868" x2="89.535" y2="117.895" width="0" layer="19" extent="1-1"/>
+<wire x1="86.995" y1="120.408" x2="89.535" y2="120.435" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$40">
 <contactref element="R43" pad="2"/>
 <contactref element="R42" pad="1"/>
 <contactref element="IC3" pad="12"/>
-<wire x1="81.915" y1="117.895" x2="84.455" y2="117.895" width="0" layer="19" extent="1-1"/>
-<wire x1="73.025" y1="126.8984" x2="81.915" y2="117.895" width="0" layer="19" extent="1-1"/>
+<wire x1="81.915" y1="120.435" x2="84.455" y2="120.435" width="0" layer="19" extent="1-1"/>
+<wire x1="73.025" y1="126.8984" x2="81.915" y2="120.435" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$41">
 <contactref element="T4" pad="2"/>
 <contactref element="R40" pad="1"/>
-<wire x1="94.445" y1="119.695" x2="97.79" y2="119.8" width="0" layer="19" extent="1-1"/>
+<wire x1="94.445" y1="122.235" x2="97.79" y2="122.34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$42">
 <contactref element="R44" pad="2"/>
@@ -5215,7 +5267,7 @@ design rules under a new name.</description>
 <contactref element="K6" pad="-"/>
 <wire x1="58.42" y1="108.07" x2="66.357" y2="107.315" width="0" layer="19" extent="1-1"/>
 <wire x1="55.245" y1="108.165" x2="58.42" y2="108.07" width="0" layer="19" extent="1-1"/>
-<wire x1="39.37" y1="99.06" x2="55.245" y2="108.165" width="0" layer="19" extent="1-1"/>
+<wire x1="42.545" y1="99.06" x2="55.245" y2="108.165" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$47">
 <contactref element="D13" pad="A"/>
@@ -5224,7 +5276,7 @@ design rules under a new name.</description>
 <contactref element="K5" pad="-"/>
 <wire x1="58.42" y1="98.545" x2="66.357" y2="97.79" width="0" layer="19" extent="1-1"/>
 <wire x1="55.245" y1="98.64" x2="58.42" y2="98.545" width="0" layer="19" extent="1-1"/>
-<wire x1="39.37" y1="88.9" x2="55.245" y2="98.64" width="0" layer="19" extent="1-1"/>
+<wire x1="42.545" y1="88.9" x2="55.245" y2="98.64" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$51">
 <contactref element="Q3" pad="4"/>
@@ -5311,12 +5363,12 @@ design rules under a new name.</description>
 <signal name="N$48">
 <contactref element="K6" pad="O2"/>
 <contactref element="FIRE" pad="7"/>
-<wire x1="7.595" y1="93.9589" x2="19.05" y2="99.06" width="0" layer="19" extent="1-1"/>
+<wire x1="7.595" y1="93.9589" x2="22.225" y2="99.06" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$50">
 <contactref element="K5" pad="O2"/>
 <contactref element="FIRE" pad="5"/>
-<wire x1="7.595" y1="83.7989" x2="19.05" y2="88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="7.595" y1="83.7989" x2="22.225" y2="88.9" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

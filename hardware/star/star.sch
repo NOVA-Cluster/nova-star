@@ -26575,6 +26575,217 @@ OUT -</text>
 </deviceset>
 </devicesets>
 </library>
+<library name="Fuse" urn="urn:adsk.eagle:library:24934274">
+<description>&lt;b&gt;Resettable Fuses, Automotive Fuses</description>
+<packages>
+<package name="FUSC4532X110" urn="urn:adsk.eagle:footprint:24934278/1" library_version="3">
+<description>Chip, 4.55 X 3.24 X 1.10 mm body
+ &lt;p&gt;Chip package with body size 4.55 X 3.24 X 1.10 mm&lt;/p&gt;</description>
+<smd name="1" x="-2.125" y="0" dx="1.55" dy="3.3" layer="1"/>
+<smd name="2" x="2.125" y="0" dx="1.55" dy="3.3" layer="1"/>
+<wire x1="-2.365" y1="1.964" x2="2.365" y2="1.964" width="0.12" layer="21"/>
+<wire x1="-2.365" y1="-1.964" x2="2.365" y2="-1.964" width="0.12" layer="21"/>
+<wire x1="-2.365" y1="-1.705" x2="-2.365" y2="1.705" width="0.12" layer="51"/>
+<wire x1="-2.365" y1="1.705" x2="2.365" y2="1.705" width="0.12" layer="51"/>
+<wire x1="2.365" y1="1.705" x2="2.365" y2="-1.705" width="0.12" layer="51"/>
+<wire x1="2.365" y1="-1.705" x2="-2.365" y2="-1.705" width="0.12" layer="51"/>
+<text x="0" y="2.599" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.599" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="FUSC4632X160" urn="urn:adsk.eagle:footprint:24934277/1" library_version="3">
+<description>Chip, 4.60 X 3.24 X 1.60 mm body
+ &lt;p&gt;Chip package with body size 4.60 X 3.24 X 1.60 mm&lt;/p&gt;</description>
+<smd name="1" x="-2.415" y="0" dx="1.73" dy="3.05" layer="1"/>
+<smd name="2" x="2.415" y="0" dx="1.73" dy="3.05" layer="1"/>
+<wire x1="-2.415" y1="1.839" x2="2.415" y2="1.839" width="0.12" layer="21"/>
+<wire x1="-2.415" y1="-1.839" x2="2.415" y2="-1.839" width="0.12" layer="21"/>
+<wire x1="-2.415" y1="-1.705" x2="-2.415" y2="1.705" width="0.12" layer="51"/>
+<wire x1="-2.415" y1="1.705" x2="2.415" y2="1.705" width="0.12" layer="51"/>
+<wire x1="2.415" y1="1.705" x2="2.415" y2="-1.705" width="0.12" layer="51"/>
+<wire x1="2.415" y1="-1.705" x2="-2.415" y2="-1.705" width="0.12" layer="51"/>
+<text x="0" y="2.474" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.474" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="FUSC4532X85" urn="urn:adsk.eagle:footprint:24934276/1" library_version="3">
+<description>Chip, 4.55 X 3.24 X 0.85 mm body
+ &lt;p&gt;Chip package with body size 4.55 X 3.24 X 0.85 mm&lt;/p&gt;</description>
+<smd name="1" x="-2.125" y="0" dx="1.55" dy="3.3" layer="1"/>
+<smd name="2" x="2.125" y="0" dx="1.55" dy="3.3" layer="1"/>
+<wire x1="-2.365" y1="1.964" x2="2.365" y2="1.964" width="0.12" layer="21"/>
+<wire x1="-2.365" y1="-1.964" x2="2.365" y2="-1.964" width="0.12" layer="21"/>
+<wire x1="-2.365" y1="-1.705" x2="-2.365" y2="1.705" width="0.12" layer="51"/>
+<wire x1="-2.365" y1="1.705" x2="2.365" y2="1.705" width="0.12" layer="51"/>
+<wire x1="2.365" y1="1.705" x2="2.365" y2="-1.705" width="0.12" layer="51"/>
+<wire x1="2.365" y1="-1.705" x2="-2.365" y2="-1.705" width="0.12" layer="51"/>
+<text x="0" y="2.599" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.599" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="FUSC4632X85" urn="urn:adsk.eagle:footprint:24934275/1" library_version="3">
+<description>Chip, 4.60 X 3.24 X 0.85 mm body
+ &lt;p&gt;Chip package with body size 4.60 X 3.24 X 0.85 mm&lt;/p&gt;</description>
+<smd name="1" x="-2.415" y="0" dx="1.73" dy="3.05" layer="1"/>
+<smd name="2" x="2.415" y="0" dx="1.73" dy="3.05" layer="1"/>
+<wire x1="-2.415" y1="1.839" x2="2.415" y2="1.839" width="0.12" layer="21"/>
+<wire x1="-2.415" y1="-1.839" x2="2.415" y2="-1.839" width="0.12" layer="21"/>
+<wire x1="-2.415" y1="-1.705" x2="-2.415" y2="1.705" width="0.12" layer="51"/>
+<wire x1="-2.415" y1="1.705" x2="2.415" y2="1.705" width="0.12" layer="51"/>
+<wire x1="2.415" y1="1.705" x2="2.415" y2="-1.705" width="0.12" layer="51"/>
+<wire x1="2.415" y1="-1.705" x2="-2.415" y2="-1.705" width="0.12" layer="51"/>
+<text x="0" y="2.474" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.474" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="FUSC4532X110" urn="urn:adsk.eagle:package:24934285/1" type="model" library_version="3">
+<description>Chip, 4.55 X 3.24 X 1.10 mm body
+ &lt;p&gt;Chip package with body size 4.55 X 3.24 X 1.10 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="FUSC4532X110"/>
+</packageinstances>
+</package3d>
+<package3d name="FUSC4632X160" urn="urn:adsk.eagle:package:24934283/1" type="model" library_version="3">
+<description>Chip, 4.60 X 3.24 X 1.60 mm body
+ &lt;p&gt;Chip package with body size 4.60 X 3.24 X 1.60 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="FUSC4632X160"/>
+</packageinstances>
+</package3d>
+<package3d name="FUSC4532X85" urn="urn:adsk.eagle:package:24934282/1" type="model" library_version="3">
+<description>Chip, 4.55 X 3.24 X 0.85 mm body
+ &lt;p&gt;Chip package with body size 4.55 X 3.24 X 0.85 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="FUSC4532X85"/>
+</packageinstances>
+</package3d>
+<package3d name="FUSC4632X85" urn="urn:adsk.eagle:package:24934281/1" type="model" library_version="3">
+<description>Chip, 4.60 X 3.24 X 0.85 mm body
+ &lt;p&gt;Chip package with body size 4.60 X 3.24 X 0.85 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="FUSC4632X85"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="FUSE" urn="urn:adsk.eagle:symbol:24934280/1" library_version="3">
+<wire x1="-3.81" y1="-0.762" x2="3.81" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0.762" x2="-3.81" y2="0.762" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-0.762" x2="3.81" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0.762" x2="-3.81" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="2.5" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-2.5" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MF-MSMF" urn="urn:adsk.eagle:component:24934291/2" prefix="F" library_version="3">
+<description>PTC Resettable Fuses
+&lt;br&gt;&lt;a href="https://www.bourns.com/docs/Product-Datasheets/mfmsmf.pdf?sfvrsn=26"&gt;Datasheet&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-STYLE1_1" package="FUSC4532X110">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24934285/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CATEGORY" value="FUSE" constant="no"/>
+<attribute name="DESCRIPTION" value="PTC Resettable Fuses" constant="no"/>
+<attribute name="MANUFACTURER" value="BOURNS" constant="no"/>
+<attribute name="MPN" value="MF-MSMF" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="-40 °C to +85 °C" constant="no"/>
+<attribute name="PART_STATUS" value="ACTIVE" constant="no"/>
+<attribute name="ROHS_COMPLIANCE" value="RoHS Compliant" constant="no"/>
+<attribute name="SERIES" value="MF-MSMF" constant="no"/>
+<attribute name="SUB-CATEGORY" value="Resettable" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="PTC" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-STYLE2_1" package="FUSC4632X160">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24934283/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CATEGORY" value="FUSE" constant="no"/>
+<attribute name="DESCRIPTION" value="PTC Resettable Fuses" constant="no"/>
+<attribute name="MANUFACTURER" value="BOURNS" constant="no"/>
+<attribute name="MPN" value="MF-MSMF" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="-40 °C to +85 °C" constant="no"/>
+<attribute name="PART_STATUS" value="Active" constant="no"/>
+<attribute name="ROHS_COMPLIANCE" value="RoHS Compliant" constant="no"/>
+<attribute name="SERIES" value="MF-MSMF" constant="no"/>
+<attribute name="SUB-CATEGORY" value="Resettable" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="PTC" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-STYLE1_2" package="FUSC4532X85">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24934282/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CATEGORY" value="FUSE" constant="no"/>
+<attribute name="DESCRIPTION" value="PTC Resettable Fuses" constant="no"/>
+<attribute name="MANUFACTURER" value="BOURNS" constant="no"/>
+<attribute name="MPN" value="MF-MSMF" constant="no"/>
+<attribute name="OPERATING_TMPERATURE" value="-40 °C to +85 °C" constant="no"/>
+<attribute name="PART_STATUS" value="Active" constant="no"/>
+<attribute name="ROHS_COMPLIANCE" value="RoHS Compliant" constant="no"/>
+<attribute name="SERIES" value="MF-MSMF" constant="no"/>
+<attribute name="SUB-CATEGORY" value="Resettable" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="PTC" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-STYLE2_2" package="FUSC4632X85">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24934281/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CATEGORY" value="FUSE" constant="no"/>
+<attribute name="DESCRIPTION" value="PTC Resettable Fuses" constant="no"/>
+<attribute name="MANUFACTURER" value="BOURNS" constant="no"/>
+<attribute name="MPN" value="MF-MSMF" constant="no"/>
+<attribute name="OPERATING_TEMPERATURE" value="-40 °C to +85 °C" constant="no"/>
+<attribute name="PART_STATUS" value="Active" constant="no"/>
+<attribute name="ROHS_COMPLIANCE" value="RoHS Compliant" constant="no"/>
+<attribute name="SERIES" value="MF-MSMF" constant="no"/>
+<attribute name="SUB-CATEGORY" value="Resettable" constant="no"/>
+<attribute name="THERMALLOSS" value="" constant="no"/>
+<attribute name="TYPE" value="PTC" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -26781,7 +26992,6 @@ OUT -</text>
 <attribute name="LCSC_PART" value="C347222"/>
 <attribute name="PRICE" value="0.5"/>
 </part>
-<part name="P+13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND101" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uf">
 <spice>
@@ -27158,6 +27368,10 @@ OUT -</text>
 <part name="R50" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="1K"/>
 <part name="+3V13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="OVERRIDE_EN2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="F1" library="Fuse" library_urn="urn:adsk.eagle:library:24934274" deviceset="MF-MSMF" device="-STYLE2_1" package3d_urn="urn:adsk.eagle:package:24934283/1">
+<attribute name="LCSC_PART" value="C78695"/>
+</part>
+<part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27292,11 +27506,11 @@ OUT -</text>
 <attribute name="NAME" x="189.992" y="409.5242" size="1.778" layer="95"/>
 <attribute name="VALUE" x="189.992" y="406.4762" size="1.778" layer="96"/>
 </instance>
-<instance part="P+5" gate="1" x="299.72" y="434.34" smashed="yes">
-<attribute name="VALUE" x="297.18" y="429.26" size="1.778" layer="96" rot="R90"/>
+<instance part="P+5" gate="1" x="314.96" y="439.42" smashed="yes">
+<attribute name="VALUE" x="312.42" y="434.34" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+6" gate="1" x="302.26" y="424.18" smashed="yes" rot="R270">
-<attribute name="VALUE" x="297.18" y="426.72" size="1.778" layer="96"/>
+<instance part="P+6" gate="1" x="289.56" y="424.18" smashed="yes" rot="R270">
+<attribute name="VALUE" x="284.48" y="426.72" size="1.778" layer="96"/>
 </instance>
 <instance part="GND10" gate="1" x="299.72" y="406.4" smashed="yes">
 <attribute name="VALUE" x="297.18" y="403.86" size="1.778" layer="96"/>
@@ -27478,9 +27692,6 @@ OUT -</text>
 <attribute name="VALUE" x="363.22" y="421.64" size="1.778" layer="96"/>
 <attribute name="PRICE" x="360.68" y="431.8" size="1.778" layer="96" display="off"/>
 <attribute name="LCSC_PART" x="360.68" y="431.8" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="P+13" gate="1" x="350.52" y="436.88" smashed="yes">
-<attribute name="VALUE" x="347.98" y="431.8" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND101" gate="1" x="360.68" y="419.1" smashed="yes">
 <attribute name="VALUE" x="358.14" y="416.56" size="1.778" layer="96"/>
@@ -28338,6 +28549,14 @@ OUT -</text>
 <attribute name="NAME" x="379.73" y="272.415" size="1.778" layer="95"/>
 <attribute name="VALUE" x="379.73" y="259.08" size="1.778" layer="96"/>
 </instance>
+<instance part="F1" gate="G$1" x="304.8" y="429.26" smashed="yes">
+<attribute name="NAME" x="304.8" y="431.76" size="1.778" layer="95" align="center"/>
+<attribute name="VALUE" x="304.8" y="426.76" size="1.778" layer="96" align="center"/>
+<attribute name="LCSC_PART" x="304.8" y="429.26" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="P+10" gate="1" x="350.52" y="439.42" smashed="yes">
+<attribute name="VALUE" x="347.98" y="434.34" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 <bus name="ESP32_BUS:+3V3,+5V,2,4,5,12,13,14,15,16,17,18,19,20,21/SDA,22/SCL,23,25_POOFER,26_BOOM_IGNITER,27_BOOM_FUEL,32_BOOM_BLOWER,33,34,35,36,39,GND">
@@ -28902,12 +29121,6 @@ OUT -</text>
 </net>
 <net name="+12V" class="2">
 <segment>
-<pinref part="P+5" gate="1" pin="+12V"/>
-<wire x1="299.72" y1="431.8" x2="299.72" y2="429.26" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="429.26" x2="284.48" y2="429.26" width="0.1524" layer="91"/>
-<pinref part="POWER_IN" gate="-4" pin="KL"/>
-</segment>
-<segment>
 <pinref part="P+12" gate="1" pin="+12V"/>
 <wire x1="302.26" y1="172.72" x2="302.26" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="D93" gate="G$1" pin="A"/>
@@ -28973,12 +29186,30 @@ OUT -</text>
 <pinref part="C24" gate="G$1" pin="1"/>
 <junction x="378.46" y="396.24"/>
 </segment>
+<segment>
+<pinref part="F1" gate="G$1" pin="2"/>
+<pinref part="P+5" gate="1" pin="+12V"/>
+<wire x1="309.88" y1="429.26" x2="314.96" y2="429.26" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="429.26" x2="314.96" y2="436.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC22" gate="G$1" pin="IN"/>
+<wire x1="350.52" y1="431.8" x2="353.06" y2="431.8" width="0.1524" layer="91"/>
+<pinref part="C35" gate="G$1" pin="1"/>
+<wire x1="350.52" y1="431.8" x2="342.9" y2="431.8" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="431.8" x2="342.9" y2="429.26" width="0.1524" layer="91"/>
+<junction x="350.52" y="431.8"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="350.52" y1="431.8" x2="350.52" y2="429.26" width="0.1524" layer="91"/>
+<pinref part="P+10" gate="1" pin="+12V"/>
+<wire x1="350.52" y1="431.8" x2="350.52" y2="436.88" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="3">
 <segment>
 <pinref part="P+6" gate="1" pin="+5V"/>
 <pinref part="POWER_IN" gate="-2" pin="KL"/>
-<wire x1="284.48" y1="424.18" x2="299.72" y2="424.18" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="424.18" x2="287.02" y2="424.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+8" gate="1" pin="+5V"/>
@@ -29008,18 +29239,6 @@ OUT -</text>
 <wire x1="309.88" y1="180.34" x2="309.88" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="D92" gate="G$1" pin="A"/>
 <wire x1="309.88" y1="180.34" x2="320.04" y2="180.34" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+13" gate="1" pin="+5V"/>
-<pinref part="IC22" gate="G$1" pin="IN"/>
-<wire x1="350.52" y1="434.34" x2="350.52" y2="431.8" width="0.1524" layer="91"/>
-<wire x1="350.52" y1="431.8" x2="353.06" y2="431.8" width="0.1524" layer="91"/>
-<pinref part="C35" gate="G$1" pin="1"/>
-<wire x1="350.52" y1="431.8" x2="342.9" y2="431.8" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="431.8" x2="342.9" y2="429.26" width="0.1524" layer="91"/>
-<junction x="350.52" y="431.8"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="350.52" y1="431.8" x2="350.52" y2="429.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+24" gate="1" pin="+5V"/>
@@ -30708,6 +30927,13 @@ OUT -</text>
 <pinref part="OVERRIDE_EN2" gate="A" pin="1"/>
 <wire x1="375.92" y1="271.78" x2="375.92" y2="269.24" width="0.1524" layer="91"/>
 <wire x1="375.92" y1="269.24" x2="383.54" y2="269.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$59" class="0">
+<segment>
+<pinref part="POWER_IN" gate="-4" pin="KL"/>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="284.48" y1="429.26" x2="299.72" y2="429.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -26895,7 +26895,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="DIST" value="https://amzn.to/3iR84VS"/>
 </part>
 <part name="P+26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="I2C_2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
+<part name="I2C" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="+3V52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND113" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="12VAC_IN" library="con-phoenix-508-jm" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
@@ -27285,9 +27285,9 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <wire x1="226.06" y1="279.4" x2="226.06" y2="213.36" width="0.254" layer="98"/>
 <wire x1="226.06" y1="213.36" x2="0" y2="213.36" width="0.254" layer="98"/>
 <wire x1="0" y1="213.36" x2="0" y2="279.4" width="0.254" layer="98"/>
-<wire x1="274.32" y1="279.4" x2="401.32" y2="279.4" width="0.254" layer="98"/>
-<wire x1="401.32" y1="279.4" x2="401.32" y2="213.36" width="0.254" layer="98"/>
-<wire x1="401.32" y1="213.36" x2="274.32" y2="213.36" width="0.254" layer="98"/>
+<wire x1="274.32" y1="279.4" x2="421.64" y2="279.4" width="0.254" layer="98"/>
+<wire x1="421.64" y1="279.4" x2="421.64" y2="213.36" width="0.254" layer="98"/>
+<wire x1="421.64" y1="213.36" x2="274.32" y2="213.36" width="0.254" layer="98"/>
 <wire x1="274.32" y1="213.36" x2="274.32" y2="279.4" width="0.254" layer="98"/>
 <text x="2.54" y="271.78" size="2.54" layer="98">Poofer</text>
 <wire x1="0" y1="66.04" x2="226.06" y2="66.04" width="0.254" layer="98"/>
@@ -27334,6 +27334,8 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <wire x1="269.24" y1="208.28" x2="269.24" y2="142.24" width="0.254" layer="98"/>
 <wire x1="269.24" y1="142.24" x2="231.14" y2="142.24" width="0.254" layer="98"/>
 <wire x1="231.14" y1="142.24" x2="231.14" y2="208.28" width="0.254" layer="98"/>
+<text x="279.4" y="274.32" size="1.778" layer="98">Device Enable</text>
+<text x="144.78" y="363.22" size="1.778" layer="98">Microcontroller</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="185.42" y="337.82" smashed="yes" rot="R90">
@@ -27587,7 +27589,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <instance part="P+26" gate="1" x="360.68" y="462.28" smashed="yes">
 <attribute name="VALUE" x="358.14" y="457.2" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="I2C_2" gate="A" x="254" y="154.94" smashed="yes">
+<instance part="I2C" gate="A" x="254" y="154.94" smashed="yes">
 <attribute name="NAME" x="247.65" y="163.195" size="1.778" layer="95"/>
 <attribute name="VALUE" x="247.65" y="147.32" size="1.778" layer="96"/>
 </instance>
@@ -27790,14 +27792,14 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="NAME" x="79.7814" y="224.79" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="84.582" y="222.25" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="IC4" gate="A" x="332.74" y="251.46" smashed="yes">
-<attribute name="NAME" x="335.28" y="254.635" size="1.778" layer="95"/>
-<attribute name="VALUE" x="335.28" y="246.38" size="1.778" layer="96"/>
-<attribute name="LCSC_PART" x="332.74" y="251.46" size="2.54" layer="96" display="off"/>
+<instance part="IC4" gate="A" x="335.28" y="251.46" smashed="yes">
+<attribute name="NAME" x="337.82" y="254.635" size="1.778" layer="95"/>
+<attribute name="VALUE" x="337.82" y="246.38" size="1.778" layer="96"/>
+<attribute name="LCSC_PART" x="335.28" y="251.46" size="2.54" layer="96" display="off"/>
 </instance>
-<instance part="IC4" gate="B" x="370.84" y="251.46" smashed="yes">
-<attribute name="NAME" x="373.38" y="254.635" size="1.778" layer="95"/>
-<attribute name="VALUE" x="373.38" y="246.38" size="1.778" layer="96"/>
+<instance part="IC4" gate="B" x="373.38" y="251.46" smashed="yes">
+<attribute name="NAME" x="375.92" y="254.635" size="1.778" layer="95"/>
+<attribute name="VALUE" x="375.92" y="246.38" size="1.778" layer="96"/>
 </instance>
 <instance part="IC4" gate="P" x="96.52" y="304.8" smashed="yes">
 <attribute name="NAME" x="95.885" y="304.165" size="1.778" layer="95"/>
@@ -27812,19 +27814,19 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="NAME" x="288.29" y="252.9586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="285.75" y="248.158" size="1.778" layer="96"/>
 </instance>
-<instance part="R20" gate="R1" x="350.52" y="251.46" smashed="yes">
-<attribute name="NAME" x="346.71" y="252.9586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="346.71" y="248.158" size="1.778" layer="96"/>
+<instance part="R20" gate="R1" x="353.06" y="251.46" smashed="yes">
+<attribute name="NAME" x="349.25" y="252.9586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="349.25" y="248.158" size="1.778" layer="96"/>
 </instance>
 <instance part="C16" gate="C1" x="312.42" y="246.38" smashed="yes">
 <attribute name="NAME" x="306.324" y="246.761" size="1.778" layer="95"/>
 <attribute name="VALUE" x="306.324" y="239.141" size="1.778" layer="96"/>
 </instance>
-<instance part="C17" gate="C1" x="345.44" y="238.76" smashed="yes">
-<attribute name="NAME" x="339.344" y="239.141" size="1.778" layer="95"/>
-<attribute name="VALUE" x="339.344" y="231.521" size="1.778" layer="96"/>
+<instance part="C17" gate="C1" x="347.98" y="238.76" smashed="yes">
+<attribute name="NAME" x="341.884" y="239.141" size="1.778" layer="95"/>
+<attribute name="VALUE" x="341.884" y="231.521" size="1.778" layer="96"/>
 </instance>
-<instance part="GND16" gate="1" x="345.44" y="223.52" smashed="yes"/>
+<instance part="GND16" gate="1" x="347.98" y="223.52" smashed="yes"/>
 <instance part="R21" gate="R1" x="116.84" y="241.3" smashed="yes" rot="R270">
 <attribute name="NAME" x="118.3386" y="245.11" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="113.538" y="245.11" size="1.778" layer="96" rot="R270"/>
@@ -27998,13 +28000,13 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="NAME" x="97.5614" y="113.03" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="102.362" y="113.03" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R49" gate="R1" x="388.62" y="251.46" smashed="yes">
-<attribute name="NAME" x="384.81" y="252.9586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="384.81" y="248.158" size="1.778" layer="96"/>
+<instance part="R49" gate="R1" x="391.16" y="251.46" smashed="yes">
+<attribute name="NAME" x="387.35" y="252.9586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="387.35" y="248.158" size="1.778" layer="96"/>
 </instance>
-<instance part="IC4" gate="C" x="370.84" y="231.14" smashed="yes">
-<attribute name="NAME" x="373.38" y="234.315" size="1.778" layer="95"/>
-<attribute name="VALUE" x="373.38" y="226.06" size="1.778" layer="96"/>
+<instance part="IC4" gate="C" x="373.38" y="231.14" smashed="yes">
+<attribute name="NAME" x="375.92" y="234.315" size="1.778" layer="95"/>
+<attribute name="VALUE" x="375.92" y="226.06" size="1.778" layer="96"/>
 </instance>
 <instance part="Q1" gate="NMOS" x="157.48" y="248.92" smashed="yes">
 <attribute name="NAME" x="162.56" y="248.92" size="1.778" layer="95" font="vector"/>
@@ -28042,8 +28044,8 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <instance part="FIRE_OUT" gate="-5" x="203.2" y="195.58" smashed="yes">
 <attribute name="NAME" x="206.248" y="194.691" size="1.778" layer="95"/>
 </instance>
-<instance part="FIRE_OUT" gate="-6" x="205.74" y="180.34" smashed="yes">
-<attribute name="NAME" x="208.788" y="179.451" size="1.778" layer="95"/>
+<instance part="FIRE_OUT" gate="-6" x="203.2" y="180.34" smashed="yes">
+<attribute name="NAME" x="206.248" y="179.451" size="1.778" layer="95"/>
 </instance>
 <instance part="FIRE_OUT" gate="-7" x="203.2" y="266.7" smashed="yes">
 <attribute name="NAME" x="206.248" y="265.811" size="1.778" layer="95"/>
@@ -28088,9 +28090,9 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="VALUE" x="162.56" y="27.94" size="1.778" layer="96" font="vector"/>
 <attribute name="LCSC_PART" x="157.48" y="30.48" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="D15" gate="D1" x="152.4" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="150.622" y="40.64" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="156.083" y="40.64" size="1.778" layer="96" rot="R90"/>
+<instance part="D15" gate="D1" x="152.4" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="150.622" y="43.18" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="156.083" y="43.18" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C28" gate="G$1" x="337.82" y="452.12" smashed="yes">
 <attribute name="NAME" x="338.836" y="452.755" size="1.778" layer="95"/>
@@ -28128,21 +28130,21 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="LCSC_PART" x="137.16" y="266.7" size="1.778" layer="96" display="off"/>
 <attribute name="JLC_ROTATION" x="137.16" y="266.7" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R60" gate="R1" x="142.24" y="264.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="140.7414" y="260.35" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="145.542" y="260.35" size="1.778" layer="96" rot="R90"/>
+<instance part="R60" gate="R1" x="144.78" y="256.54" smashed="yes">
+<attribute name="NAME" x="140.97" y="258.0386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="140.97" y="253.238" size="1.778" layer="96"/>
 </instance>
-<instance part="R61" gate="R1" x="142.24" y="193.04" smashed="yes" rot="R90">
-<attribute name="NAME" x="140.7414" y="189.23" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="145.542" y="189.23" size="1.778" layer="96" rot="R90"/>
+<instance part="R61" gate="R1" x="144.78" y="185.42" smashed="yes">
+<attribute name="NAME" x="140.97" y="186.9186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="140.97" y="182.118" size="1.778" layer="96"/>
 </instance>
-<instance part="R62" gate="R1" x="147.32" y="114.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="145.8214" y="110.49" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="150.622" y="110.49" size="1.778" layer="96" rot="R90"/>
+<instance part="R62" gate="R1" x="149.86" y="106.68" smashed="yes">
+<attribute name="NAME" x="146.05" y="108.1786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="146.05" y="103.378" size="1.778" layer="96"/>
 </instance>
-<instance part="R63" gate="R1" x="142.24" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="140.7414" y="39.37" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="145.542" y="39.37" size="1.778" layer="96" rot="R90"/>
+<instance part="R63" gate="R1" x="144.78" y="38.1" smashed="yes">
+<attribute name="NAME" x="140.97" y="39.5986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="140.97" y="34.798" size="1.778" layer="96"/>
 </instance>
 <instance part="P+24" gate="1" x="248.92" y="261.62" smashed="yes">
 <attribute name="VALUE" x="246.38" y="256.54" size="1.778" layer="96" rot="R90"/>
@@ -28302,31 +28304,31 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="NAME" x="250.19" y="249.555" size="1.778" layer="95"/>
 <attribute name="VALUE" x="255.27" y="233.68" size="1.778" layer="95"/>
 </instance>
-<instance part="D139" gate="G$1" x="12.7" y="241.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="12.7" y="248.92" size="1.778" layer="95" rot="R90"/>
-<attribute name="LCSC_PART" x="12.7" y="241.3" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="D139" gate="G$1" x="15.24" y="241.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="15.24" y="248.92" size="1.778" layer="95" rot="R90"/>
+<attribute name="LCSC_PART" x="15.24" y="241.3" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="D5" gate="G$1" x="12.7" y="167.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="12.7" y="175.26" size="1.778" layer="95" rot="R90"/>
-<attribute name="LCSC_PART" x="12.7" y="167.64" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="D5" gate="G$1" x="15.24" y="167.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="15.24" y="175.26" size="1.778" layer="95" rot="R90"/>
+<attribute name="LCSC_PART" x="15.24" y="167.64" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="D10" gate="G$1" x="12.7" y="96.52" smashed="yes" rot="R90">
-<attribute name="NAME" x="12.7" y="104.14" size="1.778" layer="95" rot="R90"/>
-<attribute name="LCSC_PART" x="12.7" y="96.52" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="D10" gate="G$1" x="15.24" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="15.24" y="104.14" size="1.778" layer="95" rot="R90"/>
+<attribute name="LCSC_PART" x="15.24" y="96.52" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="D11" gate="G$1" x="12.7" y="22.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="12.7" y="30.48" size="1.778" layer="95" rot="R90"/>
-<attribute name="LCSC_PART" x="12.7" y="22.86" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="D11" gate="G$1" x="15.24" y="22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="15.24" y="30.48" size="1.778" layer="95" rot="R90"/>
+<attribute name="LCSC_PART" x="15.24" y="22.86" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="D20" gate="G$1" x="284.48" y="238.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="284.48" y="246.38" size="1.778" layer="95" rot="R90"/>
 <attribute name="LCSC_PART" x="284.48" y="238.76" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND36" gate="1" x="284.48" y="228.6" smashed="yes"/>
-<instance part="GND37" gate="1" x="12.7" y="231.14" smashed="yes"/>
-<instance part="GND38" gate="1" x="12.7" y="157.48" smashed="yes"/>
-<instance part="GND39" gate="1" x="12.7" y="86.36" smashed="yes"/>
-<instance part="GND40" gate="1" x="12.7" y="12.7" smashed="yes"/>
+<instance part="GND37" gate="1" x="15.24" y="231.14" smashed="yes"/>
+<instance part="GND38" gate="1" x="15.24" y="157.48" smashed="yes"/>
+<instance part="GND39" gate="1" x="15.24" y="86.36" smashed="yes"/>
+<instance part="GND40" gate="1" x="15.24" y="12.7" smashed="yes"/>
 <instance part="D4" gate="G$1" x="243.84" y="233.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="243.84" y="241.3" size="1.778" layer="95" rot="R90"/>
 <attribute name="LCSC_PART" x="243.84" y="233.68" size="1.778" layer="96" rot="R90" display="off"/>
@@ -28336,7 +28338,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="LCSC_PART" x="241.3" y="233.68" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="D22" gate="D1" x="40.64" y="259.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.862" y="256.54" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="38.862" y="261.62" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="46.863" y="256.54" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D23" gate="D1" x="40.64" y="248.92" smashed="yes" rot="R90">
@@ -28344,7 +28346,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="VALUE" x="44.323" y="246.38" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D24" gate="D1" x="40.64" y="187.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.862" y="185.42" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="38.862" y="190.5" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="46.863" y="187.96" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D25" gate="D1" x="40.64" y="177.8" smashed="yes" rot="R90">
@@ -28352,7 +28354,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="VALUE" x="44.323" y="175.26" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D26" gate="D1" x="40.64" y="116.84" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.862" y="114.3" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="38.862" y="119.38" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="46.863" y="114.3" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D27" gate="D1" x="40.64" y="106.68" smashed="yes" rot="R90">
@@ -28360,36 +28362,36 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="VALUE" x="44.323" y="104.14" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D28" gate="D1" x="43.18" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="41.402" y="40.64" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="41.402" y="45.72" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="49.403" y="43.18" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D29" gate="D1" x="43.18" y="33.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="41.402" y="30.48" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="46.863" y="30.48" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="D30" gate="D1" x="317.5" y="256.54" smashed="yes" rot="R90">
-<attribute name="NAME" x="315.722" y="254" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="321.183" y="238.76" size="1.778" layer="96" rot="R90"/>
+<instance part="D30" gate="D1" x="320.04" y="256.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="318.262" y="254" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="323.723" y="238.76" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="D31" gate="D1" x="317.5" y="233.68" smashed="yes" rot="R90">
-<attribute name="NAME" x="315.722" y="231.14" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="323.723" y="231.14" size="1.778" layer="96" rot="R90"/>
+<instance part="D31" gate="D1" x="320.04" y="233.68" smashed="yes" rot="R90">
+<attribute name="NAME" x="318.262" y="231.14" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="326.263" y="231.14" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="+3V8" gate="G$1" x="40.64" y="266.7" smashed="yes">
-<attribute name="VALUE" x="38.1" y="261.62" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="40.64" y="269.24" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND42" gate="1" x="40.64" y="241.3" smashed="yes"/>
 <instance part="+3V9" gate="G$1" x="40.64" y="195.58" smashed="yes">
-<attribute name="VALUE" x="38.1" y="190.5" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="40.64" y="198.12" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="+3V10" gate="G$1" x="40.64" y="124.46" smashed="yes">
-<attribute name="VALUE" x="38.1" y="119.38" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="40.64" y="127" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="+3V11" gate="G$1" x="43.18" y="50.8" smashed="yes">
-<attribute name="VALUE" x="40.64" y="45.72" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="43.18" y="53.34" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V12" gate="G$1" x="317.5" y="264.16" smashed="yes">
-<attribute name="VALUE" x="314.96" y="259.08" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V12" gate="G$1" x="320.04" y="264.16" smashed="yes">
+<attribute name="VALUE" x="317.5" y="259.08" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND44" gate="1" x="40.64" y="170.18" smashed="yes"/>
 <instance part="GND45" gate="1" x="40.64" y="99.06" smashed="yes"/>
@@ -28398,21 +28400,21 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="NAME" x="300.7614" y="234.95" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="305.562" y="234.95" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="OVERRIDE_EN" gate="G$1" x="365.76" y="269.24" smashed="yes">
-<attribute name="NAME" x="364.49" y="274.955" size="1.778" layer="95"/>
-<attribute name="VALUE" x="364.49" y="261.62" size="1.778" layer="95"/>
+<instance part="OVERRIDE_EN" gate="G$1" x="368.3" y="269.24" smashed="yes">
+<attribute name="NAME" x="367.03" y="274.955" size="1.778" layer="95"/>
+<attribute name="VALUE" x="367.03" y="261.62" size="1.778" layer="95"/>
 </instance>
-<instance part="GND15" gate="1" x="353.06" y="261.62" smashed="yes"/>
-<instance part="R50" gate="R1" x="347.98" y="271.78" smashed="yes">
-<attribute name="NAME" x="344.17" y="273.2786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="344.17" y="268.478" size="1.778" layer="96"/>
+<instance part="GND15" gate="1" x="355.6" y="261.62" smashed="yes"/>
+<instance part="R50" gate="R1" x="350.52" y="271.78" smashed="yes">
+<attribute name="NAME" x="346.71" y="273.2786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="346.71" y="268.478" size="1.778" layer="96"/>
 </instance>
-<instance part="+3V13" gate="G$1" x="340.36" y="276.86" smashed="yes">
-<attribute name="VALUE" x="337.82" y="271.78" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V13" gate="G$1" x="342.9" y="276.86" smashed="yes">
+<attribute name="VALUE" x="340.36" y="271.78" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="OVERRIDE_EN2" gate="A" x="386.08" y="266.7" smashed="yes">
-<attribute name="NAME" x="379.73" y="272.415" size="1.778" layer="95"/>
-<attribute name="VALUE" x="379.73" y="259.08" size="1.778" layer="96"/>
+<instance part="OVERRIDE_EN2" gate="A" x="396.24" y="269.24" smashed="yes">
+<attribute name="NAME" x="389.89" y="274.955" size="1.778" layer="95"/>
+<attribute name="VALUE" x="389.89" y="261.62" size="1.778" layer="96"/>
 </instance>
 <instance part="P+10" gate="1" x="350.52" y="439.42" smashed="yes">
 <attribute name="VALUE" x="347.98" y="434.34" size="1.778" layer="96" rot="R90"/>
@@ -28473,7 +28475,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <label x="88.9" y="132.08" size="2.54" layer="95"/>
 </segment>
 <segment>
-<wire x1="396.24" y1="248.92" x2="396.24" y2="254" width="0.762" layer="92"/>
+<wire x1="398.78" y1="248.92" x2="398.78" y2="254" width="0.762" layer="92"/>
 </segment>
 <segment>
 <wire x1="340.36" y1="340.36" x2="340.36" y2="322.58" width="0.762" layer="92"/>
@@ -28685,7 +28687,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <pinref part="C12" gate="C1" pin="2"/>
 </segment>
 <segment>
-<pinref part="I2C_2" gate="A" pin="2"/>
+<pinref part="I2C" gate="A" pin="2"/>
 <pinref part="GND113" gate="1" pin="GND"/>
 <wire x1="251.46" y1="157.48" x2="243.84" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="157.48" x2="243.84" y2="165.1" width="0.1524" layer="91"/>
@@ -28741,7 +28743,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <segment>
 <pinref part="C17" gate="C1" pin="2"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="345.44" y1="233.68" x2="345.44" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="233.68" x2="347.98" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C18" gate="C1" pin="2"/>
@@ -28912,22 +28914,22 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <segment>
 <pinref part="GND40" gate="1" pin="GND"/>
 <pinref part="D11" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="15.24" x2="12.7" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="15.24" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND39" gate="1" pin="GND"/>
 <pinref part="D10" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="88.9" x2="12.7" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="88.9" x2="15.24" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND38" gate="1" pin="GND"/>
 <pinref part="D5" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="160.02" x2="12.7" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="160.02" x2="15.24" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND37" gate="1" pin="GND"/>
 <pinref part="D139" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="233.68" x2="12.7" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="233.68" x2="15.24" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND36" gate="1" pin="GND"/>
@@ -28942,7 +28944,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <wire x1="312.42" y1="231.14" x2="302.26" y2="231.14" width="0.1524" layer="91"/>
 <junction x="302.26" y="231.14"/>
 <pinref part="D31" gate="D1" pin="A"/>
-<wire x1="317.5" y1="231.14" x2="312.42" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="231.14" x2="312.42" y2="231.14" width="0.1524" layer="91"/>
 <junction x="312.42" y="231.14"/>
 </segment>
 <segment>
@@ -28968,13 +28970,11 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <segment>
 <pinref part="OVERRIDE_EN" gate="G$1" pin="3"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="360.68" y1="266.7" x2="353.06" y2="266.7" width="0.1524" layer="91"/>
-<wire x1="353.06" y1="266.7" x2="353.06" y2="264.16" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="266.7" x2="370.84" y2="266.7" width="0.1524" layer="91"/>
-<junction x="360.68" y="266.7"/>
-<wire x1="370.84" y1="266.7" x2="370.84" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="266.7" x2="355.6" y2="266.7" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="266.7" x2="355.6" y2="264.16" width="0.1524" layer="91"/>
+<junction x="363.22" y="266.7"/>
 <pinref part="OVERRIDE_EN2" gate="A" pin="3"/>
-<wire x1="370.84" y1="264.16" x2="383.54" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="266.7" x2="393.7" y2="266.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -29180,7 +29180,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 </segment>
 <segment>
 <pinref part="D15" gate="D1" pin="C"/>
-<wire x1="152.4" y1="45.72" x2="152.4" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="48.26" x2="152.4" y2="53.34" width="0.1524" layer="91"/>
 <junction x="152.4" y="53.34"/>
 <pinref part="D16" gate="G$1" pin="A"/>
 <wire x1="152.4" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
@@ -29261,7 +29261,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <pinref part="C12" gate="C1" pin="1"/>
 </segment>
 <segment>
-<pinref part="I2C_2" gate="A" pin="1"/>
+<pinref part="I2C" gate="A" pin="1"/>
 <pinref part="+3V52" gate="G$1" pin="+3V3"/>
 <wire x1="251.46" y1="160.02" x2="248.92" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="160.02" x2="248.92" y2="165.1" width="0.1524" layer="91"/>
@@ -29314,13 +29314,13 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <segment>
 <pinref part="+3V12" gate="G$1" pin="+3V3"/>
 <pinref part="D30" gate="D1" pin="C"/>
-<wire x1="317.5" y1="261.62" x2="317.5" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="261.62" x2="320.04" y2="259.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V13" gate="G$1" pin="+3V3"/>
 <pinref part="R50" gate="R1" pin="1"/>
-<wire x1="340.36" y1="274.32" x2="340.36" y2="271.78" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="271.78" x2="342.9" y2="271.78" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="274.32" x2="342.9" y2="271.78" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="271.78" x2="345.44" y2="271.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="36" class="0">
@@ -29356,8 +29356,8 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 </segment>
 <segment>
 <pinref part="R49" gate="R1" pin="2"/>
-<wire x1="393.7" y1="251.46" x2="396.24" y2="251.46" width="0.1524" layer="91"/>
-<label x="393.7" y="254" size="2.54" layer="95"/>
+<wire x1="396.24" y1="251.46" x2="398.78" y2="251.46" width="0.1524" layer="91"/>
+<label x="396.24" y="254" size="2.54" layer="95"/>
 </segment>
 </net>
 <net name="32_BOOM_BLOWER" class="0">
@@ -29597,7 +29597,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <wire x1="271.78" y1="340.36" x2="269.24" y2="340.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="I2C_2" gate="A" pin="4"/>
+<pinref part="I2C" gate="A" pin="4"/>
 <wire x1="251.46" y1="152.4" x2="238.76" y2="152.4" width="0.1524" layer="91"/>
 <label x="256.54" y="152.4" size="1.778" layer="95"/>
 </segment>
@@ -29619,7 +29619,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <wire x1="271.78" y1="342.9" x2="269.24" y2="342.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="I2C_2" gate="A" pin="3"/>
+<pinref part="I2C" gate="A" pin="3"/>
 <wire x1="251.46" y1="154.94" x2="238.76" y2="154.94" width="0.1524" layer="91"/>
 <label x="256.54" y="154.94" size="1.778" layer="95"/>
 </segment>
@@ -29891,7 +29891,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <label x="185.42" y="251.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="180.34" x2="203.2" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="180.34" x2="200.66" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="FIRE_OUT" gate="-6" pin="KL"/>
 <label x="187.96" y="182.88" size="1.778" layer="95"/>
 </segment>
@@ -30076,12 +30076,12 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <wire x1="27.94" y1="111.76" x2="22.86" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="111.76" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
 <label x="35.56" y="121.92" size="2.54" layer="95" rot="R180"/>
-<wire x1="10.16" y1="111.76" x2="12.7" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="111.76" x2="15.24" y2="111.76" width="0.1524" layer="91"/>
 <junction x="22.86" y="111.76"/>
 <pinref part="D10" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="111.76" x2="22.86" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="101.6" x2="12.7" y2="111.76" width="0.1524" layer="91"/>
-<junction x="12.7" y="111.76"/>
+<wire x1="15.24" y1="111.76" x2="22.86" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="101.6" x2="15.24" y2="111.76" width="0.1524" layer="91"/>
+<junction x="15.24" y="111.76"/>
 </segment>
 </net>
 <net name="BOOMER_FUEL" class="0">
@@ -30096,12 +30096,12 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <wire x1="27.94" y1="182.88" x2="22.86" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="182.88" x2="22.86" y2="180.34" width="0.1524" layer="91"/>
 <label x="27.94" y="187.96" size="2.54" layer="95" rot="R180"/>
-<wire x1="10.16" y1="182.88" x2="12.7" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="182.88" x2="15.24" y2="182.88" width="0.1524" layer="91"/>
 <junction x="22.86" y="182.88"/>
 <pinref part="D5" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="182.88" x2="22.86" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="172.72" x2="12.7" y2="182.88" width="0.1524" layer="91"/>
-<junction x="12.7" y="182.88"/>
+<wire x1="15.24" y1="182.88" x2="22.86" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="172.72" x2="15.24" y2="182.88" width="0.1524" layer="91"/>
+<junction x="15.24" y="182.88"/>
 </segment>
 </net>
 <net name="BOOMER_IGNITER" class="0">
@@ -30116,12 +30116,12 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <wire x1="27.94" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="38.1" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
 <label x="35.56" y="48.26" size="2.54" layer="95" rot="R180"/>
-<wire x1="10.16" y1="38.1" x2="12.7" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="38.1" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
 <junction x="22.86" y="38.1"/>
 <pinref part="D11" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="27.94" x2="12.7" y2="38.1" width="0.1524" layer="91"/>
-<junction x="12.7" y="38.1"/>
+<wire x1="15.24" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="27.94" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
+<junction x="15.24" y="38.1"/>
 </segment>
 </net>
 <net name="POOFER" class="0">
@@ -30135,13 +30135,13 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <pinref part="C13" gate="C1" pin="1"/>
 <wire x1="27.94" y1="254" x2="22.86" y2="254" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="254" x2="22.86" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="254" x2="12.7" y2="254" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="254" x2="15.24" y2="254" width="0.1524" layer="91"/>
 <junction x="22.86" y="254"/>
 <label x="27.94" y="259.08" size="2.54" layer="95" rot="R180"/>
 <pinref part="D139" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="254" x2="22.86" y2="254" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="246.38" x2="12.7" y2="254" width="0.1524" layer="91"/>
-<junction x="12.7" y="254"/>
+<wire x1="15.24" y1="254" x2="22.86" y2="254" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="246.38" x2="15.24" y2="254" width="0.1524" layer="91"/>
+<junction x="15.24" y="254"/>
 </segment>
 </net>
 <net name="STAR_ENABLE" class="0">
@@ -30220,31 +30220,29 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <segment>
 <pinref part="R20" gate="R1" pin="1"/>
 <pinref part="IC4" gate="A" pin="O"/>
-<wire x1="345.44" y1="251.46" x2="342.9" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="251.46" x2="345.44" y2="251.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="IC4" gate="B" pin="I"/>
 <pinref part="R20" gate="R1" pin="2"/>
-<wire x1="360.68" y1="251.46" x2="358.14" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="251.46" x2="360.68" y2="251.46" width="0.1524" layer="91"/>
 <pinref part="C17" gate="C1" pin="1"/>
-<wire x1="358.14" y1="251.46" x2="355.6" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="251.46" x2="358.14" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="241.3" x2="345.44" y2="241.3" width="0.1524" layer="91"/>
-<junction x="358.14" y="251.46"/>
+<wire x1="360.68" y1="251.46" x2="358.14" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="251.46" x2="360.68" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="241.3" x2="347.98" y2="241.3" width="0.1524" layer="91"/>
+<junction x="360.68" y="251.46"/>
 <pinref part="IC4" gate="C" pin="I"/>
-<wire x1="358.14" y1="241.3" x2="358.14" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="231.14" x2="360.68" y2="231.14" width="0.1524" layer="91"/>
-<junction x="358.14" y="241.3"/>
+<wire x1="360.68" y1="241.3" x2="360.68" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="231.14" x2="363.22" y2="231.14" width="0.1524" layer="91"/>
+<junction x="360.68" y="241.3"/>
 <pinref part="OVERRIDE_EN" gate="G$1" pin="2"/>
-<wire x1="360.68" y1="269.24" x2="358.14" y2="269.24" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="269.24" x2="358.14" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="269.24" x2="373.38" y2="269.24" width="0.1524" layer="91"/>
-<junction x="360.68" y="269.24"/>
+<wire x1="363.22" y1="269.24" x2="360.68" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="269.24" x2="360.68" y2="251.46" width="0.1524" layer="91"/>
+<junction x="363.22" y="269.24"/>
 <pinref part="OVERRIDE_EN2" gate="A" pin="2"/>
-<wire x1="373.38" y1="269.24" x2="373.38" y2="266.7" width="0.1524" layer="91"/>
-<wire x1="373.38" y1="266.7" x2="383.54" y2="266.7" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="269.24" x2="393.7" y2="269.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -30254,15 +30252,15 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <wire x1="297.18" y1="251.46" x2="302.26" y2="251.46" width="0.1524" layer="91"/>
 <pinref part="C16" gate="C1" pin="1"/>
 <wire x1="302.26" y1="251.46" x2="312.42" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="251.46" x2="317.5" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="251.46" x2="322.58" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="251.46" x2="320.04" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="251.46" x2="325.12" y2="251.46" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="248.92" x2="312.42" y2="251.46" width="0.1524" layer="91"/>
 <junction x="312.42" y="251.46"/>
 <pinref part="D30" gate="D1" pin="A"/>
-<wire x1="317.5" y1="254" x2="317.5" y2="251.46" width="0.1524" layer="91"/>
-<junction x="317.5" y="251.46"/>
+<wire x1="320.04" y1="254" x2="320.04" y2="251.46" width="0.1524" layer="91"/>
+<junction x="320.04" y="251.46"/>
 <pinref part="D31" gate="D1" pin="C"/>
-<wire x1="317.5" y1="251.46" x2="317.5" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="251.46" x2="320.04" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="R6" gate="R1" pin="2"/>
 <wire x1="302.26" y1="243.84" x2="302.26" y2="251.46" width="0.1524" layer="91"/>
 <junction x="302.26" y="251.46"/>
@@ -30271,8 +30269,8 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <net name="LOCAL_EN" class="0">
 <segment>
 <pinref part="IC4" gate="B" pin="O"/>
-<wire x1="381" y1="251.46" x2="383.54" y2="251.46" width="0.1524" layer="91"/>
-<label x="383.54" y="256.54" size="2.54" layer="95"/>
+<wire x1="383.54" y1="251.46" x2="386.08" y2="251.46" width="0.1524" layer="91"/>
+<label x="386.08" y="256.54" size="2.54" layer="95"/>
 <pinref part="R49" gate="R1" pin="1"/>
 </segment>
 <segment>
@@ -30523,8 +30521,8 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <net name="EN_STATUS" class="0">
 <segment>
 <pinref part="IC4" gate="C" pin="O"/>
-<wire x1="381" y1="231.14" x2="393.7" y2="231.14" width="0.1524" layer="91"/>
-<label x="386.08" y="233.68" size="2.54" layer="95"/>
+<wire x1="383.54" y1="231.14" x2="396.24" y2="231.14" width="0.1524" layer="91"/>
+<label x="388.62" y="233.68" size="2.54" layer="95"/>
 </segment>
 <segment>
 <pinref part="D94" gate="G$1" pin="A"/>
@@ -30569,15 +30567,13 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <pinref part="Q1" gate="NMOS" pin="D"/>
 <wire x1="160.02" y1="254" x2="160.02" y2="256.54" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="256.54" x2="152.4" y2="256.54" width="0.1524" layer="91"/>
-<pinref part="R60" gate="R1" pin="2"/>
-<wire x1="142.24" y1="269.24" x2="144.78" y2="269.24" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="269.24" x2="144.78" y2="256.54" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="256.54" x2="152.4" y2="256.54" width="0.1524" layer="91"/>
-<junction x="152.4" y="256.54"/>
 <pinref part="K6" gate="A" pin="K"/>
 <wire x1="160.02" y1="256.54" x2="160.02" y2="261.62" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="261.62" x2="167.64" y2="261.62" width="0.1524" layer="91"/>
 <junction x="160.02" y="256.54"/>
+<pinref part="R60" gate="R1" pin="2"/>
+<wire x1="149.86" y1="256.54" x2="152.4" y2="256.54" width="0.1524" layer="91"/>
+<junction x="152.4" y="256.54"/>
 </segment>
 </net>
 <net name="N$47" class="0">
@@ -30587,15 +30583,13 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <wire x1="152.4" y1="185.42" x2="160.02" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="NMOS" pin="D"/>
 <wire x1="160.02" y1="182.88" x2="160.02" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="R61" gate="R1" pin="2"/>
-<wire x1="142.24" y1="198.12" x2="144.78" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="198.12" x2="144.78" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="185.42" x2="152.4" y2="185.42" width="0.1524" layer="91"/>
-<junction x="152.4" y="185.42"/>
 <pinref part="K5" gate="A" pin="K"/>
 <wire x1="167.64" y1="190.5" x2="160.02" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="190.5" x2="160.02" y2="185.42" width="0.1524" layer="91"/>
 <junction x="160.02" y="185.42"/>
+<pinref part="R61" gate="R1" pin="2"/>
+<wire x1="149.86" y1="185.42" x2="152.4" y2="185.42" width="0.1524" layer="91"/>
+<junction x="152.4" y="185.42"/>
 </segment>
 </net>
 <net name="N$51" class="0">
@@ -30609,9 +30603,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <wire x1="167.64" y1="106.68" x2="165.1" y2="106.68" width="0.1524" layer="91"/>
 <junction x="165.1" y="106.68"/>
 <pinref part="R62" gate="R1" pin="2"/>
-<wire x1="147.32" y1="119.38" x2="149.86" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="119.38" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="106.68" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="106.68" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
 <junction x="157.48" y="106.68"/>
 </segment>
 </net>
@@ -30621,48 +30613,46 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <wire x1="160.02" y1="38.1" x2="160.02" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="D15" gate="D1" pin="A"/>
 <wire x1="160.02" y1="38.1" x2="152.4" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="38.1" x2="152.4" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="R63" gate="R1" pin="2"/>
-<wire x1="142.24" y1="48.26" x2="144.78" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="48.26" x2="144.78" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="38.1" x2="152.4" y2="38.1" width="0.1524" layer="91"/>
-<junction x="152.4" y="38.1"/>
+<wire x1="152.4" y1="38.1" x2="152.4" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="38.1" x2="160.02" y2="38.1" width="0.1524" layer="91"/>
 <junction x="160.02" y="38.1"/>
 <pinref part="K3" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="38.1" x2="165.1" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R63" gate="R1" pin="2"/>
+<wire x1="149.86" y1="38.1" x2="152.4" y2="38.1" width="0.1524" layer="91"/>
+<junction x="152.4" y="38.1"/>
 </segment>
 </net>
 <net name="N$54" class="0">
 <segment>
 <pinref part="D16" gate="G$1" pin="C"/>
-<pinref part="R63" gate="R1" pin="1"/>
 <wire x1="137.16" y1="40.64" x2="137.16" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="38.1" x2="142.24" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R63" gate="R1" pin="1"/>
+<wire x1="137.16" y1="38.1" x2="139.7" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$55" class="0">
 <segment>
 <pinref part="D17" gate="G$1" pin="C"/>
-<wire x1="142.24" y1="111.76" x2="142.24" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R62" gate="R1" pin="1"/>
-<wire x1="142.24" y1="109.22" x2="147.32" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="106.68" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="106.68" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$56" class="0">
 <segment>
 <pinref part="D18" gate="G$1" pin="C"/>
 <pinref part="R61" gate="R1" pin="1"/>
-<wire x1="137.16" y1="190.5" x2="137.16" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="187.96" x2="142.24" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="190.5" x2="137.16" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="185.42" x2="139.7" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$57" class="0">
 <segment>
 <pinref part="D19" gate="G$1" pin="C"/>
 <pinref part="R60" gate="R1" pin="1"/>
-<wire x1="137.16" y1="261.62" x2="137.16" y2="259.08" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="259.08" x2="142.24" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="261.62" x2="137.16" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="256.54" x2="139.7" y2="256.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -30786,12 +30776,10 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <segment>
 <pinref part="OVERRIDE_EN" gate="G$1" pin="1"/>
 <pinref part="R50" gate="R1" pin="2"/>
-<wire x1="360.68" y1="271.78" x2="353.06" y2="271.78" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="271.78" x2="375.92" y2="271.78" width="0.1524" layer="91"/>
-<junction x="360.68" y="271.78"/>
+<wire x1="363.22" y1="271.78" x2="355.6" y2="271.78" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="271.78" x2="393.7" y2="271.78" width="0.1524" layer="91"/>
+<junction x="363.22" y="271.78"/>
 <pinref part="OVERRIDE_EN2" gate="A" pin="1"/>
-<wire x1="375.92" y1="271.78" x2="375.92" y2="269.24" width="0.1524" layer="91"/>
-<wire x1="375.92" y1="269.24" x2="383.54" y2="269.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$59" class="0">

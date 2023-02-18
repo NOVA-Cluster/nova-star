@@ -3579,7 +3579,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="36.83" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="32.893" y="12.827" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="I2C_2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="" x="132.715" y="63.5" smashed="yes" rot="R90">
+<element name="I2C" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X04" package3d_urn="urn:adsk.eagle:package:22407/2" value="" x="132.715" y="63.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="130.8862" y="58.3438" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="POPULARITY" value="91" x="132.715" y="63.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="135.89" y="58.42" size="1.27" layer="27" rot="R90"/>
@@ -4688,7 +4688,7 @@ design rules under a new name.</description>
 <contactref element="C6" pad="2"/>
 <contactref element="C36" pad="2"/>
 <contactref element="C89" pad="-"/>
-<contactref element="I2C_2" pad="2"/>
+<contactref element="I2C" pad="2"/>
 <contactref element="R7" pad="2"/>
 <contactref element="R8" pad="2"/>
 <contactref element="C7" pad="2"/>
@@ -4960,7 +4960,7 @@ design rules under a new name.</description>
 <contactref element="D91" pad="A"/>
 <contactref element="C36" pad="1"/>
 <contactref element="IC22" pad="4"/>
-<contactref element="I2C_2" pad="1"/>
+<contactref element="I2C" pad="1"/>
 <contactref element="C14" pad="1"/>
 <contactref element="R2" pad="2"/>
 <contactref element="C11" pad="1"/>
@@ -5114,7 +5114,7 @@ design rules under a new name.</description>
 <signal name="21/SDA">
 <contactref element="U$1" pad="11"/>
 <contactref element="NEBULA_A" pad="13"/>
-<contactref element="I2C_2" pad="4"/>
+<contactref element="I2C" pad="4"/>
 <contactref element="R27" pad="1"/>
 <wire x1="106.68" y1="84.295" x2="132.715" y2="67.31" width="0" layer="19" extent="1-1"/>
 <wire x1="97.575" y1="43.18" x2="106.68" y2="84.295" width="0" layer="19" extent="1-1"/>
@@ -5123,7 +5123,7 @@ design rules under a new name.</description>
 <signal name="22/SCL">
 <contactref element="U$1" pad="14"/>
 <contactref element="NEBULA_A" pad="12"/>
-<contactref element="I2C_2" pad="3"/>
+<contactref element="I2C" pad="3"/>
 <contactref element="R26" pad="1"/>
 <wire x1="105.41" y1="84.295" x2="132.715" y2="64.77" width="0" layer="19" extent="1-1"/>
 <wire x1="97.575" y1="35.56" x2="132.715" y2="64.77" width="0" layer="19" extent="1-1"/>
@@ -5683,8 +5683,8 @@ design rules under a new name.</description>
 <signal name="N$49">
 <contactref element="D12" pad="A"/>
 <contactref element="Q1" pad="4"/>
-<contactref element="R60" pad="2"/>
 <contactref element="K6" pad="-"/>
+<contactref element="R60" pad="2"/>
 <wire x1="58.42" y1="108.07" x2="66.357" y2="107.315" width="0" layer="19" extent="1-1"/>
 <wire x1="55.245" y1="108.165" x2="58.42" y2="108.07" width="0" layer="19" extent="1-1"/>
 <wire x1="44.45" y1="107.315" x2="55.245" y2="108.165" width="0" layer="19" extent="1-1"/>
@@ -5692,8 +5692,8 @@ design rules under a new name.</description>
 <signal name="N$47">
 <contactref element="D13" pad="A"/>
 <contactref element="Q2" pad="4"/>
-<contactref element="R61" pad="2"/>
 <contactref element="K5" pad="-"/>
+<contactref element="R61" pad="2"/>
 <wire x1="58.42" y1="98.545" x2="66.357" y2="97.79" width="0" layer="19" extent="1-1"/>
 <wire x1="55.245" y1="98.64" x2="58.42" y2="98.545" width="0" layer="19" extent="1-1"/>
 <wire x1="44.45" y1="101.6" x2="55.245" y2="98.64" width="0" layer="19" extent="1-1"/>
@@ -5702,7 +5702,6 @@ design rules under a new name.</description>
 <contactref element="Q3" pad="4"/>
 <contactref element="D14" pad="A"/>
 <contactref element="FIRE_OUT" pad="4"/>
-<contactref element="R62" pad="2"/>
 <wire x1="7.595" y1="91.4189" x2="7.6161" y2="91.44" width="2.54" layer="1"/>
 <wire x1="13.97" y1="91.44" x2="19.685" y2="97.155" width="2.54" layer="1"/>
 <wire x1="19.685" y1="97.155" x2="46.355" y2="97.155" width="2.54" layer="1"/>
@@ -5710,14 +5709,15 @@ design rules under a new name.</description>
 <wire x1="52.07" y1="91.44" x2="62.547" y2="91.44" width="2.54" layer="1"/>
 <wire x1="62.547" y1="91.44" x2="66.357" y2="87.63" width="2.54" layer="1"/>
 <wire x1="7.6161" y1="91.44" x2="13.97" y2="91.44" width="2.54" layer="1"/>
+<contactref element="R62" pad="2"/>
 <wire x1="55.245" y1="88.48" x2="58.42" y2="88.385" width="0" layer="19" extent="1-1"/>
 <wire x1="66.357" y1="87.63" x2="58.42" y2="88.385" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$52">
 <contactref element="Q4" pad="4"/>
 <contactref element="D15" pad="A"/>
-<contactref element="R63" pad="2"/>
 <contactref element="K3" pad="2"/>
+<contactref element="R63" pad="2"/>
 <wire x1="58.42" y1="78.225" x2="66.357" y2="77.47" width="0" layer="19" extent="1-1"/>
 <wire x1="55.245" y1="78.955" x2="58.42" y2="78.225" width="0" layer="19" extent="1-1"/>
 <wire x1="40.64" y1="77.47" x2="55.245" y2="78.955" width="0" layer="19" extent="1-1"/>

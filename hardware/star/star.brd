@@ -170,7 +170,7 @@
 (c) Jm Casler 2023
 www.casler.org
 www.oontz.com</text>
-<text x="13.97" y="15.875" size="1.4224" layer="21" rot="R90">GND   5v    GND   12v</text>
+<text x="13.97" y="15.24" size="1.4224" layer="21" rot="R90">GND   5v    GND   12v</text>
 <text x="97.79" y="13.335" size="1.778" layer="27">GND
 12 TDI
 13 TCK
@@ -222,14 +222,6 @@ High Voltage</text>
 <wire x1="34.925" y1="142.875" x2="34.29" y2="143.51" width="0.1524" layer="46"/>
 <wire x1="34.29" y1="143.51" x2="34.29" y2="158.75" width="0.1524" layer="46"/>
 <wire x1="34.29" y1="158.75" x2="34.925" y2="159.385" width="0.1524" layer="46"/>
-<wire x1="27.94" y1="168.91" x2="27.94" y2="169.545" width="0.1524" layer="46"/>
-<wire x1="27.94" y1="169.545" x2="28.575" y2="170.18" width="0.1524" layer="46"/>
-<wire x1="43.815" y1="170.18" x2="44.45" y2="169.545" width="0.1524" layer="46"/>
-<wire x1="44.45" y1="169.545" x2="44.45" y2="168.91" width="0.1524" layer="46"/>
-<wire x1="44.45" y1="168.91" x2="43.815" y2="168.275" width="0.1524" layer="46"/>
-<wire x1="43.815" y1="168.275" x2="28.575" y2="168.275" width="0.1524" layer="46"/>
-<wire x1="28.575" y1="168.275" x2="27.94" y2="168.91" width="0.1524" layer="46"/>
-<wire x1="28.575" y1="170.18" x2="43.815" y2="170.18" width="0.1524" layer="46"/>
 <text x="130.175" y="172.72" size="1.778" layer="25">GND</text>
 <text x="132.715" y="158.75" size="1.778" layer="25">+5</text>
 <polygon width="0.1524" layer="41">
@@ -243,18 +235,6 @@ High Voltage</text>
 <vertex x="36.195" y="159.385"/>
 <vertex x="36.195" y="142.875"/>
 <vertex x="34.29" y="142.875"/>
-</polygon>
-<polygon width="0.1524" layer="42">
-<vertex x="27.94" y="170.18"/>
-<vertex x="44.45" y="170.18"/>
-<vertex x="44.45" y="168.275"/>
-<vertex x="27.94" y="168.275"/>
-</polygon>
-<polygon width="0.1524" layer="41">
-<vertex x="27.94" y="170.18"/>
-<vertex x="44.45" y="170.18"/>
-<vertex x="44.45" y="168.275"/>
-<vertex x="27.94" y="168.275"/>
 </polygon>
 <text x="49.53" y="144.145" size="1.27" layer="25" rot="R90">FOG POWER</text>
 <text x="49.53" y="116.84" size="1.27" layer="25" rot="R90">ACTIVATE</text>
@@ -297,8 +277,8 @@ Gnd</text>
 <vertex x="36.195" y="114.3"/>
 <vertex x="34.29" y="114.3"/>
 </polygon>
-<text x="13.97" y="109.855" size="1.778" layer="25" rot="R90">Poofer</text>
-<text x="13.97" y="100.33" size="1.778" layer="25" rot="R90">Fuel</text>
+<text x="13.97" y="106.045" size="1.778" layer="25" rot="R90">Poofer</text>
+<text x="13.97" y="96.52" size="1.778" layer="25" rot="R90">Fuel</text>
 <text x="13.97" y="85.725" size="1.778" layer="25" rot="R90">Blower</text>
 <text x="13.97" y="74.93" size="1.778" layer="25" rot="R90">Igniter</text>
 <text x="13.97" y="43.18" size="1.4224" layer="21" rot="R90">GND   5v/2</text>
@@ -329,6 +309,10 @@ Fog Active</text>
 <vertex x="34.29" y="73.66"/>
 </polygon>
 <text x="135.89" y="57.15" size="1.016" layer="21" rot="R90">3v3 GND SCL SDA</text>
+<rectangle x1="33.02" y1="160.655" x2="40.005" y2="164.465" layer="1"/>
+<rectangle x1="39.37" y1="167.005" x2="45.72" y2="172.085" layer="1"/>
+<rectangle x1="44.45" y1="160.655" x2="51.435" y2="164.465" layer="1"/>
+<text x="3.175" y="74.295" size="2.54" layer="21" rot="R90">+    -</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -3178,30 +3162,31 @@ OUT -</text>
 </package3d>
 </packages3d>
 </library>
-<library name="Fuse" urn="urn:adsk.eagle:library:24934274">
-<description>&lt;b&gt;Resettable Fuses, Automotive Fuses</description>
+<library name="2920L200" urn="urn:adsk.eagle:library:39262743">
 <packages>
-<package name="FUSC4632X160" urn="urn:adsk.eagle:footprint:24934277/1" library_version="3">
-<description>Chip, 4.60 X 3.24 X 1.60 mm body
- &lt;p&gt;Chip package with body size 4.60 X 3.24 X 1.60 mm&lt;/p&gt;</description>
-<smd name="1" x="-2.415" y="0" dx="1.73" dy="3.05" layer="1"/>
-<smd name="2" x="2.415" y="0" dx="1.73" dy="3.05" layer="1"/>
-<wire x1="-2.415" y1="1.839" x2="2.415" y2="1.839" width="0.12" layer="21"/>
-<wire x1="-2.415" y1="-1.839" x2="2.415" y2="-1.839" width="0.12" layer="21"/>
-<wire x1="-2.415" y1="-1.705" x2="-2.415" y2="1.705" width="0.12" layer="51"/>
-<wire x1="-2.415" y1="1.705" x2="2.415" y2="1.705" width="0.12" layer="51"/>
-<wire x1="2.415" y1="1.705" x2="2.415" y2="-1.705" width="0.12" layer="51"/>
-<wire x1="2.415" y1="-1.705" x2="-2.415" y2="-1.705" width="0.12" layer="51"/>
-<text x="0" y="2.474" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.474" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<package name="SMD050F" urn="urn:adsk.eagle:footprint:39262744/1" library_version="1">
+<description>&lt;b&gt;PolySwitch (TM) Resettable Device&lt;/b&gt;&lt;p&gt;
+SMD Series Size: 7555 (mm), 2920 (mils)&lt;br&gt;
+Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&lt;/a&gt;</description>
+<wire x1="-3.9" y1="2.625" x2="3.9" y2="2.625" width="0.2032" layer="51"/>
+<wire x1="3.9" y1="2.625" x2="3.9" y2="-2.625" width="0.2032" layer="51"/>
+<wire x1="3.9" y1="-2.625" x2="-3.9" y2="-2.625" width="0.2032" layer="51"/>
+<wire x1="-3.9" y1="-2.625" x2="-3.9" y2="2.625" width="0.2032" layer="51"/>
+<wire x1="-1.9" y1="2.625" x2="1.9" y2="2.625" width="0.2032" layer="21"/>
+<wire x1="1.9" y1="-2.625" x2="-1.9" y2="-2.625" width="0.2032" layer="21"/>
+<text x="-4.63986875" y="3.152059375" size="1.27171875" layer="25">&gt;NAME</text>
+<text x="-4.64191875" y="-4.93465" size="1.27228125" layer="27">&gt;VALUE</text>
+<smd name="1" x="-3.7" y="0" dx="2.3" dy="4.6" layer="1"/>
+<smd name="2" x="3.7" y="0" dx="2.3" dy="4.6" layer="1"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="FUSC4632X160" urn="urn:adsk.eagle:package:24934283/1" type="model" library_version="3">
-<description>Chip, 4.60 X 3.24 X 1.60 mm body
- &lt;p&gt;Chip package with body size 4.60 X 3.24 X 1.60 mm&lt;/p&gt;</description>
+<package3d name="SMD050F" urn="urn:adsk.eagle:package:39262746/1" type="box" library_version="1">
+<description>&lt;b&gt;PolySwitch (TM) Resettable Device&lt;/b&gt;&lt;p&gt;
+SMD Series Size: 7555 (mm), 2920 (mils)&lt;br&gt;
+Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&lt;/a&gt;</description>
 <packageinstances>
-<packageinstance name="FUSC4632X160"/>
+<packageinstance name="SMD050F"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -3334,8 +3319,8 @@ design rules under a new name.</description>
 <param name="Efforts" value="2"/>
 <param name="TopRouterVariant" value="0"/>
 <param name="tpViaShape" value="round"/>
-<param name="PrefDir.1" value="a"/>
-<param name="PrefDir.2" value="a"/>
+<param name="PrefDir.1" value="*"/>
+<param name="PrefDir.2" value="*"/>
 <param name="PrefDir.3" value="0"/>
 <param name="PrefDir.4" value="0"/>
 <param name="PrefDir.5" value="0"/>
@@ -3348,8 +3333,8 @@ design rules under a new name.</description>
 <param name="PrefDir.12" value="0"/>
 <param name="PrefDir.13" value="0"/>
 <param name="PrefDir.14" value="0"/>
-<param name="PrefDir.15" value="a"/>
-<param name="PrefDir.16" value="a"/>
+<param name="PrefDir.15" value="*"/>
+<param name="PrefDir.16" value="-"/>
 <param name="cfVia" value="8"/>
 <param name="cfNonPref" value="5"/>
 <param name="cfChangeDir" value="2"/>
@@ -3468,8 +3453,8 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="76.835" y="10.795" size="1.778" layer="27" display="off"/>
 <attribute name="PRICE" value="0.5" x="76.835" y="10.795" size="1.778" layer="27" display="off"/>
 </element>
-<element name="POWER_IN" library="con-phoenix-508-jm" package="MKDSN1,5/4-5,08" package3d_urn="urn:adsk.eagle:package:9636/1" value="MKDSN1,5/4-5,08" x="7.62" y="25.4" smashed="yes" rot="R90">
-<attribute name="POPULARITY" value="5" x="7.62" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="POWER_IN" library="con-phoenix-508-jm" package="MKDSN1,5/4-5,08" package3d_urn="urn:adsk.eagle:package:9636/1" value="MKDSN1,5/4-5,08" x="7.62" y="24.765" smashed="yes" rot="R90">
+<attribute name="POPULARITY" value="5" x="7.62" y="24.765" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="NEBULA_A" library="MCP23017-E_SO" library_urn="urn:adsk.eagle:library:37530508" package="SOIC127P1030X265-28N" package3d_urn="urn:adsk.eagle:package:37530511/1" value="MCP23017-E/SO" x="99.695" y="88.9" smashed="yes" rot="R90">
 <attribute name="AVAILABILITY" value="In Stock" x="99.695" y="88.9" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3625,37 +3610,37 @@ design rules under a new name.</description>
 <attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 150Ohm 0603  ROHS" x="75.565" y="149.86" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="73.66" y="150.495" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R10" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="R_4.7K_1206" x="46.99" y="164.465" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F4701T5E_C17936.pdf" x="46.99" y="164.465" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C17936" x="46.99" y="164.465" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="46.99" y="164.465" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="46.99" y="164.465" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="161665" x="46.99" y="164.465" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 250mW Thick Film Resistors 200V ±100ppm -55°C~+155°C 4.7kOhm 1206  ROHS" x="46.99" y="164.465" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R10" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="R_4.7K_1206" x="50.8" y="165.735" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F4701T5E_C17936.pdf" x="50.8" y="165.735" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C17936" x="50.8" y="165.735" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="50.8" y="165.735" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="50.8" y="165.735" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="161665" x="50.8" y="165.735" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 250mW Thick Film Resistors 200V ±100ppm -55°C~+155°C 4.7kOhm 1206  ROHS" x="50.8" y="165.735" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R11" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="R_4.7K_1206" x="42.545" y="164.465" smashed="yes" rot="R270">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F4701T5E_C17936.pdf" x="42.545" y="164.465" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PART" value="C17936" x="42.545" y="164.465" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="42.545" y="164.465" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="42.545" y="164.465" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_STOCK" value="161665" x="42.545" y="164.465" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PROPERTIES" value="±1% 250mW Thick Film Resistors 200V ±100ppm -55°C~+155°C 4.7kOhm 1206  ROHS" x="42.545" y="164.465" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R11" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="R_4.7K_1206" x="45.085" y="165.735" smashed="yes" rot="R270">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F4701T5E_C17936.pdf" x="45.085" y="165.735" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C17936" x="45.085" y="165.735" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="45.085" y="165.735" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="45.085" y="165.735" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_STOCK" value="161665" x="45.085" y="165.735" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROPERTIES" value="±1% 250mW Thick Film Resistors 200V ±100ppm -55°C~+155°C 4.7kOhm 1206  ROHS" x="45.085" y="165.735" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R12" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="R_4.7K_1206" x="38.1" y="164.465" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F4701T5E_C17936.pdf" x="38.1" y="164.465" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C17936" x="38.1" y="164.465" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="38.1" y="164.465" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="38.1" y="164.465" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="161665" x="38.1" y="164.465" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="±1% 250mW Thick Film Resistors 200V ±100ppm -55°C~+155°C 4.7kOhm 1206  ROHS" x="38.1" y="164.465" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R12" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="R_4.7K_1206" x="39.37" y="165.735" smashed="yes" rot="R90">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F4701T5E_C17936.pdf" x="39.37" y="165.735" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PART" value="C17936" x="39.37" y="165.735" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="39.37" y="165.735" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="39.37" y="165.735" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="LCSC_STOCK" value="161665" x="39.37" y="165.735" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROPERTIES" value="±1% 250mW Thick Film Resistors 200V ±100ppm -55°C~+155°C 4.7kOhm 1206  ROHS" x="39.37" y="165.735" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R13" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="R_4.7K_1206" x="33.655" y="164.465" smashed="yes" rot="R270">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F4701T5E_C17936.pdf" x="33.655" y="164.465" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PART" value="C17936" x="33.655" y="164.465" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="33.655" y="164.465" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="33.655" y="164.465" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="LCSC_STOCK" value="161665" x="33.655" y="164.465" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="PROPERTIES" value="±1% 250mW Thick Film Resistors 200V ±100ppm -55°C~+155°C 4.7kOhm 1206  ROHS" x="33.655" y="164.465" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R13" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="R_4.7K_1206" x="33.655" y="165.735" smashed="yes" rot="R270">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F4701T5E_C17936.pdf" x="33.655" y="165.735" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PART" value="C17936" x="33.655" y="165.735" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_PRICE1_EUR" value="" x="33.655" y="165.735" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" x="33.655" y="165.735" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LCSC_STOCK" value="161665" x="33.655" y="165.735" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROPERTIES" value="±1% 250mW Thick Film Resistors 200V ±100ppm -55°C~+155°C 4.7kOhm 1206  ROHS" x="33.655" y="165.735" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="D1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="red" x="60.96" y="163.83" smashed="yes" rot="R180">
 <attribute name="JLC_ROTATION" value="180" x="60.96" y="158.115" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3703,7 +3688,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="21.59" y="113.03" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="FOG_IN" library="con-phoenix-508-jm" package="MKDSN1,5/5-5,08" package3d_urn="urn:adsk.eagle:package:9639/1" value="MKDSN1,5/5-5,08" x="6.985" y="147.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="2.54" y="134.9489" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="2.54" y="153.3639" size="1.27" layer="25" rot="R90"/>
 <attribute name="POPULARITY" value="0" x="6.985" y="147.32" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="2.54" y="143.51" size="1.27" layer="27" rot="R90"/>
 </element>
@@ -4200,7 +4185,6 @@ design rules under a new name.</description>
 <attribute name="PROPERTIES" value="100V 850mV@2A 2A SMA(DO-214AC) Schottky Barrier Diodes (SBD) ROHS" x="58.42" y="106.045" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R55" library="varistor" library_urn="urn:adsk.eagle:library:410" package="S20K20" package3d_urn="urn:adsk.eagle:package:30577/1" value="S20K20" x="26.035" y="174.625" smashed="yes" rot="R90">
-<attribute name="NAME" x="32.385" y="170.434" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="POPULARITY" value="0" x="26.035" y="174.625" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="26.416" y="170.434" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
@@ -4210,7 +4194,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="26.416" y="178.054" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="FIRE_OUT" library="con-phoenix-508-jm" package="MKDSN1,5/8-5,08" package3d_urn="urn:adsk.eagle:package:9632/1" value="MKDSN1,5/8-5,08" x="7.62" y="93.98" smashed="yes" rot="R90">
-<attribute name="NAME" x="3.175" y="73.9889" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="3.175" y="105.7389" size="1.27" layer="25" rot="R90"/>
 <attribute name="POPULARITY" value="1" x="7.62" y="93.98" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R26" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="R_3K_0603" x="98.425" y="35.56" smashed="yes">
@@ -4662,21 +4646,16 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="92" x="106.68" y="166.37" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="109.855" y="162.56" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="F1" library="Fuse" library_urn="urn:adsk.eagle:library:24934274" package="FUSC4632X160" package3d_urn="urn:adsk.eagle:package:24934283/1" value="MF-MSMF-STYLE2_1" x="10.16" y="39.37" smashed="yes">
-<attribute name="CATEGORY" value="FUSE" x="-3.81" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="PTC Resettable Fuses" x="-3.81" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="LCSC_PART" value="C78695" x="-3.81" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="BOURNS" x="-3.81" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="MF-MSMF" x="-3.81" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="10.16" y="41.844" size="1.27" layer="25" align="bottom-center"/>
-<attribute name="OPERATING_TEMPERATURE" value="-40 °C to +85 °C" x="-3.81" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="PART_STATUS" value="Active" x="-3.81" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="ROHS_COMPLIANCE" value="RoHS Compliant" x="-3.81" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="SERIES" value="MF-MSMF" x="-3.81" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="SUB-CATEGORY" value="Resettable" x="-3.81" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="THERMALLOSS" value="" x="-3.81" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="TYPE" value="PTC" x="-3.81" y="48.26" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="10.16" y="36.896" size="1.27" layer="27" align="top-center"/>
+<element name="F2" library="2920L200" library_urn="urn:adsk.eagle:library:39262743" package="SMD050F" package3d_urn="urn:adsk.eagle:package:39262746/1" value="2920L200" x="7.62" y="38.735" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="7.62" y="38.735" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Polymeric PTC Resettable Fuse 24V 2 A Ih Surface Mount 2920 (7351 Metric), Concave " x="7.62" y="38.735" size="1.778" layer="27" display="off"/>
+<attribute name="LCSC_PART" value="C910846" x="7.62" y="38.735" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="7.62" y="38.735" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="2920L200" x="7.62" y="38.735" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="2.98013125" y="41.887059375" size="1.27171875" layer="25"/>
+<attribute name="PACKAGE" value="2920 Littelfuse Inc." x="7.62" y="38.735" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="7.62" y="38.735" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="2.97808125" y="33.80035" size="1.27228125" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -4743,7 +4722,7 @@ design rules under a new name.</description>
 <contactref element="JP1" pad="3"/>
 <contactref element="JP1" pad="4"/>
 <contactref element="C32" pad="2"/>
-<polygon width="0.1524" layer="2">
+<polygon width="0.1524" layer="2" thermals="no">
 <vertex x="65.405" y="188.595"/>
 <vertex x="140.335" y="188.595"/>
 <vertex x="140.335" y="-0.635"/>
@@ -4815,7 +4794,7 @@ design rules under a new name.</description>
 <wire x1="71.755" y1="9.945" x2="74.535" y2="7.645" width="0" layer="19" extent="1-1"/>
 <wire x1="68.58" y1="9.395" x2="71.755" y2="9.945" width="0" layer="19" extent="1-1"/>
 <wire x1="65.405" y1="9.395" x2="68.58" y2="9.395" width="0" layer="19" extent="1-1"/>
-<wire x1="15.66" y1="9.525" x2="7.595" y2="17.7589" width="0" layer="19" extent="1-1"/>
+<wire x1="15.66" y1="9.525" x2="7.595" y2="17.1239" width="0" layer="19" extent="1-1"/>
 <wire x1="15.66" y1="6.985" x2="15.66" y2="9.525" width="0" layer="19" extent="1-1"/>
 <wire x1="15.66" y1="4.445" x2="15.66" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="15.66" y1="1.905" x2="15.66" y2="4.445" width="0" layer="19" extent="1-1"/>
@@ -4883,10 +4862,6 @@ design rules under a new name.</description>
 <contactref element="C28" pad="+"/>
 <contactref element="U$2" pad="IN+"/>
 <contactref element="C24" pad="1"/>
-<contactref element="F1" pad="2"/>
-<wire x1="12.575" y1="39.37" x2="33.655" y2="39.37" width="2.54" layer="1"/>
-<wire x1="36.83" y1="36.195" x2="36.83" y2="10.795" width="2.54" layer="1"/>
-<wire x1="33.655" y1="39.37" x2="36.83" y2="36.195" width="2.54" layer="1"/>
 <wire x1="36.83" y1="10.795" x2="51.435" y2="10.795" width="2.54" layer="1"/>
 <wire x1="51.435" y1="10.795" x2="53.34" y2="10.795" width="2.54" layer="1"/>
 <contactref element="IC22" pad="3"/>
@@ -4899,6 +4874,13 @@ design rules under a new name.</description>
 <wire x1="102.63" y1="2.681" x2="102.63" y2="7.645" width="1.27" layer="1"/>
 <wire x1="79.135" y1="7.645" x2="79.135" y2="2.681" width="1.27" layer="1"/>
 <wire x1="79.135" y1="2.681" x2="78.74" y2="2.286" width="1.27" layer="1"/>
+<contactref element="F2" pad="2"/>
+<wire x1="11.32" y1="38.735" x2="35.56" y2="38.735" width="3.81" layer="1"/>
+<wire x1="35.56" y1="38.735" x2="36.83" y2="37.465" width="3.81" layer="1"/>
+<wire x1="36.83" y1="37.465" x2="36.83" y2="10.795" width="3.81" layer="1"/>
+<wire x1="20.145" y1="51.78" x2="26.96" y2="51.78" width="2.54" layer="1"/>
+<wire x1="35.56" y1="43.18" x2="35.56" y2="38.735" width="2.54" layer="1"/>
+<wire x1="26.96" y1="51.78" x2="35.56" y2="43.18" width="2.54" layer="1"/>
 <wire x1="102.87" y1="132.93" x2="102.87" y2="143.09" width="0" layer="19" extent="1-1"/>
 <wire x1="102.87" y1="122.77" x2="102.87" y2="132.93" width="0" layer="19" extent="1-1"/>
 <wire x1="102.87" y1="153.885" x2="102.87" y2="143.09" width="0" layer="19" extent="1-1"/>
@@ -4907,7 +4889,6 @@ design rules under a new name.</description>
 <wire x1="40.64" y1="146.685" x2="40.64" y2="118.11" width="0" layer="19" extent="1-1"/>
 <wire x1="20.145" y1="51.78" x2="40.64" y2="118.11" width="0" layer="19" extent="1-1"/>
 <wire x1="17.145" y1="50.48" x2="20.145" y2="51.78" width="0" layer="19" extent="1-1"/>
-<wire x1="12.575" y1="39.37" x2="17.145" y2="50.48" width="0" layer="19" extent="1-1"/>
 <wire x1="105.41" y1="9.945" x2="102.63" y2="7.645" width="0" layer="19" extent="1-1"/>
 <wire x1="107.95" y1="9.845" x2="105.41" y2="9.945" width="0" layer="19" extent="1-1"/>
 <wire x1="81.915" y1="9.945" x2="79.135" y2="7.645" width="0" layer="19" extent="1-1"/>
@@ -4954,7 +4935,7 @@ design rules under a new name.</description>
 <wire x1="68.58" y1="12.195" x2="71.755" y2="11.645" width="0" layer="19" extent="1-1"/>
 <wire x1="65.405" y1="12.195" x2="68.58" y2="12.195" width="0" layer="19" extent="1-1"/>
 <wire x1="21.197" y1="6.985" x2="65.405" y2="12.195" width="0" layer="19" extent="1-1"/>
-<wire x1="7.595" y1="22.8389" x2="21.197" y2="6.985" width="0" layer="19" extent="1-1"/>
+<wire x1="7.595" y1="22.2039" x2="21.197" y2="6.985" width="0" layer="19" extent="1-1"/>
 <wire x1="132.715" y1="163.37" x2="132.715" y2="109.87" width="0" layer="19" extent="1-1"/>
 <wire x1="137.16" y1="165.52" x2="132.715" y2="163.37" width="0" layer="19" extent="1-1"/>
 <wire x1="61.595" y1="73.418" x2="115.37" y2="68.59" width="0" layer="19" extent="1-1"/>
@@ -5307,27 +5288,27 @@ design rules under a new name.</description>
 <signal name="N$8" class="7">
 <contactref element="R13" pad="2"/>
 <contactref element="R12" pad="1"/>
-<wire x1="33.655" y1="163.043" x2="38.1" y2="163.043" width="1.27" layer="1"/>
+<wire x1="33.655" y1="164.313" x2="39.37" y2="164.313" width="1.27" layer="1"/>
 </signal>
 <signal name="N$9" class="7">
 <contactref element="R12" pad="2"/>
 <contactref element="R11" pad="1"/>
-<wire x1="38.1" y1="165.887" x2="42.545" y2="165.887" width="1.27" layer="1"/>
+<wire x1="39.37" y1="167.157" x2="45.085" y2="167.157" width="1.27" layer="1"/>
 </signal>
 <signal name="N$10" class="7">
 <contactref element="R10" pad="1"/>
 <contactref element="R11" pad="2"/>
-<wire x1="42.545" y1="163.043" x2="46.99" y2="163.043" width="1.27" layer="1"/>
+<wire x1="45.085" y1="164.313" x2="50.8" y2="164.313" width="1.27" layer="1"/>
 </signal>
 <signal name="N$11" class="7">
 <contactref element="R10" pad="2"/>
 <contactref element="U1" pad="1"/>
-<wire x1="46.99" y1="165.887" x2="47.142" y2="165.735" width="1.27" layer="1"/>
-<wire x1="47.142" y1="165.735" x2="48.26" y2="165.735" width="1.27" layer="1"/>
-<wire x1="48.26" y1="165.735" x2="50.165" y2="163.83" width="1.27" layer="1"/>
-<wire x1="50.165" y1="140.97" x2="50.8" y2="140.335" width="1.27" layer="1"/>
-<wire x1="50.8" y1="140.335" x2="52.465" y2="140.335" width="1.27" layer="1"/>
-<wire x1="50.165" y1="163.83" x2="50.165" y2="140.97" width="1.27" layer="1"/>
+<wire x1="50.8" y1="167.157" x2="50.952" y2="167.005" width="1.27" layer="1"/>
+<wire x1="50.952" y1="167.005" x2="53.34" y2="167.005" width="1.27" layer="1"/>
+<wire x1="53.34" y1="167.005" x2="53.975" y2="166.37" width="1.27" layer="1"/>
+<wire x1="53.975" y1="140.97" x2="53.34" y2="140.335" width="1.27" layer="1"/>
+<wire x1="53.34" y1="140.335" x2="52.465" y2="140.335" width="1.27" layer="1"/>
+<wire x1="53.975" y1="166.37" x2="53.975" y2="140.97" width="1.27" layer="1"/>
 </signal>
 <signal name="N$15" class="7">
 <contactref element="U1" pad="2"/>
@@ -5335,7 +5316,10 @@ design rules under a new name.</description>
 <contactref element="FOG_IN" pad="1"/>
 <wire x1="6.96" y1="137.1389" x2="27.94" y2="116.1589" width="3.81" layer="16"/>
 <wire x1="27.94" y1="116.1589" x2="27.94" y2="114.3" width="3.81" layer="16"/>
-<wire x1="27.94" y1="114.3" x2="52.465" y2="137.795" width="0" layer="19" extent="1-1"/>
+<wire x1="27.94" y1="114.3" x2="32.385" y2="118.745" width="1.27" layer="1"/>
+<wire x1="32.385" y1="118.745" x2="32.385" y2="133.985" width="1.27" layer="1"/>
+<wire x1="32.385" y1="133.985" x2="36.195" y2="137.795" width="1.27" layer="1"/>
+<wire x1="36.195" y1="137.795" x2="52.465" y2="137.795" width="1.27" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="D1" pad="C"/>
@@ -5348,9 +5332,9 @@ design rules under a new name.</description>
 <wire x1="6.96" y1="147.2989" x2="6.9811" y2="147.32" width="1.27" layer="1"/>
 <wire x1="6.9811" y1="147.32" x2="19.685" y2="147.32" width="1.27" layer="1"/>
 <wire x1="19.685" y1="147.32" x2="30.48" y2="158.115" width="1.27" layer="1"/>
-<wire x1="30.48" y1="158.115" x2="30.48" y2="165.1" width="1.27" layer="1"/>
-<wire x1="30.48" y1="165.1" x2="31.267" y2="165.887" width="1.27" layer="1"/>
-<wire x1="31.267" y1="165.887" x2="33.655" y2="165.887" width="1.27" layer="1"/>
+<wire x1="30.48" y1="158.115" x2="30.48" y2="166.37" width="1.27" layer="1"/>
+<wire x1="30.48" y1="166.37" x2="31.267" y2="167.157" width="1.27" layer="1"/>
+<wire x1="31.267" y1="167.157" x2="33.655" y2="167.157" width="1.27" layer="1"/>
 </signal>
 <signal name="N$13" class="7">
 <contactref element="K2" pad="NO"/>
@@ -5848,9 +5832,11 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$59">
 <contactref element="POWER_IN" pad="4"/>
-<contactref element="F1" pad="1"/>
-<wire x1="7.595" y1="32.9989" x2="7.595" y2="39.22" width="2.54" layer="1"/>
-<wire x1="7.595" y1="39.22" x2="7.745" y2="39.37" width="2.54" layer="1"/>
+<contactref element="F2" pad="1"/>
+<wire x1="7.595" y1="32.3639" x2="3.8311" y2="32.3639" width="3.81" layer="1"/>
+<wire x1="3.8311" y1="32.3639" x2="3.81" y2="32.385" width="3.81" layer="1"/>
+<wire x1="3.81" y1="32.385" x2="3.81" y2="38.625" width="3.81" layer="1"/>
+<wire x1="3.81" y1="38.625" x2="3.92" y2="38.735" width="3.81" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

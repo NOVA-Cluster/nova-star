@@ -26575,210 +26575,74 @@ OUT -</text>
 </deviceset>
 </devicesets>
 </library>
-<library name="Fuse" urn="urn:adsk.eagle:library:24934274">
-<description>&lt;b&gt;Resettable Fuses, Automotive Fuses</description>
+<library name="2920L200" urn="urn:adsk.eagle:library:39262743">
 <packages>
-<package name="FUSC4532X110" urn="urn:adsk.eagle:footprint:24934278/1" library_version="3">
-<description>Chip, 4.55 X 3.24 X 1.10 mm body
- &lt;p&gt;Chip package with body size 4.55 X 3.24 X 1.10 mm&lt;/p&gt;</description>
-<smd name="1" x="-2.125" y="0" dx="1.55" dy="3.3" layer="1"/>
-<smd name="2" x="2.125" y="0" dx="1.55" dy="3.3" layer="1"/>
-<wire x1="-2.365" y1="1.964" x2="2.365" y2="1.964" width="0.12" layer="21"/>
-<wire x1="-2.365" y1="-1.964" x2="2.365" y2="-1.964" width="0.12" layer="21"/>
-<wire x1="-2.365" y1="-1.705" x2="-2.365" y2="1.705" width="0.12" layer="51"/>
-<wire x1="-2.365" y1="1.705" x2="2.365" y2="1.705" width="0.12" layer="51"/>
-<wire x1="2.365" y1="1.705" x2="2.365" y2="-1.705" width="0.12" layer="51"/>
-<wire x1="2.365" y1="-1.705" x2="-2.365" y2="-1.705" width="0.12" layer="51"/>
-<text x="0" y="2.599" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.599" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
-<package name="FUSC4632X160" urn="urn:adsk.eagle:footprint:24934277/1" library_version="3">
-<description>Chip, 4.60 X 3.24 X 1.60 mm body
- &lt;p&gt;Chip package with body size 4.60 X 3.24 X 1.60 mm&lt;/p&gt;</description>
-<smd name="1" x="-2.415" y="0" dx="1.73" dy="3.05" layer="1"/>
-<smd name="2" x="2.415" y="0" dx="1.73" dy="3.05" layer="1"/>
-<wire x1="-2.415" y1="1.839" x2="2.415" y2="1.839" width="0.12" layer="21"/>
-<wire x1="-2.415" y1="-1.839" x2="2.415" y2="-1.839" width="0.12" layer="21"/>
-<wire x1="-2.415" y1="-1.705" x2="-2.415" y2="1.705" width="0.12" layer="51"/>
-<wire x1="-2.415" y1="1.705" x2="2.415" y2="1.705" width="0.12" layer="51"/>
-<wire x1="2.415" y1="1.705" x2="2.415" y2="-1.705" width="0.12" layer="51"/>
-<wire x1="2.415" y1="-1.705" x2="-2.415" y2="-1.705" width="0.12" layer="51"/>
-<text x="0" y="2.474" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.474" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
-<package name="FUSC4532X85" urn="urn:adsk.eagle:footprint:24934276/1" library_version="3">
-<description>Chip, 4.55 X 3.24 X 0.85 mm body
- &lt;p&gt;Chip package with body size 4.55 X 3.24 X 0.85 mm&lt;/p&gt;</description>
-<smd name="1" x="-2.125" y="0" dx="1.55" dy="3.3" layer="1"/>
-<smd name="2" x="2.125" y="0" dx="1.55" dy="3.3" layer="1"/>
-<wire x1="-2.365" y1="1.964" x2="2.365" y2="1.964" width="0.12" layer="21"/>
-<wire x1="-2.365" y1="-1.964" x2="2.365" y2="-1.964" width="0.12" layer="21"/>
-<wire x1="-2.365" y1="-1.705" x2="-2.365" y2="1.705" width="0.12" layer="51"/>
-<wire x1="-2.365" y1="1.705" x2="2.365" y2="1.705" width="0.12" layer="51"/>
-<wire x1="2.365" y1="1.705" x2="2.365" y2="-1.705" width="0.12" layer="51"/>
-<wire x1="2.365" y1="-1.705" x2="-2.365" y2="-1.705" width="0.12" layer="51"/>
-<text x="0" y="2.599" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.599" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-</package>
-<package name="FUSC4632X85" urn="urn:adsk.eagle:footprint:24934275/1" library_version="3">
-<description>Chip, 4.60 X 3.24 X 0.85 mm body
- &lt;p&gt;Chip package with body size 4.60 X 3.24 X 0.85 mm&lt;/p&gt;</description>
-<smd name="1" x="-2.415" y="0" dx="1.73" dy="3.05" layer="1"/>
-<smd name="2" x="2.415" y="0" dx="1.73" dy="3.05" layer="1"/>
-<wire x1="-2.415" y1="1.839" x2="2.415" y2="1.839" width="0.12" layer="21"/>
-<wire x1="-2.415" y1="-1.839" x2="2.415" y2="-1.839" width="0.12" layer="21"/>
-<wire x1="-2.415" y1="-1.705" x2="-2.415" y2="1.705" width="0.12" layer="51"/>
-<wire x1="-2.415" y1="1.705" x2="2.415" y2="1.705" width="0.12" layer="51"/>
-<wire x1="2.415" y1="1.705" x2="2.415" y2="-1.705" width="0.12" layer="51"/>
-<wire x1="2.415" y1="-1.705" x2="-2.415" y2="-1.705" width="0.12" layer="51"/>
-<text x="0" y="2.474" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.474" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<package name="SMD050F" urn="urn:adsk.eagle:footprint:39262744/1" library_version="1">
+<description>&lt;b&gt;PolySwitch (TM) Resettable Device&lt;/b&gt;&lt;p&gt;
+SMD Series Size: 7555 (mm), 2920 (mils)&lt;br&gt;
+Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&lt;/a&gt;</description>
+<wire x1="-3.9" y1="2.625" x2="3.9" y2="2.625" width="0.2032" layer="51"/>
+<wire x1="3.9" y1="2.625" x2="3.9" y2="-2.625" width="0.2032" layer="51"/>
+<wire x1="3.9" y1="-2.625" x2="-3.9" y2="-2.625" width="0.2032" layer="51"/>
+<wire x1="-3.9" y1="-2.625" x2="-3.9" y2="2.625" width="0.2032" layer="51"/>
+<wire x1="-1.9" y1="2.625" x2="1.9" y2="2.625" width="0.2032" layer="21"/>
+<wire x1="1.9" y1="-2.625" x2="-1.9" y2="-2.625" width="0.2032" layer="21"/>
+<text x="-4.63986875" y="3.152059375" size="1.27171875" layer="25">&gt;NAME</text>
+<text x="-4.64191875" y="-4.93465" size="1.27228125" layer="27">&gt;VALUE</text>
+<smd name="1" x="-3.7" y="0" dx="2.3" dy="4.6" layer="1"/>
+<smd name="2" x="3.7" y="0" dx="2.3" dy="4.6" layer="1"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="FUSC4532X110" urn="urn:adsk.eagle:package:24934285/1" type="model" library_version="3">
-<description>Chip, 4.55 X 3.24 X 1.10 mm body
- &lt;p&gt;Chip package with body size 4.55 X 3.24 X 1.10 mm&lt;/p&gt;</description>
+<package3d name="SMD050F" urn="urn:adsk.eagle:package:39262746/1" type="box" library_version="1">
+<description>&lt;b&gt;PolySwitch (TM) Resettable Device&lt;/b&gt;&lt;p&gt;
+SMD Series Size: 7555 (mm), 2920 (mils)&lt;br&gt;
+Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&lt;/a&gt;</description>
 <packageinstances>
-<packageinstance name="FUSC4532X110"/>
-</packageinstances>
-</package3d>
-<package3d name="FUSC4632X160" urn="urn:adsk.eagle:package:24934283/1" type="model" library_version="3">
-<description>Chip, 4.60 X 3.24 X 1.60 mm body
- &lt;p&gt;Chip package with body size 4.60 X 3.24 X 1.60 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="FUSC4632X160"/>
-</packageinstances>
-</package3d>
-<package3d name="FUSC4532X85" urn="urn:adsk.eagle:package:24934282/1" type="model" library_version="3">
-<description>Chip, 4.55 X 3.24 X 0.85 mm body
- &lt;p&gt;Chip package with body size 4.55 X 3.24 X 0.85 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="FUSC4532X85"/>
-</packageinstances>
-</package3d>
-<package3d name="FUSC4632X85" urn="urn:adsk.eagle:package:24934281/1" type="model" library_version="3">
-<description>Chip, 4.60 X 3.24 X 0.85 mm body
- &lt;p&gt;Chip package with body size 4.60 X 3.24 X 0.85 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="FUSC4632X85"/>
+<packageinstance name="SMD050F"/>
 </packageinstances>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="FUSE" urn="urn:adsk.eagle:symbol:24934280/1" library_version="3">
-<wire x1="-3.81" y1="-0.762" x2="3.81" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="3.81" y1="0.762" x2="-3.81" y2="0.762" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-0.762" x2="3.81" y2="0.762" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="0.762" x2="-3.81" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<text x="0" y="2.5" size="1.778" layer="95" align="center">&gt;NAME</text>
-<text x="0" y="-2.5" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<symbol name="FUSE" urn="urn:adsk.eagle:symbol:39262745/1" library_version="1">
+<wire x1="-2.794" y1="-0.762" x2="2.794" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="2.794" y1="0.762" x2="-2.794" y2="0.762" width="0.254" layer="94"/>
+<wire x1="2.794" y1="-0.762" x2="2.794" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-2.794" y1="0.762" x2="-2.794" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.524" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="92.7955"/>
+<wire x1="1.524" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="0" x2="0" y2="0" width="0.1524" layer="94" curve="92.7955"/>
+<text x="-3.81543125" y="1.398990625" size="1.780540625" layer="95">&gt;NAME</text>
+<text x="-3.81213125" y="-2.92263125" size="1.778990625" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MF-MSMF" urn="urn:adsk.eagle:component:24934291/2" prefix="F" library_version="3">
-<description>PTC Resettable Fuses
-&lt;br&gt;&lt;a href="https://www.bourns.com/docs/Product-Datasheets/mfmsmf.pdf?sfvrsn=26"&gt;Datasheet&lt;br&gt;</description>
+<deviceset name="2920L200" urn="urn:adsk.eagle:component:39262747/1" prefix="F" library_version="1">
+<description>&lt;b&gt;PolySwitch (TM) Resettable Device&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&lt;/a&gt; &lt;a href="https://pricing.snapeda.com/parts/2920L200/Littelfuse%20Inc./view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-STYLE1_1" package="FUSC4532X110">
+<device name="" package="SMD050F">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24934285/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39262746/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="CATEGORY" value="FUSE" constant="no"/>
-<attribute name="DESCRIPTION" value="PTC Resettable Fuses" constant="no"/>
-<attribute name="MANUFACTURER" value="BOURNS" constant="no"/>
-<attribute name="MPN" value="MF-MSMF" constant="no"/>
-<attribute name="OPERATING_TEMPERATURE" value="-40 °C to +85 °C" constant="no"/>
-<attribute name="PART_STATUS" value="ACTIVE" constant="no"/>
-<attribute name="ROHS_COMPLIANCE" value="RoHS Compliant" constant="no"/>
-<attribute name="SERIES" value="MF-MSMF" constant="no"/>
-<attribute name="SUB-CATEGORY" value="Resettable" constant="no"/>
-<attribute name="THERMALLOSS" value="" constant="no"/>
-<attribute name="TYPE" value="PTC" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-STYLE2_1" package="FUSC4632X160">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24934283/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="CATEGORY" value="FUSE" constant="no"/>
-<attribute name="DESCRIPTION" value="PTC Resettable Fuses" constant="no"/>
-<attribute name="MANUFACTURER" value="BOURNS" constant="no"/>
-<attribute name="MPN" value="MF-MSMF" constant="no"/>
-<attribute name="OPERATING_TEMPERATURE" value="-40 °C to +85 °C" constant="no"/>
-<attribute name="PART_STATUS" value="Active" constant="no"/>
-<attribute name="ROHS_COMPLIANCE" value="RoHS Compliant" constant="no"/>
-<attribute name="SERIES" value="MF-MSMF" constant="no"/>
-<attribute name="SUB-CATEGORY" value="Resettable" constant="no"/>
-<attribute name="THERMALLOSS" value="" constant="no"/>
-<attribute name="TYPE" value="PTC" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-STYLE1_2" package="FUSC4532X85">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24934282/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="CATEGORY" value="FUSE" constant="no"/>
-<attribute name="DESCRIPTION" value="PTC Resettable Fuses" constant="no"/>
-<attribute name="MANUFACTURER" value="BOURNS" constant="no"/>
-<attribute name="MPN" value="MF-MSMF" constant="no"/>
-<attribute name="OPERATING_TMPERATURE" value="-40 °C to +85 °C" constant="no"/>
-<attribute name="PART_STATUS" value="Active" constant="no"/>
-<attribute name="ROHS_COMPLIANCE" value="RoHS Compliant" constant="no"/>
-<attribute name="SERIES" value="MF-MSMF" constant="no"/>
-<attribute name="SUB-CATEGORY" value="Resettable" constant="no"/>
-<attribute name="THERMALLOSS" value="" constant="no"/>
-<attribute name="TYPE" value="PTC" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-STYLE2_2" package="FUSC4632X85">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24934281/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="CATEGORY" value="FUSE" constant="no"/>
-<attribute name="DESCRIPTION" value="PTC Resettable Fuses" constant="no"/>
-<attribute name="MANUFACTURER" value="BOURNS" constant="no"/>
-<attribute name="MPN" value="MF-MSMF" constant="no"/>
-<attribute name="OPERATING_TEMPERATURE" value="-40 °C to +85 °C" constant="no"/>
-<attribute name="PART_STATUS" value="Active" constant="no"/>
-<attribute name="ROHS_COMPLIANCE" value="RoHS Compliant" constant="no"/>
-<attribute name="SERIES" value="MF-MSMF" constant="no"/>
-<attribute name="SUB-CATEGORY" value="Resettable" constant="no"/>
-<attribute name="THERMALLOSS" value="" constant="no"/>
-<attribute name="TYPE" value="PTC" constant="no"/>
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" Polymeric PTC Resettable Fuse 24V 2 A Ih Surface Mount 2920 (7351 Metric), Concave "/>
+<attribute name="MF" value="Littelfuse Inc."/>
+<attribute name="MP" value="2920L200"/>
+<attribute name="PACKAGE" value="2920 Littelfuse Inc."/>
+<attribute name="PRICE" value="None"/>
 </technology>
 </technologies>
 </device>
@@ -27368,10 +27232,11 @@ OUT -</text>
 <part name="R50" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="1K"/>
 <part name="+3V13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="OVERRIDE_EN2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
-<part name="F1" library="Fuse" library_urn="urn:adsk.eagle:library:24934274" deviceset="MF-MSMF" device="-STYLE2_1" package3d_urn="urn:adsk.eagle:package:24934283/1">
-<attribute name="LCSC_PART" value="C78695"/>
-</part>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
+<part name="F2" library="2920L200" library_urn="urn:adsk.eagle:library:39262743" deviceset="2920L200" device="" package3d_urn="urn:adsk.eagle:package:39262746/1">
+<attribute name="LCSC_PART" value="C910846"/>
+<attribute name="MF" value=""/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -28549,13 +28414,13 @@ OUT -</text>
 <attribute name="NAME" x="379.73" y="272.415" size="1.778" layer="95"/>
 <attribute name="VALUE" x="379.73" y="259.08" size="1.778" layer="96"/>
 </instance>
-<instance part="F1" gate="G$1" x="304.8" y="429.26" smashed="yes">
-<attribute name="NAME" x="304.8" y="431.76" size="1.778" layer="95" align="center"/>
-<attribute name="VALUE" x="304.8" y="426.76" size="1.778" layer="96" align="center"/>
-<attribute name="LCSC_PART" x="304.8" y="429.26" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="P+10" gate="1" x="350.52" y="439.42" smashed="yes">
 <attribute name="VALUE" x="347.98" y="434.34" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="F2" gate="G$1" x="304.8" y="429.26" smashed="yes">
+<attribute name="NAME" x="300.98456875" y="430.658990625" size="1.780540625" layer="95"/>
+<attribute name="VALUE" x="300.98786875" y="426.33736875" size="1.778990625" layer="96"/>
+<attribute name="LCSC_PART" x="304.8" y="429.26" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -29187,10 +29052,10 @@ OUT -</text>
 <junction x="378.46" y="396.24"/>
 </segment>
 <segment>
-<pinref part="F1" gate="G$1" pin="2"/>
 <pinref part="P+5" gate="1" pin="+12V"/>
 <wire x1="309.88" y1="429.26" x2="314.96" y2="429.26" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="429.26" x2="314.96" y2="436.88" width="0.1524" layer="91"/>
+<pinref part="F2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="IC22" gate="G$1" pin="IN"/>
@@ -30932,8 +30797,8 @@ OUT -</text>
 <net name="N$59" class="0">
 <segment>
 <pinref part="POWER_IN" gate="-4" pin="KL"/>
-<pinref part="F1" gate="G$1" pin="1"/>
 <wire x1="284.48" y1="429.26" x2="299.72" y2="429.26" width="0.1524" layer="91"/>
+<pinref part="F2" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

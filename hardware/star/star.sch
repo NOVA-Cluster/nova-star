@@ -25626,13 +25626,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <packages>
 </packages>
 <symbols>
-<symbol name="GND2" urn="urn:adsk.eagle:symbol:27005/1" library_version="2">
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<text x="-2.413" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND2" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 <symbol name="GND3" urn="urn:adsk.eagle:symbol:27006/1" library_version="2">
 <wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
@@ -25656,19 +25649,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND2" urn="urn:adsk.eagle:component:27051/1" prefix="SUPPLY" library_version="2">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="GND2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="GND3" urn="urn:adsk.eagle:component:27053/1" prefix="SUPPLY" library_version="2">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -26457,6 +26437,27 @@ IN -</text>
 
 OUT -</text>
 </package>
+<package name="EPS-25">
+<description>Meanwell EPS-25 Series</description>
+<wire x1="0" y1="0" x2="76.16" y2="0" width="0.127" layer="21"/>
+<wire x1="76.16" y1="0" x2="76.16" y2="50.54" width="0.127" layer="21"/>
+<wire x1="76.16" y1="50.54" x2="0" y2="50.54" width="0.127" layer="21"/>
+<wire x1="0" y1="50.54" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="IN+" x="2.365" y="28.92" drill="1.5" shape="square"/>
+<pad name="IN-" x="2.365" y="23.92" drill="1.5" shape="square"/>
+<pad name="OUT+" x="73.795" y="21.3" drill="1.5" shape="square"/>
+<pad name="OUT-" x="73.795" y="16.3" drill="1.5" shape="square"/>
+<text x="4.445" y="24.13" size="1.27" layer="21">IN +
+
+IN -</text>
+<text x="66.675" y="16.51" size="1.27" layer="21">OUT +
+
+OUT -</text>
+<hole x="3.175" y="47.625" drill="6"/>
+<hole x="73.025" y="47.625" drill="6"/>
+<hole x="73.025" y="3.175" drill="6"/>
+<hole x="3.175" y="3.175" drill="6"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ZK-SJVA-4X">
@@ -26477,6 +26478,24 @@ OUT -</text>
 </gates>
 <devices>
 <device name="" package="ZK-SJVA-4X">
+<connects>
+<connect gate="G$1" pin="IN+" pad="IN+"/>
+<connect gate="G$1" pin="IN-" pad="IN-"/>
+<connect gate="G$1" pin="OUT+" pad="OUT+"/>
+<connect gate="G$1" pin="OUT-" pad="OUT-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EPS-25">
+<gates>
+<gate name="G$1" symbol="ZK-SJVA-4X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EPS-25">
 <connects>
 <connect gate="G$1" pin="IN+" pad="IN+"/>
 <connect gate="G$1" pin="IN-" pad="IN-"/>
@@ -27041,7 +27060,6 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <part name="Q1" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="MOSFET-NCH" device="-FDD8780" package3d_urn="urn:adsk.eagle:package:38459/1" value="35A/25V/8.5mΩ">
 <attribute name="LCSC_PART" value="C2995335"/>
 </part>
-<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND2" device=""/>
 <part name="D12" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" deviceset="D_" device="_SMA" package3d_urn="urn:adsk.eagle:package:38668548/1" technology="SS210_MDD"/>
 <part name="R55" library="varistor" library_urn="urn:adsk.eagle:library:410" deviceset="S20K20" device="" package3d_urn="urn:adsk.eagle:package:30577/1"/>
 <part name="R56" library="varistor" library_urn="urn:adsk.eagle:library:410" deviceset="S20K20" device="" package3d_urn="urn:adsk.eagle:package:30577/1"/>
@@ -27051,7 +27069,6 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <part name="Q2" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="MOSFET-NCH" device="-FDD8780" package3d_urn="urn:adsk.eagle:package:38459/1" value="35A/25V/8.5mΩ">
 <attribute name="LCSC_PART" value="C2995335"/>
 </part>
-<part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND2" device=""/>
 <part name="D13" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" deviceset="D_" device="_SMA" package3d_urn="urn:adsk.eagle:package:38668548/1" technology="SS210_MDD"/>
 <part name="Q3" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="MOSFET-NCH" device="-FDD8780" package3d_urn="urn:adsk.eagle:package:38459/1" value="35A/25V/8.5mΩ">
 <attribute name="LCSC_PART" value="C2995335"/>
@@ -27164,7 +27181,6 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 </spice>
 <attribute name="LCSC_PART" value="C15849"/>
 </part>
-<part name="5V/2_IN" library="con-phoenix-508-jm" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V/2" device=""/>
 <part name="P+22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -27236,6 +27252,18 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <part name="F2" library="2920L200" library_urn="urn:adsk.eagle:library:39262743" deviceset="2920L200" device="" package3d_urn="urn:adsk.eagle:package:39262746/1">
 <attribute name="LCSC_PART" value="C910846"/>
 <attribute name="MF" value=""/>
+</part>
+<part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$3" library="Nova" deviceset="EPS-25" device=""/>
+<part name="C26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uf">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="LCSC_PART" value="C15849"/>
 </part>
 </parts>
 <sheets>
@@ -28013,9 +28041,6 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="VALUE" x="162.56" y="246.38" size="1.778" layer="96" font="vector"/>
 <attribute name="LCSC_PART" x="157.48" y="248.92" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="160.02" y="236.22" smashed="yes">
-<attribute name="VALUE" x="157.607" y="233.045" size="1.778" layer="96"/>
-</instance>
 <instance part="D12" gate="D1" x="152.4" y="264.16" smashed="yes" rot="R90">
 <attribute name="NAME" x="150.622" y="261.62" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="156.083" y="261.62" size="1.778" layer="96" rot="R90"/>
@@ -28065,9 +28090,6 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="NAME" x="162.56" y="177.8" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="162.56" y="175.26" size="1.778" layer="96" font="vector"/>
 <attribute name="LCSC_PART" x="157.48" y="177.8" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="SUPPLY8" gate="G$1" x="160.02" y="165.1" smashed="yes">
-<attribute name="VALUE" x="157.607" y="161.925" size="1.778" layer="96"/>
 </instance>
 <instance part="D13" gate="D1" x="152.4" y="193.04" smashed="yes" rot="R90">
 <attribute name="NAME" x="150.622" y="190.5" size="1.778" layer="95" rot="R90"/>
@@ -28231,18 +28253,18 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="NAME" x="170.18" y="270.51" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="170.18" y="256.54" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="U$2" gate="G$1" x="393.7" y="391.16" smashed="yes"/>
-<instance part="GND26" gate="1" x="378.46" y="383.54" smashed="yes">
-<attribute name="VALUE" x="375.92" y="381" size="1.778" layer="96"/>
+<instance part="U$2" gate="G$1" x="393.7" y="386.08" smashed="yes"/>
+<instance part="GND26" gate="1" x="378.46" y="378.46" smashed="yes">
+<attribute name="VALUE" x="375.92" y="375.92" size="1.778" layer="96"/>
 </instance>
-<instance part="GND33" gate="1" x="414.02" y="383.54" smashed="yes">
-<attribute name="VALUE" x="411.48" y="381" size="1.778" layer="96"/>
+<instance part="GND33" gate="1" x="414.02" y="378.46" smashed="yes">
+<attribute name="VALUE" x="411.48" y="375.92" size="1.778" layer="96"/>
 </instance>
-<instance part="P+21" gate="1" x="378.46" y="403.86" smashed="yes">
-<attribute name="VALUE" x="375.92" y="398.78" size="1.778" layer="96" rot="R90"/>
+<instance part="P+21" gate="1" x="378.46" y="398.78" smashed="yes">
+<attribute name="VALUE" x="375.92" y="393.7" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY2" gate="G$1" x="414.02" y="403.86" smashed="yes">
-<attribute name="VALUE" x="411.48" y="407.035" size="1.778" layer="96"/>
+<instance part="SUPPLY2" gate="G$1" x="414.02" y="396.24" smashed="yes">
+<attribute name="VALUE" x="411.48" y="399.415" size="1.778" layer="96"/>
 </instance>
 <instance part="GND34" gate="1" x="165.1" y="86.36" smashed="yes">
 <attribute name="VALUE" x="162.56" y="83.82" size="1.778" layer="96"/>
@@ -28254,26 +28276,18 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="NAME" x="170.18" y="199.39" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="170.18" y="185.42" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="C24" gate="G$1" x="378.46" y="393.7" smashed="yes">
-<attribute name="NAME" x="379.476" y="394.335" size="1.778" layer="95"/>
-<attribute name="VALUE" x="379.476" y="389.509" size="1.778" layer="96"/>
-<attribute name="LCSC_PART" x="378.46" y="393.7" size="1.778" layer="96" display="off"/>
+<instance part="C24" gate="G$1" x="378.46" y="388.62" smashed="yes">
+<attribute name="NAME" x="379.476" y="389.255" size="1.778" layer="95"/>
+<attribute name="VALUE" x="379.476" y="384.429" size="1.778" layer="96"/>
+<attribute name="LCSC_PART" x="378.46" y="388.62" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C25" gate="G$1" x="414.02" y="393.7" smashed="yes">
-<attribute name="NAME" x="415.036" y="394.335" size="1.778" layer="95"/>
-<attribute name="VALUE" x="415.036" y="389.509" size="1.778" layer="96"/>
-<attribute name="LCSC_PART" x="414.02" y="393.7" size="1.778" layer="96" display="off"/>
+<instance part="C25" gate="G$1" x="414.02" y="388.62" smashed="yes">
+<attribute name="NAME" x="415.036" y="389.255" size="1.778" layer="95"/>
+<attribute name="VALUE" x="415.036" y="384.429" size="1.778" layer="96"/>
+<attribute name="LCSC_PART" x="414.02" y="388.62" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="5V/2_IN" gate="-1" x="350.52" y="391.16" smashed="yes">
-<attribute name="NAME" x="353.568" y="390.271" size="1.778" layer="95"/>
-<attribute name="VALUE" x="347.98" y="387.477" size="1.778" layer="96"/>
-</instance>
-<instance part="5V/2_IN" gate="-2" x="350.52" y="398.78" smashed="yes">
-<attribute name="NAME" x="353.568" y="397.891" size="1.778" layer="95"/>
-<attribute name="VALUE" x="347.98" y="395.097" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY4" gate="G$1" x="345.44" y="403.86" smashed="yes">
-<attribute name="VALUE" x="341.63" y="407.035" size="1.778" layer="96"/>
+<instance part="SUPPLY4" gate="G$1" x="370.84" y="396.24" smashed="yes">
+<attribute name="VALUE" x="367.03" y="399.415" size="1.778" layer="96"/>
 </instance>
 <instance part="P+22" gate="1" x="149.86" y="276.86" smashed="yes">
 <attribute name="VALUE" x="147.32" y="271.78" size="1.778" layer="96" rot="R90"/>
@@ -28297,8 +28311,8 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <instance part="K3" gate="G$2" x="185.42" y="45.72" smashed="yes">
 <attribute name="PART" x="182.88" y="43.18" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="SUPPLY5" gate="G$1" x="345.44" y="386.08" smashed="yes">
-<attribute name="VALUE" x="343.027" y="382.905" size="1.778" layer="96"/>
+<instance part="SUPPLY5" gate="G$1" x="370.84" y="378.46" smashed="yes">
+<attribute name="VALUE" x="368.427" y="375.285" size="1.778" layer="96"/>
 </instance>
 <instance part="LED_ARRAY" gate="G$1" x="256.54" y="241.3" smashed="yes">
 <attribute name="NAME" x="250.19" y="249.555" size="1.778" layer="95"/>
@@ -28423,6 +28437,18 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <attribute name="NAME" x="300.98456875" y="430.658990625" size="1.780540625" layer="95"/>
 <attribute name="VALUE" x="300.98786875" y="426.33736875" size="1.778990625" layer="96"/>
 <attribute name="LCSC_PART" x="304.8" y="429.26" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND43" gate="1" x="160.02" y="236.22" smashed="yes">
+<attribute name="VALUE" x="157.48" y="233.68" size="1.778" layer="96"/>
+</instance>
+<instance part="GND48" gate="1" x="160.02" y="165.1" smashed="yes">
+<attribute name="VALUE" x="157.48" y="162.56" size="1.778" layer="96"/>
+</instance>
+<instance part="U$3" gate="G$1" x="353.06" y="386.08" smashed="yes"/>
+<instance part="C26" gate="G$1" x="370.84" y="388.62" smashed="yes">
+<attribute name="NAME" x="371.856" y="389.255" size="1.778" layer="95"/>
+<attribute name="VALUE" x="371.856" y="384.429" size="1.778" layer="96"/>
+<attribute name="LCSC_PART" x="370.84" y="388.62" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -28888,18 +28914,18 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <segment>
 <pinref part="U$2" gate="G$1" pin="IN-"/>
 <pinref part="GND26" gate="1" pin="GND"/>
-<wire x1="381" y1="388.62" x2="378.46" y2="388.62" width="0.1524" layer="91"/>
-<wire x1="378.46" y1="388.62" x2="378.46" y2="386.08" width="0.1524" layer="91"/>
+<wire x1="381" y1="383.54" x2="378.46" y2="383.54" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="383.54" x2="378.46" y2="381" width="0.1524" layer="91"/>
 <pinref part="C24" gate="G$1" pin="2"/>
-<junction x="378.46" y="388.62"/>
+<junction x="378.46" y="383.54"/>
 </segment>
 <segment>
 <pinref part="GND33" gate="1" pin="GND"/>
 <pinref part="U$2" gate="G$1" pin="OUT-"/>
-<wire x1="414.02" y1="386.08" x2="414.02" y2="388.62" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="388.62" x2="408.94" y2="388.62" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="381" x2="414.02" y2="383.54" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="383.54" x2="408.94" y2="383.54" width="0.1524" layer="91"/>
 <pinref part="C25" gate="G$1" pin="2"/>
-<junction x="414.02" y="388.62"/>
+<junction x="414.02" y="383.54"/>
 </segment>
 <segment>
 <pinref part="GND34" gate="1" pin="GND"/>
@@ -28976,6 +29002,16 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <pinref part="OVERRIDE_EN2" gate="A" pin="3"/>
 <wire x1="363.22" y1="266.7" x2="393.7" y2="266.7" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="Q1" gate="NMOS" pin="S"/>
+<wire x1="160.02" y1="243.84" x2="160.02" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="GND43" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="Q2" gate="NMOS" pin="S"/>
+<wire x1="160.02" y1="172.72" x2="160.02" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="GND48" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -29046,10 +29082,10 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <segment>
 <pinref part="U$2" gate="G$1" pin="IN+"/>
 <pinref part="P+21" gate="1" pin="+12V"/>
-<wire x1="381" y1="396.24" x2="378.46" y2="396.24" width="0.1524" layer="91"/>
-<wire x1="378.46" y1="396.24" x2="378.46" y2="401.32" width="0.1524" layer="91"/>
+<wire x1="381" y1="391.16" x2="378.46" y2="391.16" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="391.16" x2="378.46" y2="396.24" width="0.1524" layer="91"/>
 <pinref part="C24" gate="G$1" pin="1"/>
-<junction x="378.46" y="396.24"/>
+<junction x="378.46" y="391.16"/>
 </segment>
 <segment>
 <pinref part="P+5" gate="1" pin="+12V"/>
@@ -29869,6 +29905,11 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <pinref part="K5" gate="A" pin="DS2"/>
 <label x="190.5" y="187.96" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="335.28" y1="383.54" x2="340.36" y2="383.54" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="IN-"/>
+<label x="335.28" y="381" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="120_NEUTRAL" class="6">
 <segment>
@@ -29894,6 +29935,11 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <wire x1="190.5" y1="180.34" x2="200.66" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="FIRE_OUT" gate="-6" pin="KL"/>
 <label x="187.96" y="182.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="335.28" y1="391.16" x2="340.36" y2="391.16" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="IN+"/>
+<label x="335.28" y="388.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -30548,18 +30594,6 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <label x="157.48" y="330.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GND2" class="8">
-<segment>
-<pinref part="Q1" gate="NMOS" pin="S"/>
-<pinref part="SUPPLY1" gate="G$1" pin="GND2"/>
-<wire x1="160.02" y1="243.84" x2="160.02" y2="238.76" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="Q2" gate="NMOS" pin="S"/>
-<pinref part="SUPPLY8" gate="G$1" pin="GND2"/>
-<wire x1="160.02" y1="172.72" x2="160.02" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$49" class="0">
 <segment>
 <pinref part="D12" gate="D1" pin="A"/>
@@ -30703,10 +30737,10 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 <segment>
 <pinref part="U$2" gate="G$1" pin="OUT+"/>
 <pinref part="SUPPLY2" gate="G$1" pin="+14V"/>
-<wire x1="408.94" y1="396.24" x2="414.02" y2="396.24" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="396.24" x2="414.02" y2="401.32" width="0.1524" layer="91"/>
+<wire x1="408.94" y1="391.16" x2="414.02" y2="391.16" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="391.16" x2="414.02" y2="393.7" width="0.1524" layer="91"/>
 <pinref part="C25" gate="G$1" pin="1"/>
-<junction x="414.02" y="396.24"/>
+<junction x="414.02" y="391.16"/>
 </segment>
 <segment>
 <label x="157.48" y="119.38" size="1.778" layer="95"/>
@@ -30726,15 +30760,17 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 </net>
 <net name="+5V/2" class="0">
 <segment>
-<pinref part="5V/2_IN" gate="-2" pin="KL"/>
-<pinref part="SUPPLY4" gate="G$1" pin="+5V/2"/>
-<wire x1="347.98" y1="398.78" x2="345.44" y2="398.78" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="398.78" x2="345.44" y2="401.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="K3" gate="G$2" pin="S"/>
 <pinref part="SUPPLY6" gate="G$1" pin="+5V/2"/>
 <wire x1="185.42" y1="50.8" x2="185.42" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY4" gate="G$1" pin="+5V/2"/>
+<pinref part="C26" gate="G$1" pin="1"/>
+<wire x1="370.84" y1="393.7" x2="370.84" y2="391.16" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="OUT+"/>
+<wire x1="370.84" y1="391.16" x2="368.3" y2="391.16" width="0.1524" layer="91"/>
+<junction x="370.84" y="391.16"/>
 </segment>
 </net>
 <net name="N$48" class="0">
@@ -30753,16 +30789,18 @@ Source: &lt;a href="http://www.farnell.com/datasheets/13482.pdf"&gt;Data sheet&l
 </net>
 <net name="GND3" class="1">
 <segment>
-<pinref part="5V/2_IN" gate="-1" pin="KL"/>
-<wire x1="347.98" y1="391.16" x2="345.44" y2="391.16" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="391.16" x2="345.44" y2="388.62" width="0.1524" layer="91"/>
-<pinref part="SUPPLY5" gate="G$1" pin="GND3"/>
-</segment>
-<segment>
 <pinref part="FIRE_OUT" gate="-2" pin="KL"/>
 <pinref part="SUPPLY10" gate="G$1" pin="GND3"/>
 <wire x1="198.12" y1="25.4" x2="193.04" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="25.4" x2="193.04" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="OUT-"/>
+<pinref part="C26" gate="G$1" pin="2"/>
+<wire x1="368.3" y1="383.54" x2="370.84" y2="383.54" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="G$1" pin="GND3"/>
+<wire x1="370.84" y1="383.54" x2="370.84" y2="381" width="0.1524" layer="91"/>
+<junction x="370.84" y="383.54"/>
 </segment>
 </net>
 <net name="N$53" class="0">

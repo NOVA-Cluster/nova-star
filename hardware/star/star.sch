@@ -26331,10 +26331,10 @@ IN -</text>
 <text x="66.675" y="16.51" size="1.27" layer="21">OUT +
 
 OUT -</text>
-<hole x="3.175" y="47.625" drill="6"/>
-<hole x="73.025" y="47.625" drill="6"/>
-<hole x="73.025" y="3.175" drill="6"/>
-<hole x="3.175" y="3.175" drill="6"/>
+<hole x="3.175" y="47.625" drill="3.4"/>
+<hole x="73.025" y="47.625" drill="3.4"/>
+<hole x="73.025" y="3.175" drill="3.4"/>
+<hole x="3.175" y="3.175" drill="3.4"/>
 <text x="1.27" y="52.07" size="1.27" layer="21">&gt;NAME</text>
 </package>
 <package name="SKA15B">

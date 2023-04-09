@@ -43,18 +43,19 @@ void loop()
   // put your main code here, to run repeatedly:
   mcp_a.digitalWrite(FOG_POWER, HIGH);
 
+  // if (1)
   if (mcp_a.digitalRead(FOG_STATUS))
   {
     uint16_t fogRandomDelay = 0;
     fogRandomDelay = random(10, 120);
 
-    Serial.println("Fog machine ready - GO");
+    Serial.println("Fog machine activate!");
     mcp_a.digitalWrite(FOG_ACTIVATE, HIGH);
-    delay(1000);
+    delay(1500);
 
-    Serial.print("Fog machine ready - Will delay for ");
+    Serial.print("Fog machine - Will delay for ");
     Serial.print(fogRandomDelay);
-    Serial.print(" seconds.");
+    Serial.println(" seconds.");
     mcp_a.digitalWrite(FOG_ACTIVATE, LOW);
     delay(fogRandomDelay * 1000);
   }

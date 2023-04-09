@@ -37,16 +37,16 @@ void loop()
   // put your main code here, to run repeatedly:
   mcp_a.digitalWrite(FOG_POWER, HIGH);
   // mcp_a.digitalWrite(FOG_ACTIVATE, HIGH);
-  //delay(1000);
-  //mcp_a.digitalWrite(FOG_POWER, LOW);
+  // delay(1000);
+  // mcp_a.digitalWrite(FOG_POWER, LOW);
   //  mcp_a.digitalWrite(FOG_ACTIVATE, LOW);
   if (mcp_a.digitalRead(FOG_STATUS))
-  //if (1)
+  // if (1)
   {
     Serial.println("Fog machine ready!");
-  mcp_a.digitalWrite(FOG_ACTIVATE, HIGH);
-  delay(3000);
-  mcp_a.digitalWrite(FOG_ACTIVATE, LOW);
-  delay(5000);
+    mcp_a.digitalWrite(FOG_ACTIVATE, HIGH);
+    delay(3000);
+    mcp_a.digitalWrite(FOG_ACTIVATE, LOW);
+    delay(5000);
   }
 }

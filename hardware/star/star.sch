@@ -26359,17 +26359,17 @@ OUT -</text>
 <wire x1="0" y1="0" x2="50.8" y2="0" width="0.127" layer="21"/>
 <wire x1="50.8" y1="0" x2="50.8" y2="11" width="0.127" layer="21"/>
 <wire x1="50.8" y1="11" x2="0" y2="11" width="0.127" layer="21"/>
-<pad name="VOUT1" x="1.3" y="7" drill="0.9" shape="square"/>
-<pad name="VOUT2" x="3.84" y="7" drill="0.9" shape="square"/>
-<pad name="VOUT3" x="6.38" y="7" drill="0.9" shape="square"/>
-<pad name="VOUT4" x="8.92" y="7" drill="0.9" shape="square"/>
-<pad name="COM1" x="11.46" y="7" drill="0.9" shape="square"/>
-<pad name="COM2" x="36.86" y="7" drill="0.9" shape="square"/>
-<pad name="VIN1" x="39.4" y="7" drill="0.9" shape="square"/>
-<pad name="VIN2" x="41.94" y="7" drill="0.9" shape="square"/>
-<pad name="NC" x="44.48" y="7" drill="0.9" shape="square"/>
-<pad name="TRIM" x="47.02" y="7" drill="0.9" shape="square"/>
-<pad name="RC" x="49.56" y="7" drill="0.9" shape="square"/>
+<pad name="VOUT1" x="1.3" y="5.73" drill="0.9" shape="square"/>
+<pad name="VOUT2" x="3.84" y="5.73" drill="0.9" shape="square"/>
+<pad name="VOUT3" x="6.38" y="5.73" drill="0.9" shape="square"/>
+<pad name="VOUT4" x="8.92" y="5.73" drill="0.9" shape="square"/>
+<pad name="COM1" x="11.46" y="5.73" drill="0.9" shape="square"/>
+<pad name="COM2" x="36.86" y="5.73" drill="0.9" shape="square"/>
+<pad name="VIN1" x="39.4" y="5.73" drill="0.9" shape="square"/>
+<pad name="VIN2" x="41.94" y="5.73" drill="0.9" shape="square"/>
+<pad name="NC" x="44.48" y="5.73" drill="0.9" shape="square"/>
+<pad name="TRIM" x="47.02" y="5.73" drill="0.9" shape="square"/>
+<pad name="RC" x="49.56" y="5.73" drill="0.9" shape="square"/>
 <text x="0" y="11.43" size="1.27" layer="21">&gt;NAME</text>
 </package>
 </packages>

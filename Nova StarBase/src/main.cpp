@@ -17,7 +17,8 @@ void setup()
   pinMode(BLOWER_DUTY_PIN, OUTPUT);
 
   Serial.println("Setting up Blower Duty Pin to 100%");
-  digitalWrite(BLOWER_DUTY_PIN, HIGH);
+  //digitalWrite(BLOWER_DUTY_PIN, HIGH);
+  analogWrite(BLOWER_DUTY_PIN, 150); // Note: Best not to use blower below ~130 (~12.2v)
 
   Serial.println("MCP23X17 interfaces setup.");
   if (!mcp_a.begin_I2C(0x20))

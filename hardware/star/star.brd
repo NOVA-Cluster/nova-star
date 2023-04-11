@@ -297,7 +297,7 @@ Gnd</text>
 <vertex x="36.195" y="73.66"/>
 <vertex x="34.29" y="73.66"/>
 </polygon>
-<text x="138.43" y="16.51" size="1.016" layer="21" rot="R180">3v3 GND SCL SDA</text>
+<text x="138.43" y="16.51" size="1.016" layer="21" rot="R180">SDA SCL GND 3v3</text>
 <rectangle x1="34.29" y1="160.02" x2="41.275" y2="163.83" layer="1"/>
 <rectangle x1="40.64" y1="167.64" x2="46.99" y2="172.72" layer="1"/>
 <rectangle x1="45.72" y1="160.02" x2="52.705" y2="163.83" layer="1"/>

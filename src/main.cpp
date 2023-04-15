@@ -10,32 +10,41 @@ void setup()
   delay(500); // Give time for the serial monitor to connect
   Serial.println("NOVA: STARBASE");
 
+  uint8_t blowerDuty = 150;
+
   // pinMode(FOG_STATUS, INPUT);
   // pinMode(FOG_POWER, OUTPUT);
   // pinMode(FOG_ACTIVATE, OUTPUT);
 
   pinMode(BLOWER_DUTY_PIN, OUTPUT);
 
-  Serial.println("Setting up Blower Duty Pin to 100%");
-  //digitalWrite(BLOWER_DUTY_PIN, HIGH);
-  analogWrite(BLOWER_DUTY_PIN, 150); // Note: Best not to use blower below ~130 (~12.2v)
+  Serial.print("Blower: Setting up Blower Duty Pin (Max is 255) @ ");
+  Serial.println(blowerDuty);
 
-  Serial.println("MCP23X17 interfaces setup.");
+  // digitalWrite(BLOWER_DUTY_PIN, HIGH);
+  analogWrite(BLOWER_DUTY_PIN, blowerDuty); // Note: Best not to use blower below ~130 (~12.2v)
+  // analogWrite(BLOWER_DUTY_PIN, 255); // Note: Best not to use blower below ~130 (~12.2v)
+
+  Serial.println("MCP23X17: interfaces setup.");
   if (!mcp_a.begin_I2C(0x20))
   {
-    Serial.println("Error - mcp_a");
+    Serial.println("MCP23X17: interfaces setup error. May be a problem with the I2C bus.");
     while (1)
-      ;
+    {
+      // Do nothing
+    };
   }
 
-  Serial.println("Setting Fog Machine Pin States.");
+  Serial.println("Fog Machine: Setting Pin States.");
 
   mcp_a.pinMode(FOG_STATUS, INPUT);
   mcp_a.pinMode(FOG_POWER, OUTPUT);
   mcp_a.pinMode(FOG_ACTIVATE, OUTPUT);
 
-  Serial.println("Turning off fog states for now.");
-  mcp_a.digitalWrite(FOG_POWER, LOW);
+  Serial.println("Fog Machine: Turning on power to the Fog Machine.");
+  mcp_a.digitalWrite(FOG_POWER, HIGH);
+
+  Serial.println("Fog Machine: Ensuring the machine is not currently active.");
   mcp_a.digitalWrite(FOG_ACTIVATE, LOW);
 }
 
@@ -50,11 +59,11 @@ void loop()
     uint16_t fogRandomDelay = 0;
     fogRandomDelay = random(10, 120);
 
-    Serial.println("Fog machine activate!");
+    Serial.println("Fog Machine: activate!");
     mcp_a.digitalWrite(FOG_ACTIVATE, HIGH);
     delay(1500);
 
-    Serial.print("Fog machine - Will delay for ");
+    Serial.print("Fog Machine: Will delay for ");
     Serial.print(fogRandomDelay);
     Serial.println(" seconds.");
     mcp_a.digitalWrite(FOG_ACTIVATE, LOW);

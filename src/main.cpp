@@ -57,11 +57,15 @@ void loop()
   if (mcp_a.digitalRead(FOG_STATUS))
   {
     uint16_t fogRandomDelay = 0;
-    fogRandomDelay = random(10, 120);
+    uint16_t fogRandomOutputDelay = 0;
+    fogRandomDelay = random(5, 30);
+    fogRandomOutputDelay = random(200, 1000);
 
-    Serial.println("Fog Machine: activate!");
+    Serial.print("Fog Machine: Will activate for ");
+    Serial.print(fogRandomOutputDelay);
+    Serial.println(" ms.");
     mcp_a.digitalWrite(FOG_ACTIVATE, HIGH);
-    delay(1500);
+    delay(fogRandomOutputDelay);
 
     Serial.print("Fog Machine: Will delay for ");
     Serial.print(fogRandomDelay);

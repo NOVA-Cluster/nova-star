@@ -10,7 +10,8 @@ void setup()
   delay(500); // Give time for the serial monitor to connect
   Serial.println("NOVA: STARBASE");
 
-  uint8_t blowerDuty = 150;
+  uint8_t blowerDuty = 250;
+  float blowerVolt = ((blowerDuty / 255.0) * 24.0);
 
   // pinMode(FOG_STATUS, INPUT);
   // pinMode(FOG_POWER, OUTPUT);
@@ -19,7 +20,10 @@ void setup()
   pinMode(BLOWER_DUTY_PIN, OUTPUT);
 
   Serial.print("Blower: Setting up Blower Duty Pin (Max is 255) @ ");
-  Serial.println(blowerDuty);
+  Serial.print(blowerDuty);
+  Serial.print(" or  ");
+  Serial.print(blowerVolt);
+  Serial.println(" volts DC");
 
   // digitalWrite(BLOWER_DUTY_PIN, HIGH);
   analogWrite(BLOWER_DUTY_PIN, blowerDuty); // Note: Best not to use blower below ~130 (~12.2v)

@@ -27280,9 +27280,7 @@ OUT -</text>
 <attribute name="LCSC_PART" value="C2995335"/>
 </part>
 <part name="D13" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" deviceset="D_" device="_SMA" package3d_urn="urn:adsk.eagle:package:38668548/1" technology="SS210_MDD"/>
-<part name="Q3" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="MOSFET-NCH" device="-FDD8780" package3d_urn="urn:adsk.eagle:package:38459/1" value="35A/25V/8.5mΩ">
-<attribute name="LCSC_PART" value="C2995335"/>
-</part>
+<part name="Q3" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="MOSFET-NCH" device="-FDD8780" package3d_urn="urn:adsk.eagle:package:38459/1" value="35A/25V/8.5mΩ"/>
 <part name="D14" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" deviceset="D_" device="_SMA" package3d_urn="urn:adsk.eagle:package:38668548/1" technology="SS210_MDD"/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND3" device=""/>
 <part name="Q4" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="MOSFET-NCH" device="-FDD8780" package3d_urn="urn:adsk.eagle:package:38459/1" value="35A/25V/8.5mΩ">
@@ -27497,6 +27495,13 @@ OUT -</text>
 <part name="+3V23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="R15" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="2K"/>
+<part name="D32" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="blue">
+<attribute name="JLC_ROTATION" value="180"/>
+<attribute name="LCSC_PART" value="C72041"/>
+</part>
+<part name="R17" library="JLC PCB Basic Parts_loc" library_urn="urn:adsk.eagle:library:38668506" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="1K" value="R_1K_0603"/>
+<part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND3" device=""/>
+<part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V/2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27779,8 +27784,8 @@ OUT -</text>
 <attribute name="VALUE" x="361.95" y="169.418" size="1.778" layer="96"/>
 <attribute name="LCSC_PART" x="365.76" y="172.72" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND99" gate="1" x="378.46" y="157.48" smashed="yes">
-<attribute name="VALUE" x="375.92" y="154.94" size="1.778" layer="96"/>
+<instance part="GND99" gate="1" x="378.46" y="160.02" smashed="yes">
+<attribute name="VALUE" x="375.92" y="157.48" size="1.778" layer="96"/>
 </instance>
 <instance part="R139" gate="G$1" x="365.76" y="165.1" smashed="yes">
 <attribute name="NAME" x="361.95" y="166.5986" size="1.778" layer="95"/>
@@ -28220,7 +28225,6 @@ OUT -</text>
 <instance part="Q3" gate="NMOS" x="200.66" y="101.6" smashed="yes">
 <attribute name="NAME" x="205.74" y="101.6" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="205.74" y="99.06" size="1.778" layer="96" font="vector"/>
-<attribute name="LCSC_PART" x="200.66" y="101.6" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="D14" gate="D1" x="195.58" y="116.84" smashed="yes" rot="R90">
 <attribute name="NAME" x="193.802" y="114.3" size="1.778" layer="95" rot="R90"/>
@@ -28692,6 +28696,22 @@ OUT -</text>
 <attribute name="NAME" x="166.37" y="39.5986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="166.37" y="34.798" size="1.778" layer="96"/>
 </instance>
+<instance part="D32" gate="G$1" x="347.98" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="352.552" y="151.511" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="347.472" y="149.225" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
+<attribute name="LCSC_PART" x="347.98" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="JLC_ROTATION" x="347.98" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R17" gate="R1" x="365.76" y="154.94" smashed="yes" rot="R180">
+<attribute name="NAME" x="369.57" y="153.4414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="369.57" y="158.242" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY2" gate="G$1" x="378.46" y="149.86" smashed="yes">
+<attribute name="VALUE" x="376.047" y="146.685" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY3" gate="G$1" x="312.42" y="160.02" smashed="yes">
+<attribute name="VALUE" x="308.61" y="163.195" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="ESP32_BUS:+3V3,+5V,2,4,5,12,13,14,15,16,17,18,19,20,21/SDA,22/SCL,23,25_POOFER,26_BOOM_IGNITER,27_BOOM_FUEL,32_BOOM_BLOWER,33,34,35,36,39,GND">
@@ -28911,7 +28931,7 @@ OUT -</text>
 <pinref part="R131" gate="G$1" pin="2"/>
 <wire x1="378.46" y1="180.34" x2="378.46" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="378.46" y1="172.72" x2="378.46" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="378.46" y1="165.1" x2="378.46" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="165.1" x2="378.46" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="180.34" x2="378.46" y2="180.34" width="0.1524" layer="91"/>
 <junction x="378.46" y="180.34"/>
 <pinref part="R132" gate="G$1" pin="2"/>
@@ -30408,6 +30428,7 @@ OUT -</text>
 <segment>
 <pinref part="5V_CTRL_LAZERS" gate="G$1" pin="7"/>
 <wire x1="304.8" y1="33.02" x2="287.02" y2="33.02" width="0.1524" layer="91"/>
+<label x="307.34" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EXP_ULN3" class="0">
@@ -30433,6 +30454,7 @@ OUT -</text>
 <segment>
 <pinref part="5V_CTRL_LAZERS" gate="G$1" pin="5"/>
 <wire x1="304.8" y1="27.94" x2="287.02" y2="27.94" width="0.1524" layer="91"/>
+<label x="307.34" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EXP_ULN6" class="0">
@@ -30444,6 +30466,7 @@ OUT -</text>
 <segment>
 <pinref part="5V_CTRL_LAZERS" gate="G$1" pin="3"/>
 <wire x1="304.8" y1="22.86" x2="287.02" y2="22.86" width="0.1524" layer="91"/>
+<label x="307.34" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EXP_ULN7" class="0">
@@ -30455,6 +30478,7 @@ OUT -</text>
 <segment>
 <pinref part="5V_CTRL_LAZERS" gate="G$1" pin="1"/>
 <wire x1="304.8" y1="17.78" x2="287.02" y2="17.78" width="0.1524" layer="91"/>
+<label x="307.34" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BOOMER_BLOWER" class="0">
@@ -31032,6 +31056,12 @@ OUT -</text>
 <wire x1="416.56" y1="391.16" x2="416.56" y2="388.62" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="388.62" x2="414.02" y2="388.62" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="D32" gate="G$1" pin="A"/>
+<pinref part="SUPPLY3" gate="G$1" pin="+5V/2"/>
+<wire x1="345.44" y1="154.94" x2="312.42" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="154.94" x2="312.42" y2="157.48" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$48" class="0">
 <segment>
@@ -31059,6 +31089,12 @@ OUT -</text>
 <pinref part="SUPPLY1" gate="G$1" pin="GND3"/>
 <wire x1="414.02" y1="381" x2="416.56" y2="381" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="381" x2="416.56" y2="378.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R17" gate="R1" pin="1"/>
+<pinref part="SUPPLY2" gate="G$1" pin="GND3"/>
+<wire x1="370.84" y1="154.94" x2="378.46" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="378.46" y1="154.94" x2="378.46" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$53" class="0">
@@ -31141,6 +31177,13 @@ OUT -</text>
 <wire x1="165.1" y1="99.06" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="NMOS" pin="G"/>
 <wire x1="165.1" y1="99.06" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="D32" gate="G$1" pin="C"/>
+<pinref part="R17" gate="R1" pin="2"/>
+<wire x1="353.06" y1="154.94" x2="360.68" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

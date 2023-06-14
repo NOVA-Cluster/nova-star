@@ -64,3 +64,22 @@ hardware/star/star.pro
 hardware/star/star.pro
 *.pro
 
+.pio/build/nova_starbase/firmware.bin
+.pio/build/nova_starbase/.sconsign39.dblite
+.pio/build/nova_starbase/firmware.bin
+.pio/build/nova_starbase/firmware.elf
+.pio/build/nova_starbase/firmware.map
+.pio/build/nova_starbase/idedata.json
+.pio/build/project.checksum
+.pio/libdeps/nova_starbase/integrity.dat
+.vscode/c_cpp_properties.json
+.pio/build/nova_starbase/.sconsign39.dblite
+.pio/build/nova_starbase/firmware.bin
+.pio/build/nova_starbase/firmware.elf
+.pio/build/nova_starbase/firmware.map
+.pio/build/nova_starbase/idedata.json
+.pio/build/project.checksum
+.pio/libdeps/nova_starbase/integrity.dat
+.vscode/c_cpp_properties.json
+*.dblite
+*.dblite

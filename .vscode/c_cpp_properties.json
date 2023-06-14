@@ -10,6 +10,8 @@
             "includePath": [
                 "/Users/jmcasler/Documents/GitHub/mchamster/nova-star/include",
                 "/Users/jmcasler/Documents/GitHub/mchamster/nova-star/src",
+                "/Users/jmcasler/Documents/GitHub/mchamster/nova-star/.pio/libdeps/nova_starbase/esp_dmx/src",
+                "/Users/jmcasler/Documents/GitHub/mchamster/nova-star/.pio/libdeps/nova_starbase/FastLED/src",
                 "/Users/jmcasler/Documents/GitHub/mchamster/nova-star/.pio/libdeps/nova_starbase/Adafruit MCP23017 Arduino Library/src",
                 "/Users/jmcasler/Documents/GitHub/mchamster/nova-star/.pio/libdeps/nova_starbase/Adafruit BusIO",
                 "/Users/jmcasler/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src",
@@ -243,6 +245,8 @@
                 "path": [
                     "/Users/jmcasler/Documents/GitHub/mchamster/nova-star/include",
                     "/Users/jmcasler/Documents/GitHub/mchamster/nova-star/src",
+                    "/Users/jmcasler/Documents/GitHub/mchamster/nova-star/.pio/libdeps/nova_starbase/esp_dmx/src",
+                    "/Users/jmcasler/Documents/GitHub/mchamster/nova-star/.pio/libdeps/nova_starbase/FastLED/src",
                     "/Users/jmcasler/Documents/GitHub/mchamster/nova-star/.pio/libdeps/nova_starbase/Adafruit MCP23017 Arduino Library/src",
                     "/Users/jmcasler/Documents/GitHub/mchamster/nova-star/.pio/libdeps/nova_starbase/Adafruit BusIO",
                     "/Users/jmcasler/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src",
@@ -473,7 +477,7 @@
                 ]
             },
             "defines": [
-                "PLATFORMIO=60106",
+                "PLATFORMIO=60107",
                 "ARDUINO_ESP32_DEV",
                 "USE_THREAD_NAMES",
                 "HAVE_CONFIG_H",

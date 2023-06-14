@@ -8,10 +8,13 @@
 Adafruit_MCP23X17 mcp_a;
 
 dmx_port_t dmxPort = 1;
-// byte data[DMX_PACKET_SIZE];
 byte data[DMX_PACKET_SIZE];
+
 unsigned long lastUpdate = millis();
-CRGB leds[2];
+
+#define NUM_LEDS 4
+CRGBArray<NUM_LEDS> leds;
+uint8_t hue = 0;
 
 void setup()
 {
@@ -54,14 +57,11 @@ void setup()
   }
 
   Serial.println("DMX: Setting Pin States.");
-  if (1)
-  {
-    mcp_a.pinMode(DMX_DE, OUTPUT);
-    mcp_a.pinMode(DMX_RE, OUTPUT);
+  mcp_a.pinMode(DMX_DE, OUTPUT);
+  mcp_a.pinMode(DMX_RE, OUTPUT);
 
-    mcp_a.digitalWrite(DMX_DE, HIGH);
-    mcp_a.digitalWrite(DMX_RE, HIGH);
-  }
+  mcp_a.digitalWrite(DMX_DE, HIGH);
+  mcp_a.digitalWrite(DMX_RE, HIGH);
 
   Serial.println("Fog Machine: Setting Pin States.");
 
@@ -78,6 +78,8 @@ void setup()
 
 void loop()
 {
+  static uint8_t hue;
+
   // put your main code here, to run repeatedly:
   mcp_a.digitalWrite(FOG_POWER, HIGH);
 
@@ -108,36 +110,58 @@ void loop()
   unsigned long now = millis();
   // leds[0].
 
-  if (now - lastUpdate >= 1000)
+  if (now - lastUpdate >= 70)
   {
     /* Increment every byte in our packet. Notice we don't increment the zeroeth
       byte, since that is our DMX start code. Then we must write our changes to
       the DMX packet. Maximum is kept in DMX_PACKET_SIZE */
     data[0] = 0x00; // Null
 
-    // Channel 1
-    data[1] = 0xff; // Brightness
-    data[2] = 0x00; // Red
-    data[3] = 0xff; // Green
-    data[4] = 0x00; // Blue
-    data[5] = 0x00;
-    data[6] = 0x00;
-    data[7] = 0x00; // Null
+    /*
+        // Channel 1
+        data[1] = 0xff; // Brightness
+        data[2] = 0x00; // Red
+        data[3] = 0xff; // Green
+        data[4] = 0x00; // Blue
+        data[5] = 0x00;
+        data[6] = 0x00;
+        data[7] = 0x00; // Null
 
-    // Channel 2
-    data[8] = 0xff;  // Brightness
-    data[9] = 0xff;  // Red
-    data[10] = 0x00; // Green
-    data[11] = 0xff; // Blue
-    data[12] = 0x00;
-    data[13] = 0x00;
-    data[14] = 0x00; // Null
+        // Channel 2
+        data[8] = 0xff;  // Brightness
+        data[9] = 0xff;  // Red
+        data[10] = 0x00; // Green
+        data[11] = 0xff; // Blue
+        data[12] = 0x00;
+        data[13] = 0x00;
+        data[14] = 0x00; // Null
+    */
+
+    for (int i = 0; i < NUM_LEDS; i++)
+    {
+      // let's set an led value
+      leds[i] = CHSV(hue + (i * 127), 255, 255);
+    }
+
+    data[1] = 0xff; // Brightness
+    data[2] = leds[0].r;
+    data[3] = leds[0].g;
+    data[4] = leds[0].b;
+
+
+    data[8] = 0xff; // Brightness
+    data[9] = leds[1].r;
+    data[10] = leds[1].g;
+    data[11] = leds[1].b;
+
+    hue++;
 
     dmx_write(dmxPort, data, DMX_PACKET_SIZE);
 
     /* Log our changes to the Serial Monitor. */
-    Serial.printf("Sending DMX 0x%02X\n", data[1]);
     lastUpdate = now;
+    Serial.printf("Sending DMX 0x%02X 0x%02X 0x%02X\n", data[2], data[3], data[4]);
+    Serial.printf("            0x%02X 0x%02X 0x%02X\n", data[9], data[10], data[11]);
   }
 
   /* Now we can transmit the DMX packet! */

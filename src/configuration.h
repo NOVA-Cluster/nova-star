@@ -15,5 +15,3 @@
 
 #define DMX_RO 2 
 #define DMX_DI 4 
-
-#define DMX_NOVA_PACKET_SIZE 32

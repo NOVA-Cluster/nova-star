@@ -83,3 +83,4 @@ hardware/star/star.pro
 .vscode/c_cpp_properties.json
 *.dblite
 *.dblite
+*.dblite

@@ -1,11 +1,13 @@
 #include <Arduino.h>
 #include "configuration.h"
-#include <Adafruit_MCP23X17.h>
+// #include <Adafruit_MCP23X17.h>
 // #include <DmxSimple.h>
 #include <FastLED.h>
 #include "esp_dmx.h"
+#include "NovaNet.h"
+#include "NovaIO.h"
 
-Adafruit_MCP23X17 mcp_a;
+// Adafruit_MCP23X17 mcp_a;
 
 dmx_port_t dmxPort = 1;
 byte data[DMX_PACKET_SIZE];
@@ -16,6 +18,8 @@ unsigned long lastUpdate = millis();
 CRGBArray<NUM_LEDS> leds;
 uint8_t hue = 0;
 
+void TaskNovaNet(void *pvParameters);
+
 void setup()
 {
   Serial.begin(921600);
@@ -23,6 +27,13 @@ void setup()
   Serial.println("NOVA: STARBASE");
 
   pinMode(BLOWER_DUTY_PIN, OUTPUT);
+
+  Serial.println("Set clock of I2C interface to 400khz");
+  Wire.begin();
+  Wire.setClock(400000UL);
+
+  Serial.println("new NovaIO");
+  novaIO = new NovaIO();
 
   /* Set the DMX hardware pins to the pins that we want to use. */
   dmx_set_pin(dmxPort, DMX_DI, DMX_RO, 0);
@@ -42,49 +53,67 @@ void setup()
   Serial.print(blowerVolt);
   Serial.println(" volts DC");
 
+  Serial.println("new NovaNet");
+  novaNet = new NovaNet();
+
   // digitalWrite(BLOWER_DUTY_PIN, HIGH);
   analogWrite(BLOWER_DUTY_PIN, blowerDuty); // Note: Best not to use blower below ~130 (~12.2v)
   // analogWrite(BLOWER_DUTY_PIN, 255); // Note: Best not to use blower below ~130 (~12.2v)
 
-  Serial.println("MCP23X17: interfaces setup.");
-  if (!mcp_a.begin_I2C(0x20))
-  {
-    Serial.println("MCP23X17: interfaces setup error. May be a problem with the I2C bus.");
-    while (1)
+  /*
+    Serial.println("MCP23X17: interfaces setup.");
+    if (!mcp_a.begin_I2C(0x20))
     {
-      // Do nothing
-    };
-  }
+      Serial.println("MCP23X17: interfaces setup error. May be a problem with the I2C bus.");
+      while (1)
+      {
+        // Do nothing
+      };
+    }
+  */
 
   Serial.println("DMX: Setting Pin States.");
-  mcp_a.pinMode(DMX_DE, OUTPUT);
-  mcp_a.pinMode(DMX_RE, OUTPUT);
+  novaIO->mcp_a.pinMode(DMX_DE, OUTPUT);
+  //mcp_a.pinMode(DMX_DE, OUTPUT);
+  novaIO->mcp_a.pinMode(DMX_RE, OUTPUT);
+  //mcp_a.pinMode(DMX_RE, OUTPUT);
 
-  mcp_a.digitalWrite(DMX_DE, HIGH);
-  mcp_a.digitalWrite(DMX_RE, HIGH);
+  novaIO->mcpA_digitalWrite(DMX_DE, HIGH);
+  //mcp_a.digitalWrite(DMX_DE, HIGH);
+  novaIO->mcpA_digitalWrite(DMX_RE, HIGH);
+  //mcp_a.digitalWrite(DMX_RE, HIGH);
 
   Serial.println("Fog Machine: Setting Pin States.");
 
-  mcp_a.pinMode(FOG_STATUS, INPUT);
-  mcp_a.pinMode(FOG_POWER, OUTPUT);
-  mcp_a.pinMode(FOG_ACTIVATE, OUTPUT);
+  novaIO->mcp_a.pinMode(FOG_STATUS, INPUT);
+  novaIO->mcp_a.pinMode(FOG_POWER, OUTPUT);
+  novaIO->mcp_a.pinMode(FOG_ACTIVATE, OUTPUT);
 
   Serial.println("Fog Machine: Turning on power to the Fog Machine.");
-  mcp_a.digitalWrite(FOG_POWER, HIGH);
+  novaIO->mcp_a.digitalWrite(FOG_POWER, HIGH);
 
   Serial.println("Fog Machine: Ensuring the machine is not currently active.");
-  mcp_a.digitalWrite(FOG_ACTIVATE, LOW);
+  novaIO->mcp_a.digitalWrite(FOG_ACTIVATE, LOW);
+
+  Serial.println("Create TaskNovaNet");
+  xTaskCreate(&TaskNovaNet, "TaskNovaNet", 2048, NULL, 5, NULL);
+  Serial.println("Create TaskNovaNet - Done");
 }
 
 void loop()
 {
+  /* Best not to have anything in this loop.
+    Everything should be in freeRTOS tasks
+  */
   static uint8_t hue;
 
   // put your main code here, to run repeatedly:
-  mcp_a.digitalWrite(FOG_POWER, HIGH);
 
-  // if (1)
-  if (mcp_a.digitalRead(FOG_STATUS))
+  novaIO->mcpA_digitalWrite(FOG_POWER, HIGH);
+  //mcp_a.digitalWrite(FOG_POWER, HIGH);
+
+  // Todo -- Need to update this to a threadsafe wrapper
+  if (novaIO->mcp_a.digitalRead(FOG_STATUS))
   {
     uint16_t fogRandomDelay = 0;
     uint16_t fogRandomOutputDelay = 0;
@@ -94,13 +123,13 @@ void loop()
     Serial.print("Fog Machine: Will activate for ");
     Serial.print(fogRandomOutputDelay);
     Serial.println(" ms.");
-    mcp_a.digitalWrite(FOG_ACTIVATE, HIGH);
+    novaIO->mcpA_digitalWrite(FOG_ACTIVATE, HIGH);
     delay(fogRandomOutputDelay);
 
     Serial.print("Fog Machine: Will delay for ");
     Serial.print(fogRandomDelay);
     Serial.println(" seconds.");
-    mcp_a.digitalWrite(FOG_ACTIVATE, LOW);
+    novaIO->mcpA_digitalWrite(FOG_ACTIVATE, LOW);
     delay(fogRandomDelay * 1000);
   }
 
@@ -148,7 +177,6 @@ void loop()
     data[3] = leds[0].g;
     data[4] = leds[0].b;
 
-
     data[8] = 0xff; // Brightness
     data[9] = leds[1].r;
     data[10] = leds[1].g;
@@ -176,5 +204,18 @@ void loop()
     /* If we get here, it means that we timed out waiting for the DMX packet to
       send. */
     Serial.println("DMX: Timed out waiting for DMX packet to send.");
+  }
+}
+
+void TaskNovaNet(void *pvParameters) // This is a task.
+{
+  (void)pvParameters;
+
+  Serial.println("TaskNovaNet is running");
+  while (1) // A Task shall never return or exit.
+  {
+    novaNet->loop();
+    yield(); // Should't do anything but it's here incase the watchdog needs it.
+    delay(1);
   }
 }

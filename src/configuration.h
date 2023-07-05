@@ -15,3 +15,24 @@
 
 #define DMX_RO 2 
 #define DMX_DI 4 
+
+
+#define DMX512_MAX 512 // Maximum number of channels on a DMX512 universe.
+
+#define NOVABUF_MAX 1024 // Maximum size of the protocol buffer
+
+/*
+    Options include:
+        9600
+        19200
+        28800
+        38400
+        57600
+        76800
+        115200
+        230400
+        460800
+        576000
+        921600
+*/
+#define NOVANET_BAUD 921600

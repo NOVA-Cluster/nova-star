@@ -28,6 +28,9 @@ void setup()
 
   pinMode(BLOWER_DUTY_PIN, OUTPUT);
 
+  Serial.println("Setting up Serial2");
+  Serial2.begin(921600, SERIAL_8N1, UART2_RX, UART2_TX);
+
   Serial.println("Set clock of I2C interface to 400khz");
   Wire.begin();
   Wire.setClock(400000UL);
@@ -74,14 +77,14 @@ void setup()
 
   Serial.println("DMX: Setting Pin States.");
   novaIO->mcp_a.pinMode(DMX_DE, OUTPUT);
-  //mcp_a.pinMode(DMX_DE, OUTPUT);
+  // mcp_a.pinMode(DMX_DE, OUTPUT);
   novaIO->mcp_a.pinMode(DMX_RE, OUTPUT);
-  //mcp_a.pinMode(DMX_RE, OUTPUT);
+  // mcp_a.pinMode(DMX_RE, OUTPUT);
 
   novaIO->mcpA_digitalWrite(DMX_DE, HIGH);
-  //mcp_a.digitalWrite(DMX_DE, HIGH);
+  // mcp_a.digitalWrite(DMX_DE, HIGH);
   novaIO->mcpA_digitalWrite(DMX_RE, HIGH);
-  //mcp_a.digitalWrite(DMX_RE, HIGH);
+  // mcp_a.digitalWrite(DMX_RE, HIGH);
 
   Serial.println("Fog Machine: Setting Pin States.");
 
@@ -96,7 +99,7 @@ void setup()
   novaIO->mcp_a.digitalWrite(FOG_ACTIVATE, LOW);
 
   Serial.println("Create TaskNovaNet");
-  xTaskCreate(&TaskNovaNet, "TaskNovaNet", 2048, NULL, 5, NULL);
+  xTaskCreate(&TaskNovaNet, "TaskNovaNet", 4096, NULL, 5, NULL);
   Serial.println("Create TaskNovaNet - Done");
 }
 
@@ -110,7 +113,7 @@ void loop()
   // put your main code here, to run repeatedly:
 
   novaIO->mcpA_digitalWrite(FOG_POWER, HIGH);
-  //mcp_a.digitalWrite(FOG_POWER, HIGH);
+  // mcp_a.digitalWrite(FOG_POWER, HIGH);
 
   // Todo -- Need to update this to a threadsafe wrapper
   if (novaIO->mcp_a.digitalRead(FOG_STATUS))
@@ -188,8 +191,8 @@ void loop()
 
     /* Log our changes to the Serial Monitor. */
     lastUpdate = now;
-    Serial.printf("Sending DMX 0x%02X 0x%02X 0x%02X\n", data[2], data[3], data[4]);
-    Serial.printf("            0x%02X 0x%02X 0x%02X\n", data[9], data[10], data[11]);
+    // Serial.printf("Sending DMX 0x%02X 0x%02X 0x%02X\n", data[2], data[3], data[4]);
+    // Serial.printf("            0x%02X 0x%02X 0x%02X\n", data[9], data[10], data[11]);
   }
 
   /* Now we can transmit the DMX packet! */

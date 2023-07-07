@@ -16,6 +16,13 @@
 #define DMX_RO 2 
 #define DMX_DI 4 
 
+#define NOVANET_DE 3 // Expansion A
+#define NOVANET_RE 2 // Expansion A
+
+#define UART2_RX 16
+#define UART2_TX 17
+
+
 
 #define DMX512_MAX 512 // Maximum number of channels on a DMX512 universe.
 

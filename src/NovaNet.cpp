@@ -2,6 +2,7 @@
 #include "NovaNet.h"
 #include "configuration.h"
 #include "pb_arduino.h"
+#include "NovaIO.h"
 
 #include "messaging.pb.h"
 
@@ -19,21 +20,30 @@ NovaNet::NovaNet()
     messaging_Request request = messaging_Request_init_zero;
     Serial.println("NovaNet setup started");
 
-    Serial2.begin(NOVANET_BAUD);
+    //Serial2.begin(NOVANET_BAUD);
+
+    // Set the NovaNet pins to receive
+    novaIO->mcp_digitalWrite(NOVANET_RE, LOW, 0);
+    novaIO->mcp_digitalWrite(NOVANET_DE, HIGH, 0);
 
     // Setup goes in here
 }
 
 void NovaNet::loop()
 {
-    Serial.println("NovaNet loop");
-    //sendProtobuf();
-    delay(1000);
+    //Serial.println("NovaNet loop");
+    sendProtobuf();
+    //delay(1000);
 }
 
 void NovaNet::sendProtobuf()
 {
+    uint16_t msg_size = 0;
 
+    // Prepare the header: F0 9F 92 A5 followed by the CRC and the size of the protobuf
+    uint8_t header[4] = {0xF0, 0x9F, 0x92, 0xA5};
+
+/*
     uint8_t dmxValues[DMX512_MAX] = {};
     dmxValues[0] = 0x00;
     dmxValues[1] = 0xff; // Brightness
@@ -105,8 +115,6 @@ void NovaNet::sendProtobuf()
     // Calculate the CRC of the protobuf
     uint16_t protobuf_crc = crc16_ccitt(buffer, stream.bytes_written);
 
-    // Prepare the header: F0 9F 92 A5 followed by the CRC and the size of the protobuf
-    uint8_t header[4] = {0xF0, 0x9F, 0x92, 0xA5};
     uint16_t msg_size = stream.bytes_written;
 
     // Send the header
@@ -125,7 +133,9 @@ void NovaNet::sendProtobuf()
 
     delay(100); // Wait a bit before reading
     return;
+*/
 
+    //Serial.println("receiving");
     // Read and check the header
     uint8_t received_header[4];
     while (Serial2.available() < sizeof(received_header))
@@ -134,6 +144,7 @@ void NovaNet::sendProtobuf()
         yield();
     }
     Serial2.readBytes((char *)received_header, sizeof(received_header));
+
     if (memcmp(received_header, header, sizeof(header)) != 0)
     {
         // Handle the error: invalid header
@@ -177,6 +188,8 @@ void NovaNet::sendProtobuf()
         // Handle the error: invalid CRC
         Serial.println("NovaNet: Invalid receive CRC");
         return;
+    } else {
+        //Serial.println("NovaNet: CRC OK");
     }
 
     // Initialize a protobuf input stream
@@ -188,28 +201,59 @@ void NovaNet::sendProtobuf()
     {
         // Handle the decoding error
     }
+
+    if (received_msg.which_request_payload == messaging_Request_dmx_request_tag)
+    {
+        // Handle the DMX request
+        messaging_DmxRequest received_dmx_request = received_msg.request_payload.dmx_request;
+
+        // Print the received DMX values
+        for (int i = 0; i < received_dmx_request.values.size; i++)
+        {
+            Serial.print(received_dmx_request.values.bytes[i], HEX);
+            Serial.print(" ");
+        }
+        Serial.println();
+    }
+    else if (received_msg.which_request_payload == messaging_Request_power_request_tag)
+    {
+        // Handle the power request
+        messaging_PowerRequest received_power_request = received_msg.request_payload.power_request;
+
+        // Print the received power request
+        Serial.println("Power request: ");
+        //Serial.println(received_power_request.power);
+    }
+    else
+    {
+        // Handle the error: invalid request payload
+    }
 }
 
 // CRC-16-CCITT function
 uint16_t NovaNet::crc16_ccitt(const uint8_t *data, uint16_t length)
 {
-    uint16_t crc = 0xFFFF;
+    uint16_t crc = 0xFFFF; // Initialize CRC to 0xFFFF
 
+    // Iterate over the data
     for (uint16_t i = 0; i < length; i++)
     {
-        crc ^= data[i] << 8;
+        crc ^= data[i] << 8; // XOR the current byte with the CRC
+
+        // Iterate over the bits in the byte
         for (uint16_t j = 0; j < 8; j++)
         {
+            // If the MSB of the CRC is 1, XOR with the polynomial
             if (crc & 0x8000)
             {
                 crc = (crc << 1) ^ 0x1021; // Polynomial: x^16 + x^12 + x^5 + 1
             }
-            else
+            else // Otherwise, shift the CRC left by 1 bit
             {
                 crc <<= 1;
             }
         }
     }
 
-    return crc;
+    return crc; // Return the final CRC value
 }

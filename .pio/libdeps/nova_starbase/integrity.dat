@@ -1,4 +1,7 @@
-adafruit/Adafruit MCP23017 Arduino Library@^2.3.0
+https://github.com/mc-hamster/nanopb-arduino
 adafruit/Adafruit BusIO@^1.14.1
-Wire
+someweisguy/esp_dmx
 SPI
+Wire
+adafruit/Adafruit MCP23017 Arduino Library@^2.3.0
+FastLED@^3.6.0

@@ -20,7 +20,7 @@ NovaNet::NovaNet()
     messaging_Request request = messaging_Request_init_zero;
     Serial.println("NovaNet setup started");
 
-    //Serial2.begin(NOVANET_BAUD);
+    // Serial2.begin(NOVANET_BAUD);
 
     // Set the NovaNet pins to receive
     novaIO->mcp_digitalWrite(NOVANET_RE, LOW, 0);
@@ -31,118 +31,28 @@ NovaNet::NovaNet()
 
 void NovaNet::loop()
 {
-    //Serial.println("NovaNet loop");
-    sendProtobuf();
-    //delay(1000);
+    // Serial.println("NovaNet loop");
+    receiveProtobuf();
+    // delay(1000);
 }
 
-void NovaNet::sendProtobuf()
+void NovaNet::receiveProtobuf()
 {
     uint16_t msg_size = 0;
 
     // Prepare the header: F0 9F 92 A5 followed by the CRC and the size of the protobuf
     uint8_t header[4] = {0xF0, 0x9F, 0x92, 0xA5};
 
-/*
-    uint8_t dmxValues[DMX512_MAX] = {};
-    dmxValues[0] = 0x00;
-    dmxValues[1] = 0xff; // Brightness
-    dmxValues[2] = 0xff; // red
-    dmxValues[3] = 0x00; // green
-    dmxValues[4] = 0xff; // blue
-
-    dmxValues[5] = 0x01; // blue
-    dmxValues[6] = 0x02; // blue
-    dmxValues[7] = 0x03; // blue
-
-    // Create a DmxRequest object
-    messaging_DmxRequest dmxRequest = messaging_DmxRequest_init_zero;
-
-    memcpy(dmxRequest.values.bytes, dmxValues, sizeof(dmxValues));
-
-    // Find the last index with data
-    int lastIndexWithData = 0;
-    for (int i = DMX512_MAX; i >= 0; i--)
-    {
-        if (dmxValues[i] != 0)
-        {
-            lastIndexWithData = i + 1;
-            break;
-        }
-    }
-
-    Serial.print("lastIndexWithData ");
-    Serial.println(lastIndexWithData);
-
-    dmxRequest.values.size = lastIndexWithData;
-
-    dmxRequest.ack = false; // Request acknoledgement
-
-    // Create a Request object and set its type to DMX_REQUEST
-    messaging_Request request = messaging_Request_init_zero;
-    // request.type = messaging_RequestType_REQUEST_DMX;
-    request.request_payload.dmx_request = dmxRequest;
-    request.which_request_payload = messaging_Request_dmx_request_tag;
-
-    // Initialize a buffer stream for the encoded message
-    uint8_t buffer[NOVABUF_MAX];
-    pb_ostream_t stream = pb_ostream_from_buffer(buffer, sizeof(buffer));
-
-    // Encode the protobuf
-    if (!pb_encode(&stream, messaging_Request_fields, &request))
-    {
-        // Encode error. Maybe the buffer isn't big enough?
-        Serial.println("PB_Encode Error!!!");
-    }
-
-    if (1)
-    {
-        // Print the size of the encoded message.
-        Serial.println(stream.bytes_written);
-
-        // Print the encoded message in hexadecimal format.
-        for (size_t i = 0; i < stream.bytes_written; i++)
-        {
-            if (buffer[i] < 16)
-            {
-                Serial.print('0'); // print leading zero for single-digit hex values
-            }
-            Serial.print(buffer[i], HEX);
-        }
-        Serial.println();
-    }
-
-    // Calculate the CRC of the protobuf
-    uint16_t protobuf_crc = crc16_ccitt(buffer, stream.bytes_written);
-
-    uint16_t msg_size = stream.bytes_written;
-
-    // Send the header
-    Serial2.write(header, sizeof(header));
-
-    // Send the CRC of the protobuf
-    Serial2.write((uint8_t *)&protobuf_crc, sizeof(protobuf_crc));
-
-    // Send the size of the protobuf
-    Serial2.write((uint8_t *)&msg_size, sizeof(msg_size));
-
-    // Then send the protobuf
-    Serial2.write(buffer, msg_size);
-
-    Serial.println("Written");
-
-    delay(100); // Wait a bit before reading
-    return;
-*/
-
-    //Serial.println("receiving");
-    // Read and check the header
+    // Serial.println("receiving");
+    //  Read and check the header
     uint8_t received_header[4];
+
     while (Serial2.available() < sizeof(received_header))
     {
         // Wait until the header has been received
-        yield();
+        delay(1);
     }
+
     Serial2.readBytes((char *)received_header, sizeof(received_header));
 
     if (memcmp(received_header, header, sizeof(header)) != 0)
@@ -188,8 +98,10 @@ void NovaNet::sendProtobuf()
         // Handle the error: invalid CRC
         Serial.println("NovaNet: Invalid receive CRC");
         return;
-    } else {
-        //Serial.println("NovaNet: CRC OK");
+    }
+    else
+    {
+        // Serial.println("NovaNet: CRC OK");
     }
 
     // Initialize a protobuf input stream
@@ -214,6 +126,9 @@ void NovaNet::sendProtobuf()
             Serial.print(" ");
         }
         Serial.println();
+
+        // Send the DMX values to the DMX output
+        
     }
     else if (received_msg.which_request_payload == messaging_Request_power_request_tag)
     {
@@ -222,7 +137,7 @@ void NovaNet::sendProtobuf()
 
         // Print the received power request
         Serial.println("Power request: ");
-        //Serial.println(received_power_request.power);
+        // Serial.println(received_power_request.power);
     }
     else
     {

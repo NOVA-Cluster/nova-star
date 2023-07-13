@@ -16,7 +16,7 @@ public:
 
     void loop();
 
-    void sendProtobuf();
+    void receiveProtobuf();
 
     uint16_t crc16_ccitt(const uint8_t* data, uint16_t length);
 };

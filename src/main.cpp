@@ -90,7 +90,7 @@ void loop()
   /* Best not to have anything in this loop.
     Everything should be in freeRTOS tasks
   */
-  static uint8_t hue;
+  
 
   // put your main code here, to run repeatedly:
 

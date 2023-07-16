@@ -72,7 +72,7 @@ void DmxNet::loop()
     /* Increment every byte in our packet. Notice we don't increment the zeroeth
       byte, since that is our DMX start code. Then we must write our changes to
       the DMX packet. Maximum is kept in DMX_PACKET_SIZE */
-    data[0] = 0x00; // Null
+    data[0] = 0x00; // Start code byte.
 
     for (int i = 0; i < NUM_LEDS; i++)
     {

@@ -4,9 +4,6 @@
 #include "NovaIO.h"
 #include "DmxNet.h"
 
-
-
-
 void TaskNovaNet(void *pvParameters);
 void TaskDmxNet(void *pvParameters);
 
@@ -28,8 +25,6 @@ void setup()
   Serial.println("new NovaIO");
   novaIO = new NovaIO();
 
-
-
   uint8_t blowerDuty = 250;
   float blowerVolt = ((blowerDuty / 255.0) * 24.0);
 
@@ -45,32 +40,14 @@ void setup()
   Serial.println("new DmxNet");
   dmxNet = new DmxNet();
 
-  // digitalWrite(BLOWER_DUTY_PIN, HIGH);
   analogWrite(BLOWER_DUTY_PIN, blowerDuty); // Note: Best not to use blower below ~130 (~12.2v)
-  // analogWrite(BLOWER_DUTY_PIN, 255); // Note: Best not to use blower below ~130 (~12.2v)
-
-  /*
-    Serial.println("MCP23X17: interfaces setup.");
-    if (!mcp_a.begin_I2C(0x20))
-    {
-      Serial.println("MCP23X17: interfaces setup error. May be a problem with the I2C bus.");
-      while (1)
-      {
-        // Do nothing
-      };
-    }
-  */
 
   Serial.println("DMX: Setting Pin States.");
   novaIO->mcp_a.pinMode(DMX_DE, OUTPUT);
-  // mcp_a.pinMode(DMX_DE, OUTPUT);
   novaIO->mcp_a.pinMode(DMX_RE, OUTPUT);
-  // mcp_a.pinMode(DMX_RE, OUTPUT);
 
   novaIO->mcpA_digitalWrite(DMX_DE, HIGH);
-  // mcp_a.digitalWrite(DMX_DE, HIGH);
   novaIO->mcpA_digitalWrite(DMX_RE, HIGH);
-  // mcp_a.digitalWrite(DMX_RE, HIGH);
 
   Serial.println("Fog Machine: Setting Pin States.");
 

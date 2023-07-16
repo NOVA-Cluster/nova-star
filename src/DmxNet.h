@@ -18,9 +18,7 @@ public:
 
     void loop();
 
-    uint16_t crc16_ccitt(const uint8_t *data, uint16_t length);
-
-    void receiveDMX512(uint8_t *data);
+    void receiveDMX512(const uint8_t *data);
 };
 
 extern DmxNet *dmxNet;

@@ -38,9 +38,6 @@ DmxNet::DmxNet()
 
 void DmxNet::loop()
 {
-  // Serial.println("DmxNet loop");
-  //  delay(1000);
-
   static uint8_t hue;
 
   /* Get the current time since boot in milliseconds so that we can find out how
@@ -91,14 +88,14 @@ void DmxNet::loop()
     data[11] = leds[1].b;
 
     data[15] = 0xff; // Brightness
-    data[16] = leds[1].r;
-    data[17] = leds[1].g;
-    data[18] = leds[1].b;
+    data[16] = leds[2].r;
+    data[17] = leds[2].g;
+    data[18] = leds[2].b;
 
     data[22] = 0xff; // Brightness
-    data[23] = leds[1].r;
-    data[24] = leds[1].g;
-    data[25] = leds[1].b;
+    data[23] = leds[3].r;
+    data[24] = leds[3].g;
+    data[25] = leds[3].b;
 
     hue++;
 
@@ -110,8 +107,6 @@ void DmxNet::loop()
   /* Now we can transmit the DMX packet! */
   dmx_send(dmxPort, DMX_PACKET_SIZE);
 
-  /* We can do some other work here if we want. */
-
   /* If we have no more work to do, we will wait until we are done sending our
     DMX packet. */
   if (!dmx_wait_sent(dmxPort, DMX_TIMEOUT_TICK))
@@ -122,49 +117,40 @@ void DmxNet::loop()
   }
 }
 
-void DmxNet::receiveDMX512(uint8_t *receivedData)
+void DmxNet::receiveDMX512(const uint8_t *receivedData)
 {
   /*
    When we receive DMX512:
      - Set the time that the DMX packet was received.
-     - Print the DMX packet to the Serial Monitor.
-     - Set the DMX packet to the DMX output buffer.
+     - Copy the received DMX512 data into the data buffer.
   */
 
   lastReceivededPacketTime = millis();
-  // Serial.println("DMX: Received DMX512 packet from NovaNet");
 
-  // Serial.println("DMX: Received DMX512 packet:");
-
-  // Zero out the data array
-  memset(data, 0, DMX_PACKET_SIZE);
-
-  // Copy the received data into the data array
+  // Copy the received data into the data buffer
   memcpy(data, receivedData, DMX_PACKET_SIZE);
 
-
-
-    if (0)
+  // Print the received data to the Serial Monitor (optional)
+  if (false)
+  {
+    Serial.print("R: ");
+    for (int i = 0; i < DMX_PACKET_SIZE; i++)
     {
-      Serial.print("R: ");
-      for (int i = 0; i < 21; i++)
-      {
-        Serial.print(receivedData[i], HEX);
-        Serial.print(" ");
-      }
-      Serial.println();
+      Serial.print(receivedData[i], HEX);
+      Serial.print(" ");
     }
+    Serial.println();
+  }
 
-
-    if (0)
+  // Print the copied data to the Serial Monitor (optional)
+  if (false)
+  {
+    Serial.print("D: ");
+    for (int i = 0; i < DMX_PACKET_SIZE; i++)
     {
-      Serial.print("D: ");
-      for (int i = 0; i < 21; i++)
-      {
-        Serial.print(data[i], HEX);
-        Serial.print(" ");
-      }
-      Serial.println();
+      Serial.print(data[i], HEX);
+      Serial.print(" ");
     }
-
+    Serial.println();
+  }
 }

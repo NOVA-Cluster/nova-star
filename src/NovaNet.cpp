@@ -3,6 +3,7 @@
 #include "configuration.h"
 #include "pb_arduino.h"
 #include "NovaIO.h"
+#include "DmxNet.h"
 
 #include "messaging.pb.h"
 
@@ -41,6 +42,7 @@ void NovaNet::receiveProtobuf()
     uint16_t msg_size = 0;
 
     // Prepare the header: F0 9F 92 A5 followed by the CRC and the size of the protobuf
+    // aka "fire" emoji 🔥
     uint8_t header[4] = {0xF0, 0x9F, 0x92, 0xA5};
 
     // Serial.println("receiving");
@@ -119,16 +121,20 @@ void NovaNet::receiveProtobuf()
         // Handle the DMX request
         messaging_DmxRequest received_dmx_request = received_msg.request_payload.dmx_request;
 
-        // Print the received DMX values
-        for (int i = 0; i < received_dmx_request.values.size; i++)
+        if (0)
         {
-            Serial.print(received_dmx_request.values.bytes[i], HEX);
-            Serial.print(" ");
+            Serial.print("R: ");
+            // Print the received DMX values
+            for (int i = 0; i < received_dmx_request.values.size; i++)
+            {
+                Serial.print(received_dmx_request.values.bytes[i], HEX);
+                Serial.print(" ");
+            }
+            Serial.println();
         }
-        Serial.println();
 
         // Send the DMX values to the DMX output
-        
+        dmxNet->receiveDMX512(received_dmx_request.values.bytes);
     }
     else if (received_msg.which_request_payload == messaging_Request_power_request_tag)
     {

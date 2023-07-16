@@ -8,6 +8,7 @@
 
 
 void TaskNovaNet(void *pvParameters);
+void TaskDmxNet(void *pvParameters);
 
 void setup()
 {
@@ -40,6 +41,9 @@ void setup()
 
   Serial.println("new NovaNet");
   novaNet = new NovaNet();
+
+  Serial.println("new DmxNet");
+  dmxNet = new DmxNet();
 
   // digitalWrite(BLOWER_DUTY_PIN, HIGH);
   analogWrite(BLOWER_DUTY_PIN, blowerDuty); // Note: Best not to use blower below ~130 (~12.2v)
@@ -83,6 +87,10 @@ void setup()
   Serial.println("Create TaskNovaNet");
   xTaskCreate(&TaskNovaNet, "TaskNovaNet", 6 * 1024, NULL, 5, NULL);
   Serial.println("Create TaskNovaNet - Done");
+
+  Serial.println("Create TaskDmxNet");
+  xTaskCreate(&TaskDmxNet, "TaskDmxNet", 6 * 1024, NULL, 5, NULL);
+  Serial.println("Create TaskDmxNet - Done");
 }
 
 void loop()
@@ -102,7 +110,7 @@ void loop()
   {
     uint16_t fogRandomDelay = 0;
     uint16_t fogRandomOutputDelay = 0;
-    fogRandomDelay = random(5, 30);
+    fogRandomDelay = random(5, 20);
     fogRandomOutputDelay = random(200, 1000);
 
     Serial.print("Fog Machine: Will activate for ");
@@ -128,6 +136,19 @@ void TaskNovaNet(void *pvParameters) // This is a task.
   while (1) // A Task shall never return or exit.
   {
     novaNet->loop();
+    yield(); // Should't do anything but it's here incase the watchdog needs it.
+    delay(1);
+  }
+}
+
+void TaskDmxNet(void *pvParameters) // This is a task.
+{
+  (void)pvParameters;
+
+  Serial.println("TaskDmxNet is running");
+  while (1) // A Task shall never return or exit.
+  {
+    dmxNet->loop();
     yield(); // Should't do anything but it's here incase the watchdog needs it.
     delay(1);
   }

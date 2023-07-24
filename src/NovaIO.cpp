@@ -66,7 +66,7 @@ bool NovaIO::expansionDigitalRead(int pin)
     bool readValue;
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             readValue = mcp_h.digitalRead(pin);
             break;
@@ -99,7 +99,7 @@ void NovaIO::mcpB_writeGPIOAB(uint16_t value)
     bool readValue;
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             mcp_b.writeGPIOAB(value);
             break;
@@ -115,7 +115,7 @@ void NovaIO::mcpC_writeGPIOAB(uint16_t value)
     bool readValue;
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             mcp_c.writeGPIOAB(value);
             break;
@@ -131,7 +131,7 @@ void NovaIO::mcpD_writeGPIOAB(uint16_t value)
     bool readValue;
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             mcp_d.writeGPIOAB(value);
             break;
@@ -147,7 +147,7 @@ void NovaIO::mcpE_writeGPIOAB(uint16_t value)
     bool readValue;
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             mcp_e.writeGPIOAB(value);
             break;
@@ -163,7 +163,7 @@ void NovaIO::mcpF_writeGPIOAB(uint16_t value)
     bool readValue;
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             mcp_f.writeGPIOAB(value);
             break;
@@ -179,7 +179,7 @@ void NovaIO::mcpG_writeGPIOAB(uint16_t value)
     bool readValue;
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             mcp_g.writeGPIOAB(value);
             break;
@@ -195,7 +195,7 @@ void NovaIO::mcpH_writeGPIOAB(uint16_t value)
     bool readValue;
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             mcp_h.writeGPIOAB(value);
             break;
@@ -210,7 +210,7 @@ void NovaIO::mcpA_digitalWrite(uint8_t pin, uint8_t value)
 {
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             mcp_a.digitalWrite(pin, value);
             break;
@@ -225,7 +225,7 @@ void NovaIO::mcp_digitalWrite(uint8_t pin, uint8_t value, uint8_t expander)
 {
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             if (expander == 0)
             {
@@ -271,7 +271,7 @@ void NovaIO::mcpB_digitalWrite(uint8_t pin, uint8_t value)
 {
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             mcp_b.digitalWrite(pin, value);
             break;
@@ -286,7 +286,7 @@ void NovaIO::mcpC_digitalWrite(uint8_t pin, uint8_t value)
 {
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             mcp_c.digitalWrite(pin, value);
             break;
@@ -301,7 +301,7 @@ void NovaIO::mcpD_digitalWrite(uint8_t pin, uint8_t value)
 {
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             mcp_d.digitalWrite(pin, value);
             break;
@@ -316,7 +316,7 @@ void NovaIO::mcpE_digitalWrite(uint8_t pin, uint8_t value)
 {
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             mcp_e.digitalWrite(pin, value);
             break;
@@ -331,7 +331,7 @@ void NovaIO::mcpF_digitalWrite(uint8_t pin, uint8_t value)
 {
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             mcp_f.digitalWrite(pin, value);
             break;
@@ -346,7 +346,7 @@ void NovaIO::mcpG_digitalWrite(uint8_t pin, uint8_t value)
 {
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             mcp_g.digitalWrite(pin, value);
             break;
@@ -361,7 +361,7 @@ void NovaIO::mcpH_digitalWrite(uint8_t pin, uint8_t value)
 {
     while (1) // After duration set Pins to end state
     {
-        if (xSemaphoreTake(mutex_i2c, 100) == pdTRUE)
+        if (xSemaphoreTake(mutex_i2c, BLOCK_TIME) == pdTRUE)
         {
             mcp_h.digitalWrite(pin, value);
             break;

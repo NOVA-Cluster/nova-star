@@ -70,7 +70,7 @@ void setup()
   novaIO->mcp_a.digitalWrite(FOG_ACTIVATE, LOW);
 
   Serial.println("Create TaskNovaNet");
-  xTaskCreate(&TaskNovaNet, "TaskNovaNet", 6 * 1024, NULL, 5, NULL);
+  xTaskCreate(&TaskNovaNet, "TaskNovaNet", 6 * 1024, NULL, 6, NULL);
   Serial.println("Create TaskNovaNet - Done");
 
   Serial.println("Create TaskDmxNet");
@@ -78,7 +78,7 @@ void setup()
   Serial.println("Create TaskDmxNet - Done");
 
   Serial.println("Create TaskFogMachine");
-  xTaskCreate(&TaskFogMachine, "TaskFogMachine", 6 * 1024, NULL, 5, NULL);
+  xTaskCreate(&TaskFogMachine, "TaskFogMachine", 6 * 1024, NULL, 4, NULL);
   Serial.println("Create TaskFogMachine - Done");
 
   
@@ -100,7 +100,7 @@ void TaskNovaNet(void *pvParameters) // This is a task.
   {
     novaNet->loop();
     // yield(); // Should't do anything but it's here incase the watchdog needs it.
-    delay(1);
+    delayMicroseconds(250);
   }
 }
 

@@ -192,9 +192,12 @@ void NovaNet::receiveProtobuf()
         // Handle the error: invalid request payload
     }
 
-    //Serial.println("Message received");
-    if (elapsedTime >= 1000) {
-        float frequency = (float)count / ((float)elapsedTime / 1000.0);
+    /*
+     * Calculate the frequency of received messages
+     */
+    if (elapsedTime >= 10000)
+    {
+        float frequency = (float)count / ((float)elapsedTime / 10000.0);
         Serial.print("Received Message Frequency: ");
         Serial.print(frequency);
         Serial.println(" Hz");

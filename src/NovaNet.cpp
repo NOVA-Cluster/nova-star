@@ -18,6 +18,9 @@ This class is responsible for sending and receiving messages over the NovaNet pr
 
 NovaNet *novaNet = NULL;
 
+unsigned long lastTime = 0;
+unsigned int count = 0;
+
 NovaNet::NovaNet()
 {
 
@@ -42,6 +45,9 @@ void NovaNet::loop()
 
 void NovaNet::receiveProtobuf()
 {
+    unsigned long currentTime = millis();
+    unsigned long elapsedTime = currentTime - lastTime;
+
     uint16_t msg_size = 0;
 
     // Prepare the header: F0 9F 92 A5 followed by the CRC and the size of the protobuf
@@ -117,6 +123,7 @@ void NovaNet::receiveProtobuf()
     if (!pb_decode(&pb_istream, messaging_Request_fields, &received_msg))
     {
         // Handle the decoding error
+        Serial.println("NovaNet: Decode Error");
     }
 
     if (received_msg.which_request_payload == messaging_Request_dmx_request_tag)
@@ -176,13 +183,26 @@ void NovaNet::receiveProtobuf()
         messaging_PowerRequest received_power_request = received_msg.request_payload.power_request;
 
         // Print the received power request
-        Serial.println("Power request: ");
+        Serial.println("Power request: ???");
         // Serial.println(received_power_request.power);
     }
     else
     {
+        Serial.println("NovaNet: Invalid request payload");
         // Handle the error: invalid request payload
     }
+
+    //Serial.println("Message received");
+    if (elapsedTime >= 1000) {
+        float frequency = (float)count / ((float)elapsedTime / 1000.0);
+        Serial.print("Received Message Frequency: ");
+        Serial.print(frequency);
+        Serial.println(" Hz");
+
+        lastTime = currentTime;
+        count = 0;
+    }
+    count++;
 }
 
 // CRC-16-CCITT function

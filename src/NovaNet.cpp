@@ -1,9 +1,12 @@
 #include <Arduino.h>
 #include "NovaNet.h"
+#include "main.h"
 #include "configuration.h"
 #include "pb_arduino.h"
 #include "NovaIO.h"
 #include "DmxNet.h"
+#include "globals.h"
+#include "FogMachine.h"
 
 #include "messaging.pb.h"
 
@@ -120,6 +123,37 @@ void NovaNet::receiveProtobuf()
     {
         // Handle the DMX request
         messaging_DmxRequest received_dmx_request = received_msg.request_payload.dmx_request;
+
+        if (received_msg.configAmnesia.fogActivateTime)
+        {
+            Serial.printf("Received Fog activate time: %d\n", received_msg.configAmnesia.fogActivateTime);
+            // fogActivateTime = received_msg.configAmnesia.fogActivateTime;
+            Serial.println("WARNING: fogActivateTime received but this is not implemented");
+        }
+
+        if (received_msg.configAmnesia.fogOutputOnMinTime)
+        {
+            Serial.printf("Received Fog output on min time: %d\n", received_msg.configAmnesia.fogOutputOnMinTime);
+            fogMachine->setFogOutputOnMinTime(received_msg.configAmnesia.fogOutputOnMinTime);
+        }
+
+        if (received_msg.configAmnesia.fogOutputOnMaxTime)
+        {
+            Serial.printf("Received Fog output on max time: %d\n", received_msg.configAmnesia.fogOutputOnMaxTime);
+            fogMachine->setFogOutputOnMaxTime(received_msg.configAmnesia.fogOutputOnMaxTime);
+        }
+
+        if (received_msg.configAmnesia.fogOutputOffMinTime)
+        {
+            Serial.printf("Received Fog output off min time: %d\n", received_msg.configAmnesia.fogOutputOffMinTime);
+            fogMachine->setFogOutputOffMinTime(received_msg.configAmnesia.fogOutputOffMinTime);
+        }
+
+        if (received_msg.configAmnesia.fogOutputOffMaxTime)
+        {
+            Serial.printf("Received Fog output off max time: %d\n", received_msg.configAmnesia.fogOutputOffMaxTime);
+            fogMachine->setFogOutputOffMaxTime(received_msg.configAmnesia.fogOutputOffMaxTime);
+        }
 
         if (0)
         {

@@ -1,11 +1,16 @@
 #include <Arduino.h>
+#include "main.h"
 #include "configuration.h"
 #include "NovaNet.h"
 #include "NovaIO.h"
 #include "DmxNet.h"
+#include "globals.h"
+#include "FogMachine.h"
 
 void TaskNovaNet(void *pvParameters);
 void TaskDmxNet(void *pvParameters);
+void TaskFogMachine(void *pvParameters);
+
 
 void setup()
 {
@@ -40,6 +45,9 @@ void setup()
   Serial.println("new DmxNet");
   dmxNet = new DmxNet();
 
+  Serial.println("new FogMachine");
+  fogMachine = new FogMachine();
+
   analogWrite(BLOWER_DUTY_PIN, blowerDuty); // Note: Best not to use blower below ~130 (~12.2v)
 
   Serial.println("DMX: Setting Pin States.");
@@ -68,6 +76,12 @@ void setup()
   Serial.println("Create TaskDmxNet");
   xTaskCreate(&TaskDmxNet, "TaskDmxNet", 6 * 1024, NULL, 5, NULL);
   Serial.println("Create TaskDmxNet - Done");
+
+  Serial.println("Create TaskFogMachine");
+  xTaskCreate(&TaskFogMachine, "TaskFogMachine", 6 * 1024, NULL, 5, NULL);
+  Serial.println("Create TaskFogMachine - Done");
+
+  
 }
 
 void loop()
@@ -75,34 +89,6 @@ void loop()
   /* Best not to have anything in this loop.
     Everything should be in freeRTOS tasks
   */
-  
-
-  // put your main code here, to run repeatedly:
-
-  novaIO->mcpA_digitalWrite(FOG_POWER, HIGH);
-  // mcp_a.digitalWrite(FOG_POWER, HIGH);
-
-  // Todo -- Need to update this to a threadsafe wrapper
-  if (novaIO->mcp_a.digitalRead(FOG_STATUS))
-  {
-    uint16_t fogRandomDelay = 0;
-    uint16_t fogRandomOutputDelay = 0;
-    fogRandomDelay = random(5, 20);
-    fogRandomOutputDelay = random(200, 1000);
-
-    Serial.print("Fog Machine: Will activate for ");
-    Serial.print(fogRandomOutputDelay);
-    Serial.println(" ms.");
-    novaIO->mcpA_digitalWrite(FOG_ACTIVATE, HIGH);
-    delay(fogRandomOutputDelay);
-
-    Serial.print("Fog Machine: Will delay for ");
-    Serial.print(fogRandomDelay);
-    Serial.println(" seconds.");
-    novaIO->mcpA_digitalWrite(FOG_ACTIVATE, LOW);
-    delay(fogRandomDelay * 1000);
-  }
-
 }
 
 void TaskNovaNet(void *pvParameters) // This is a task.
@@ -113,7 +99,7 @@ void TaskNovaNet(void *pvParameters) // This is a task.
   while (1) // A Task shall never return or exit.
   {
     novaNet->loop();
-    yield(); // Should't do anything but it's here incase the watchdog needs it.
+    // yield(); // Should't do anything but it's here incase the watchdog needs it.
     delay(1);
   }
 }
@@ -126,7 +112,20 @@ void TaskDmxNet(void *pvParameters) // This is a task.
   while (1) // A Task shall never return or exit.
   {
     dmxNet->loop();
-    yield(); // Should't do anything but it's here incase the watchdog needs it.
+    // yield(); // Should't do anything but it's here incase the watchdog needs it.
     delay(1);
+  }
+}
+
+void TaskFogMachine(void *pvParameters) // This is a task.
+{
+  (void)pvParameters;
+
+  Serial.println("TaskFogMachine is running");
+  while (1) // A Task shall never return or exit.
+  {
+    fogMachine->loop();
+    // yield(); // Should't do anything but it's here incase the watchdog needs it.
+    delay(10);
   }
 }

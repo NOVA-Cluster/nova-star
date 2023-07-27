@@ -21,8 +21,8 @@ void FogMachine::loop()
   // mcp_a.digitalWrite(FOG_POWER, HIGH);
 
   // Todo -- Need to update this to a threadsafe wrapper
-  //if (novaIO->mcp_a.digitalRead(FOG_STATUS))
-  if (1)
+  if (novaIO->mcp_a.digitalRead(FOG_STATUS))
+  //if (1)
   {
 
     uint32_t fogRandomDelayOff = 0;

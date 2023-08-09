@@ -1,9 +1,12 @@
 #include <Arduino.h>
 #include "NovaNet.h"
+#include "main.h"
 #include "configuration.h"
 #include "pb_arduino.h"
 #include "NovaIO.h"
 #include "DmxNet.h"
+#include "globals.h"
+#include "FogMachine.h"
 
 #include "messaging.pb.h"
 
@@ -14,6 +17,9 @@ This class is responsible for sending and receiving messages over the NovaNet pr
 */
 
 NovaNet *novaNet = NULL;
+
+unsigned long lastTime = 0;
+unsigned int count = 0;
 
 NovaNet::NovaNet()
 {
@@ -39,6 +45,9 @@ void NovaNet::loop()
 
 void NovaNet::receiveProtobuf()
 {
+    unsigned long currentTime = millis();
+    unsigned long elapsedTime = currentTime - lastTime;
+
     uint16_t msg_size = 0;
 
     // Prepare the header: F0 9F 92 A5 followed by the CRC and the size of the protobuf
@@ -114,12 +123,44 @@ void NovaNet::receiveProtobuf()
     if (!pb_decode(&pb_istream, messaging_Request_fields, &received_msg))
     {
         // Handle the decoding error
+        Serial.println("NovaNet: Decode Error");
     }
 
     if (received_msg.which_request_payload == messaging_Request_dmx_request_tag)
     {
         // Handle the DMX request
         messaging_DmxRequest received_dmx_request = received_msg.request_payload.dmx_request;
+
+        if (received_msg.configAmnesia.fogActivateTime)
+        {
+            Serial.printf("Received Fog activate time: %d\n", received_msg.configAmnesia.fogActivateTime);
+            // fogActivateTime = received_msg.configAmnesia.fogActivateTime;
+            Serial.println("WARNING: fogActivateTime received but this is not implemented");
+        }
+
+        if (received_msg.configAmnesia.fogOutputOnMinTime)
+        {
+            Serial.printf("Received Fog output on min time: %d\n", received_msg.configAmnesia.fogOutputOnMinTime);
+            fogMachine->setFogOutputOnMinTime(received_msg.configAmnesia.fogOutputOnMinTime);
+        }
+
+        if (received_msg.configAmnesia.fogOutputOnMaxTime)
+        {
+            Serial.printf("Received Fog output on max time: %d\n", received_msg.configAmnesia.fogOutputOnMaxTime);
+            fogMachine->setFogOutputOnMaxTime(received_msg.configAmnesia.fogOutputOnMaxTime);
+        }
+
+        if (received_msg.configAmnesia.fogOutputOffMinTime)
+        {
+            Serial.printf("Received Fog output off min time: %d\n", received_msg.configAmnesia.fogOutputOffMinTime);
+            fogMachine->setFogOutputOffMinTime(received_msg.configAmnesia.fogOutputOffMinTime);
+        }
+
+        if (received_msg.configAmnesia.fogOutputOffMaxTime)
+        {
+            Serial.printf("Received Fog output off max time: %d\n", received_msg.configAmnesia.fogOutputOffMaxTime);
+            fogMachine->setFogOutputOffMaxTime(received_msg.configAmnesia.fogOutputOffMaxTime);
+        }
 
         if (0)
         {
@@ -142,13 +183,29 @@ void NovaNet::receiveProtobuf()
         messaging_PowerRequest received_power_request = received_msg.request_payload.power_request;
 
         // Print the received power request
-        Serial.println("Power request: ");
+        Serial.println("Power request: ???");
         // Serial.println(received_power_request.power);
     }
     else
     {
+        Serial.println("NovaNet: Invalid request payload");
         // Handle the error: invalid request payload
     }
+
+    /*
+     * Calculate the frequency of received messages
+     */
+    if (elapsedTime >= 10000)
+    {
+        float frequency = (float)count / ((float)elapsedTime / 10000.0);
+        Serial.print("Received Message Frequency: ");
+        Serial.print(frequency);
+        Serial.println(" Hz");
+
+        lastTime = currentTime;
+        count = 0;
+    }
+    count++;
 }
 
 // CRC-16-CCITT function

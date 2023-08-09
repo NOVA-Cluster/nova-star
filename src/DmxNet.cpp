@@ -117,6 +117,13 @@ void DmxNet::loop()
   }
 }
 
+/**
+ * @brief Receives DMX512 data and copies it into the data buffer.
+ * 
+ * When DMX512 data is received, the function sets the time that the DMX packet was received and copies the received data into the data buffer.
+ * 
+ * @param receivedData Pointer to the received DMX512 data.
+ */
 void DmxNet::receiveDMX512(const uint8_t *receivedData)
 {
   /*

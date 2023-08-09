@@ -3,7 +3,7 @@
 
 #include "NovaIO.h"
 #include "configuration.h"
-//#include "main.h"
+#include "main.h"
 
 NovaIO *novaIO = NULL;
 
